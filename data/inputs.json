@@ -1,0 +1,721 @@
+{
+  "run_timestamp": "2026-05-16T11:14:13.922126+00:00",
+  "leaders": {
+    "starmer": {
+      "name": "Keir Starmer",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "Labour",
+      "coalition_parties": [
+        "Labour"
+      ],
+      "far_right_party": "Reform UK",
+      "tenure": {
+        "took_office": "2024-07-05",
+        "days_in_office": 680,
+        "years_in_office": 1.86
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 1.13,
+        "inflation_yoy_pct": 3.27,
+        "unemployment_pct": 4.75,
+        "data_year": 2025
+      }
+    },
+    "merz": {
+      "name": "Friedrich Merz",
+      "country": "Germany",
+      "country_code": "DE",
+      "system": "parliamentary",
+      "role": "Chancellor",
+      "leader_party": "CDU/CSU",
+      "coalition_parties": [
+        "CDU/CSU",
+        "SPD"
+      ],
+      "far_right_party": "AfD",
+      "tenure": {
+        "took_office": "2025-05-06",
+        "days_in_office": 375,
+        "years_in_office": 1.03
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": -0.5,
+        "inflation_yoy_pct": 2.26,
+        "unemployment_pct": 3.71,
+        "data_year": 2025
+      }
+    },
+    "macron": {
+      "name": "Emmanuel Macron",
+      "country": "France",
+      "country_code": "FR",
+      "system": "presidential",
+      "role": "President",
+      "leader_party": "Renaissance",
+      "coalition_parties": null,
+      "far_right_party": "National Rally",
+      "tenure": {
+        "took_office": "2017-05-14",
+        "days_in_office": 3289,
+        "years_in_office": 9.0
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 1.19,
+        "inflation_yoy_pct": 2.0,
+        "unemployment_pct": 7.54,
+        "data_year": 2025
+      }
+    },
+    "sanchez": {
+      "name": "Pedro Sánchez",
+      "country": "Spain",
+      "country_code": "ES",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "PSOE",
+      "coalition_parties": [
+        "PSOE",
+        "Sumar"
+      ],
+      "far_right_party": "Vox",
+      "tenure": {
+        "took_office": "2018-06-02",
+        "days_in_office": 2905,
+        "years_in_office": 7.95
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 3.46,
+        "inflation_yoy_pct": 2.77,
+        "unemployment_pct": 10.38,
+        "data_year": 2025
+      }
+    },
+    "frederiksen": {
+      "name": "Mette Frederiksen",
+      "country": "Denmark",
+      "country_code": "DK",
+      "system": "parliamentary",
+      "role": "Prime Minister (caretaker)",
+      "leader_party": "Social Democrats",
+      "coalition_parties": [
+        "Social Democrats",
+        "Venstre",
+        "Moderates"
+      ],
+      "far_right_party": "Danish People's Party",
+      "tenure": {
+        "took_office": "2019-06-27",
+        "days_in_office": 2515,
+        "years_in_office": 6.89
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 3.48,
+        "inflation_yoy_pct": 1.37,
+        "unemployment_pct": 5.53,
+        "data_year": 2025
+      }
+    },
+    "albanese": {
+      "name": "Anthony Albanese",
+      "country": "Australia",
+      "country_code": "AU",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "Labor",
+      "coalition_parties": [
+        "Labor"
+      ],
+      "far_right_party": "One Nation",
+      "tenure": {
+        "took_office": "2022-05-23",
+        "days_in_office": 1454,
+        "years_in_office": 3.98
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 1.37,
+        "inflation_yoy_pct": 3.17,
+        "unemployment_pct": 4.09,
+        "data_year": 2025
+      }
+    },
+    "martin": {
+      "name": "Micheál Martin",
+      "country": "Ireland",
+      "country_code": "IE",
+      "system": "parliamentary",
+      "role": "Taoiseach",
+      "leader_party": "Fianna Fáil",
+      "coalition_parties": [
+        "Fianna Fáil",
+        "Fine Gael"
+      ],
+      "far_right_party": null,
+      "tenure": {
+        "took_office": "2025-01-23",
+        "days_in_office": 478,
+        "years_in_office": 1.31
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 2.6,
+        "inflation_yoy_pct": 2.11,
+        "unemployment_pct": 4.63,
+        "data_year": 2025
+      }
+    },
+    "jetten": {
+      "name": "Rob Jetten",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "D66",
+      "coalition_parties": [
+        "D66",
+        "VVD",
+        "CDA",
+        "GroenLinks-PvdA"
+      ],
+      "far_right_party": "PVV",
+      "tenure": {
+        "took_office": "2026-02-23",
+        "days_in_office": 82,
+        "years_in_office": 0.22
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 1.08,
+        "inflation_yoy_pct": 3.35,
+        "unemployment_pct": 3.87,
+        "data_year": 2025
+      }
+    },
+    "montenegro": {
+      "name": "Luís Montenegro",
+      "country": "Portugal",
+      "country_code": "PT",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "PSD",
+      "coalition_parties": [
+        "PSD",
+        "CDS-PP"
+      ],
+      "far_right_party": "Chega",
+      "tenure": {
+        "took_office": "2024-04-02",
+        "days_in_office": 774,
+        "years_in_office": 2.12
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 2.14,
+        "inflation_yoy_pct": 2.42,
+        "unemployment_pct": 6.16,
+        "data_year": 2025
+      }
+    },
+    "store": {
+      "name": "Jonas Gahr Støre",
+      "country": "Norway",
+      "country_code": "NO",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "Labour",
+      "coalition_parties": [
+        "Labour"
+      ],
+      "far_right_party": "Progress Party",
+      "tenure": {
+        "took_office": "2021-10-14",
+        "days_in_office": 1675,
+        "years_in_office": 4.59
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 2.1,
+        "inflation_yoy_pct": 3.15,
+        "unemployment_pct": 4.64,
+        "data_year": 2025
+      }
+    },
+    "takaichi": {
+      "name": "Sanae Takaichi",
+      "country": "Japan",
+      "country_code": "JP",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "LDP",
+      "coalition_parties": [
+        "LDP",
+        "Komeito"
+      ],
+      "far_right_party": "Sanseito",
+      "tenure": {
+        "took_office": "2025-10-21",
+        "days_in_office": 207,
+        "years_in_office": 0.57
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 0.1,
+        "inflation_yoy_pct": 2.74,
+        "unemployment_pct": 2.45,
+        "data_year": 2025
+      }
+    },
+    "michal": {
+      "name": "Kristen Michal",
+      "country": "Estonia",
+      "country_code": "EE",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "Reform",
+      "coalition_parties": [
+        "Reform",
+        "Eesti 200",
+        "Social Democrats"
+      ],
+      "far_right_party": "EKRE",
+      "tenure": {
+        "took_office": "2024-07-23",
+        "days_in_office": 662,
+        "years_in_office": 1.81
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": -0.09,
+        "inflation_yoy_pct": 3.52,
+        "unemployment_pct": 8.31,
+        "data_year": 2025
+      }
+    },
+    "kristersson": {
+      "name": "Ulf Kristersson",
+      "country": "Sweden",
+      "country_code": "SE",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "Moderate",
+      "coalition_parties": [
+        "Moderate",
+        "Christian Democrats",
+        "Liberals"
+      ],
+      "far_right_party": "Sweden Democrats",
+      "tenure": {
+        "took_office": "2022-10-18",
+        "days_in_office": 1306,
+        "years_in_office": 3.58
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 0.82,
+        "inflation_yoy_pct": 2.84,
+        "unemployment_pct": 8.69,
+        "data_year": 2025
+      }
+    },
+    "orpo": {
+      "name": "Petteri Orpo",
+      "country": "Finland",
+      "country_code": "FI",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "NCP",
+      "coalition_parties": [
+        "NCP",
+        "Finns Party",
+        "Swedish People's Party",
+        "Christian Democrats"
+      ],
+      "far_right_party": "Finns Party",
+      "tenure": {
+        "took_office": "2023-06-20",
+        "days_in_office": 1061,
+        "years_in_office": 2.9
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 0.42,
+        "inflation_yoy_pct": 1.57,
+        "unemployment_pct": 9.46,
+        "data_year": 2025
+      }
+    },
+    "mitsotakis": {
+      "name": "Kyriakos Mitsotakis",
+      "country": "Greece",
+      "country_code": "GR",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "New Democracy",
+      "coalition_parties": [
+        "New Democracy"
+      ],
+      "far_right_party": "Greek Solution",
+      "tenure": {
+        "took_office": "2019-07-08",
+        "days_in_office": 2504,
+        "years_in_office": 6.86
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 2.09,
+        "inflation_yoy_pct": 2.74,
+        "unemployment_pct": 8.54,
+        "data_year": 2025
+      }
+    },
+    "stocker": {
+      "name": "Christian Stocker",
+      "country": "Austria",
+      "country_code": "AT",
+      "system": "parliamentary",
+      "role": "Chancellor",
+      "leader_party": "ÖVP",
+      "coalition_parties": [
+        "ÖVP",
+        "SPÖ",
+        "NEOS"
+      ],
+      "far_right_party": "FPÖ",
+      "tenure": {
+        "took_office": "2025-03-03",
+        "days_in_office": 439,
+        "years_in_office": 1.2
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": -0.66,
+        "inflation_yoy_pct": 2.94,
+        "unemployment_pct": 5.58,
+        "data_year": 2025
+      }
+    },
+    "dewever": {
+      "name": "Bart De Wever",
+      "country": "Belgium",
+      "country_code": "BE",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "N-VA",
+      "coalition_parties": [
+        "N-VA",
+        "MR",
+        "Les Engagés",
+        "CD&V",
+        "Vooruit"
+      ],
+      "far_right_party": "Vlaams Belang",
+      "tenure": {
+        "took_office": "2025-02-03",
+        "days_in_office": 467,
+        "years_in_office": 1.28
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 1.07,
+        "inflation_yoy_pct": 3.14,
+        "unemployment_pct": 5.91,
+        "data_year": 2025
+      }
+    },
+    "luxon": {
+      "name": "Christopher Luxon",
+      "country": "New Zealand",
+      "country_code": "NZ",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "National",
+      "coalition_parties": [
+        "National",
+        "ACT",
+        "NZ First"
+      ],
+      "far_right_party": "NZ First",
+      "tenure": {
+        "took_office": "2023-11-27",
+        "days_in_office": 901,
+        "years_in_office": 2.47
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 1.29,
+        "inflation_yoy_pct": 2.92,
+        "unemployment_pct": 5.08,
+        "data_year": 2025
+      }
+    },
+    "meloni": {
+      "name": "Giorgia Meloni",
+      "country": "Italy",
+      "country_code": "IT",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "Brothers of Italy",
+      "coalition_parties": [
+        "Brothers of Italy",
+        "Lega",
+        "Forza Italia"
+      ],
+      "far_right_party": null,
+      "tenure": {
+        "took_office": "2022-10-22",
+        "days_in_office": 1302,
+        "years_in_office": 3.56
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 0.69,
+        "inflation_yoy_pct": 0.98,
+        "unemployment_pct": 6.39,
+        "data_year": 2025
+      }
+    },
+    "babis": {
+      "name": "Andrej Babiš",
+      "country": "Czechia",
+      "country_code": "CZ",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "ANO",
+      "coalition_parties": [
+        "ANO",
+        "SPD",
+        "Motorists"
+      ],
+      "far_right_party": "SPD",
+      "tenure": {
+        "took_office": "2025-12-09",
+        "days_in_office": 158,
+        "years_in_office": 0.43
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 1.23,
+        "inflation_yoy_pct": 2.44,
+        "unemployment_pct": 2.83,
+        "data_year": 2025
+      }
+    },
+    "trump": {
+      "name": "Donald Trump",
+      "country": "United States",
+      "country_code": "US",
+      "system": "presidential",
+      "role": "President",
+      "leader_party": "Republican",
+      "coalition_parties": null,
+      "far_right_party": null,
+      "tenure": {
+        "took_office": "2025-01-20",
+        "days_in_office": 481,
+        "years_in_office": 1.32
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 2.79,
+        "inflation_yoy_pct": 2.95,
+        "unemployment_pct": 4.2,
+        "data_year": 2025
+      }
+    },
+    "magyar": {
+      "name": "Péter Magyar",
+      "country": "Hungary",
+      "country_code": "HU",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "Tisza",
+      "coalition_parties": [
+        "Tisza"
+      ],
+      "far_right_party": "Mi Hazánk",
+      "tenure": {
+        "took_office": "2026-05-09",
+        "days_in_office": 7,
+        "years_in_office": 0.02
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 0.56,
+        "inflation_yoy_pct": 3.7,
+        "unemployment_pct": 4.52,
+        "data_year": 2025
+      }
+    },
+    "fico": {
+      "name": "Robert Fico",
+      "country": "Slovakia",
+      "country_code": "SK",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "Smer-SD",
+      "coalition_parties": [
+        "Smer-SD",
+        "Hlas-SD",
+        "SNS"
+      ],
+      "far_right_party": null,
+      "tenure": {
+        "took_office": "2023-10-25",
+        "days_in_office": 934,
+        "years_in_office": 2.56
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 1.94,
+        "inflation_yoy_pct": 2.76,
+        "unemployment_pct": 5.36,
+        "data_year": 2025
+      }
+    },
+    "milei": {
+      "name": "Javier Milei",
+      "country": "Argentina",
+      "country_code": "AR",
+      "system": "presidential",
+      "role": "President",
+      "leader_party": "La Libertad Avanza",
+      "coalition_parties": null,
+      "far_right_party": null,
+      "tenure": {
+        "took_office": "2023-12-10",
+        "days_in_office": 888,
+        "years_in_office": 2.43
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": -1.34,
+        "inflation_yoy_pct": 219.88,
+        "unemployment_pct": 7.14,
+        "data_year": 2025
+      }
+    },
+    "netanyahu": {
+      "name": "Benjamin Netanyahu",
+      "country": "Israel",
+      "country_code": "IL",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "Likud",
+      "coalition_parties": [
+        "Likud",
+        "Shas",
+        "United Torah Judaism",
+        "Religious Zionist Party",
+        "Otzma Yehudit",
+        "Noam"
+      ],
+      "far_right_party": "Otzma Yehudit",
+      "tenure": {
+        "took_office": "2022-12-29",
+        "days_in_office": 1234,
+        "years_in_office": 3.38
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 0.87,
+        "inflation_yoy_pct": 3.07,
+        "unemployment_pct": 3.49,
+        "data_year": 2025
+      }
+    },
+    "erdogan": {
+      "name": "Recep Tayyip Erdoğan",
+      "country": "Türkiye",
+      "country_code": "TR",
+      "system": "presidential",
+      "role": "President",
+      "leader_party": "AKP",
+      "coalition_parties": null,
+      "far_right_party": null,
+      "tenure": {
+        "took_office": "2014-08-28",
+        "days_in_office": 4279,
+        "years_in_office": 11.72
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 3.33,
+        "inflation_yoy_pct": 58.51,
+        "unemployment_pct": 8.52,
+        "data_year": 2025
+      }
+    },
+    "tusk": {
+      "name": "Donald Tusk",
+      "country": "Poland",
+      "country_code": "PL",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "KO",
+      "coalition_parties": [
+        "KO",
+        "Third Way",
+        "The Left"
+      ],
+      "far_right_party": "Confederation",
+      "tenure": {
+        "took_office": "2023-12-13",
+        "days_in_office": 885,
+        "years_in_office": 2.42
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 3.03,
+        "inflation_yoy_pct": 3.79,
+        "unemployment_pct": 2.98,
+        "data_year": 2025
+      }
+    },
+    "carney": {
+      "name": "Mark Carney",
+      "country": "Canada",
+      "country_code": "CA",
+      "system": "parliamentary",
+      "role": "Prime Minister",
+      "leader_party": "Liberal",
+      "coalition_parties": [
+        "Liberal"
+      ],
+      "far_right_party": "People's Party of Canada",
+      "tenure": {
+        "took_office": "2025-03-14",
+        "days_in_office": 428,
+        "years_in_office": 1.17
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 1.55,
+        "inflation_yoy_pct": 2.38,
+        "unemployment_pct": 6.91,
+        "data_year": 2025
+      }
+    },
+    "lee": {
+      "name": "Lee Jae-myung",
+      "country": "South Korea",
+      "country_code": "KR",
+      "system": "presidential",
+      "role": "President",
+      "leader_party": "Democratic Party",
+      "coalition_parties": null,
+      "far_right_party": null,
+      "tenure": {
+        "took_office": "2025-06-04",
+        "days_in_office": 346,
+        "years_in_office": 0.95
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 2.0,
+        "inflation_yoy_pct": 2.32,
+        "unemployment_pct": 2.68,
+        "data_year": 2025
+      }
+    },
+    "sheinbaum": {
+      "name": "Claudia Sheinbaum",
+      "country": "Mexico",
+      "country_code": "MX",
+      "system": "presidential",
+      "role": "President",
+      "leader_party": "Morena",
+      "coalition_parties": null,
+      "far_right_party": null,
+      "tenure": {
+        "took_office": "2024-10-01",
+        "days_in_office": 592,
+        "years_in_office": 1.62
+      },
+      "macro": {
+        "gdp_growth_yoy_pct": 1.43,
+        "inflation_yoy_pct": 4.72,
+        "unemployment_pct": 2.67,
+        "data_year": 2025
+      }
+    }
+  }
+}
