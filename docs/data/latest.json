@@ -993,22 +993,20 @@
         "data_year": 2025
       },
       "classification": {
-        "angle": 140,
-        "doom_score": 75,
-        "phase": 2,
-        "coalition_pct_now": 42.0,
-        "coalition_pct_3mo_ago": 42.0,
-        "far_right_pct_now": 7.5,
-        "far_right_pct_3mo_ago": 7.0,
+        "angle": 245,
+        "doom_score": 78,
+        "phase": 3,
+        "coalition_pct_now": null,
+        "coalition_pct_3mo_ago": null,
+        "far_right_pct_now": null,
+        "far_right_pct_3mo_ago": null,
         "approval_now": null,
         "approval_3mo_ago": null,
-        "analysis": "Netanyahu's coalition faces imminent collapse after ultra-Orthodox faction Degel HaTorah called for Knesset dissolution on May 12 over failure to exempt Haredim from military service. Elections may come in September instead of October. His Likud base is fracturing badly with forty-two percent of 2022 voters defecting or considering it, while far-right Otzma Yehudit maintains leverage as indispensable coalition partner.",
+        "analysis": "Netanyahu leads a far-right coalition including Otzma Yehudit and Religious Zionism, in office since late 2022. Active institutional damage: judicial reform attempts, settler expansion, prolonged war in Gaza, ICC arrest warrant. Phase III dynamics are unambiguous — far-right governance with measurable democratic and economic costs. Domestic protests continue but the coalition holds, sustained by the war footing.",
         "sources": [
-          "https://www.npr.org/2026/05/12/g-s1-121631/israel-military-ultra-orthodox-netanyahu-coalition",
-          "https://www.haaretz.com/israel-news/elections/2026-05-11/ty-article/poll-shows-cracks-emerging-in-netanyahus-likud-base-ahead-of-upcoming-election/0000019e-1632-d222-a19f-57ff323b0000",
-          "https://en.wikipedia.org/wiki/2026_Israeli_legislative_election",
-          "https://www.timesofisrael.com/polls-find-pms-bloc-far-from-majority-but-most-say-zionist-opposition-also-falls-short/"
-        ]
+          "https://en.wikipedia.org/wiki/Benjamin_Netanyahu"
+        ],
+        "manual_override": true
       }
     },
     "erdogan": {
