@@ -1,6 +1,7 @@
 {
-  "schema_version": 1,
-  "last_updated": "2026-05-15",
+  "schema_version": 2,
+  "last_updated": "2026-05-16",
+  "notes": "Coalition parties and far-right party fields are best-effort. Denmark in interim status post-March 2026 election.",
   "leaders": [
     {
       "id": "starmer",
@@ -9,10 +10,12 @@
       "country_code": "GB",
       "flag": "🇬🇧",
       "wiki_slug": "Keir_Starmer",
-      "party": "Labour",
       "role": "Prime Minister",
       "took_office": "2024-07-05",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_United_Kingdom_general_election"
+      "system": "parliamentary",
+      "leader_party": "Labour",
+      "coalition_parties": ["Labour"],
+      "far_right_party": "Reform UK"
     },
     {
       "id": "merz",
@@ -21,10 +24,12 @@
       "country_code": "DE",
       "flag": "🇩🇪",
       "wiki_slug": "Friedrich_Merz",
-      "party": "CDU/CSU",
       "role": "Chancellor",
       "took_office": "2025-05-06",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_German_federal_election"
+      "system": "parliamentary",
+      "leader_party": "CDU/CSU",
+      "coalition_parties": ["CDU/CSU", "SPD"],
+      "far_right_party": "AfD"
     },
     {
       "id": "macron",
@@ -33,10 +38,12 @@
       "country_code": "FR",
       "flag": "🇫🇷",
       "wiki_slug": "Emmanuel_Macron",
-      "party": "Renaissance",
       "role": "President",
       "took_office": "2017-05-14",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2027_French_presidential_election"
+      "system": "presidential",
+      "leader_party": "Renaissance",
+      "coalition_parties": null,
+      "far_right_party": "National Rally"
     },
     {
       "id": "sanchez",
@@ -45,10 +52,12 @@
       "country_code": "ES",
       "flag": "🇪🇸",
       "wiki_slug": "Pedro_Sánchez",
-      "party": "PSOE",
       "role": "Prime Minister",
       "took_office": "2018-06-02",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Spanish_general_election"
+      "system": "parliamentary",
+      "leader_party": "PSOE",
+      "coalition_parties": ["PSOE", "Sumar"],
+      "far_right_party": "Vox"
     },
     {
       "id": "frederiksen",
@@ -57,10 +66,13 @@
       "country_code": "DK",
       "flag": "🇩🇰",
       "wiki_slug": "Mette_Frederiksen",
-      "party": "Social Democrats",
-      "role": "Prime Minister",
+      "role": "Prime Minister (caretaker)",
       "took_office": "2019-06-27",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Danish_general_election"
+      "system": "parliamentary",
+      "leader_party": "Social Democrats",
+      "coalition_parties": ["Social Democrats", "Venstre", "Moderates"],
+      "far_right_party": "Danish People's Party",
+      "notes": "Caretaker since 25 March 2026 election; coalition talks ongoing. Update once new government is sworn in."
     },
     {
       "id": "albanese",
@@ -69,10 +81,12 @@
       "country_code": "AU",
       "flag": "🇦🇺",
       "wiki_slug": "Anthony_Albanese",
-      "party": "Labor",
       "role": "Prime Minister",
       "took_office": "2022-05-23",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Australian_federal_election"
+      "system": "parliamentary",
+      "leader_party": "Labor",
+      "coalition_parties": ["Labor"],
+      "far_right_party": "One Nation"
     },
     {
       "id": "martin",
@@ -81,22 +95,26 @@
       "country_code": "IE",
       "flag": "🇮🇪",
       "wiki_slug": "Micheál_Martin",
-      "party": "Fianna Fáil",
       "role": "Taoiseach",
       "took_office": "2025-01-23",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Irish_general_election"
+      "system": "parliamentary",
+      "leader_party": "Fianna Fáil",
+      "coalition_parties": ["Fianna Fáil", "Fine Gael"],
+      "far_right_party": null
     },
     {
-      "id": "schoof",
-      "name": "Dick Schoof",
+      "id": "jetten",
+      "name": "Rob Jetten",
       "country": "Netherlands",
       "country_code": "NL",
       "flag": "🇳🇱",
-      "wiki_slug": "Dick_Schoof",
-      "party": "Independent",
+      "wiki_slug": "Rob_Jetten",
       "role": "Prime Minister",
-      "took_office": "2024-07-02",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Dutch_general_election"
+      "took_office": "2026-02-23",
+      "system": "parliamentary",
+      "leader_party": "D66",
+      "coalition_parties": ["D66", "VVD", "CDA", "GroenLinks-PvdA"],
+      "far_right_party": "PVV"
     },
     {
       "id": "montenegro",
@@ -105,10 +123,12 @@
       "country_code": "PT",
       "flag": "🇵🇹",
       "wiki_slug": "Luís_Montenegro",
-      "party": "PSD",
       "role": "Prime Minister",
       "took_office": "2024-04-02",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Portuguese_legislative_election"
+      "system": "parliamentary",
+      "leader_party": "PSD",
+      "coalition_parties": ["PSD", "CDS-PP"],
+      "far_right_party": "Chega"
     },
     {
       "id": "store",
@@ -117,10 +137,12 @@
       "country_code": "NO",
       "flag": "🇳🇴",
       "wiki_slug": "Jonas_Gahr_Støre",
-      "party": "Labour",
       "role": "Prime Minister",
       "took_office": "2021-10-14",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Norwegian_parliamentary_election"
+      "system": "parliamentary",
+      "leader_party": "Labour",
+      "coalition_parties": ["Labour"],
+      "far_right_party": "Progress Party"
     },
     {
       "id": "takaichi",
@@ -129,10 +151,12 @@
       "country_code": "JP",
       "flag": "🇯🇵",
       "wiki_slug": "Sanae_Takaichi",
-      "party": "LDP",
       "role": "Prime Minister",
       "took_office": "2025-10-21",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Japanese_general_election"
+      "system": "parliamentary",
+      "leader_party": "LDP",
+      "coalition_parties": ["LDP", "Komeito"],
+      "far_right_party": "Sanseito"
     },
     {
       "id": "michal",
@@ -141,10 +165,12 @@
       "country_code": "EE",
       "flag": "🇪🇪",
       "wiki_slug": "Kristen_Michal",
-      "party": "Reform",
       "role": "Prime Minister",
       "took_office": "2024-07-23",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Estonian_parliamentary_election"
+      "system": "parliamentary",
+      "leader_party": "Reform",
+      "coalition_parties": ["Reform", "Eesti 200", "Social Democrats"],
+      "far_right_party": "EKRE"
     },
     {
       "id": "kristersson",
@@ -153,10 +179,12 @@
       "country_code": "SE",
       "flag": "🇸🇪",
       "wiki_slug": "Ulf_Kristersson",
-      "party": "Moderate",
       "role": "Prime Minister",
       "took_office": "2022-10-18",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Swedish_general_election"
+      "system": "parliamentary",
+      "leader_party": "Moderate",
+      "coalition_parties": ["Moderate", "Christian Democrats", "Liberals"],
+      "far_right_party": "Sweden Democrats"
     },
     {
       "id": "orpo",
@@ -165,10 +193,12 @@
       "country_code": "FI",
       "flag": "🇫🇮",
       "wiki_slug": "Petteri_Orpo",
-      "party": "NCP",
       "role": "Prime Minister",
       "took_office": "2023-06-20",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Finnish_parliamentary_election"
+      "system": "parliamentary",
+      "leader_party": "NCP",
+      "coalition_parties": ["NCP", "Finns Party", "Swedish People's Party", "Christian Democrats"],
+      "far_right_party": "Finns Party"
     },
     {
       "id": "mitsotakis",
@@ -177,10 +207,12 @@
       "country_code": "GR",
       "flag": "🇬🇷",
       "wiki_slug": "Kyriakos_Mitsotakis",
-      "party": "New Democracy",
       "role": "Prime Minister",
       "took_office": "2019-07-08",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Greek_legislative_election"
+      "system": "parliamentary",
+      "leader_party": "New Democracy",
+      "coalition_parties": ["New Democracy"],
+      "far_right_party": "Greek Solution"
     },
     {
       "id": "stocker",
@@ -189,10 +221,12 @@
       "country_code": "AT",
       "flag": "🇦🇹",
       "wiki_slug": "Christian_Stocker",
-      "party": "ÖVP",
       "role": "Chancellor",
       "took_office": "2025-03-03",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Austrian_legislative_election"
+      "system": "parliamentary",
+      "leader_party": "ÖVP",
+      "coalition_parties": ["ÖVP", "SPÖ", "NEOS"],
+      "far_right_party": "FPÖ"
     },
     {
       "id": "dewever",
@@ -201,10 +235,12 @@
       "country_code": "BE",
       "flag": "🇧🇪",
       "wiki_slug": "Bart_De_Wever",
-      "party": "N-VA",
       "role": "Prime Minister",
       "took_office": "2025-02-03",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Belgian_federal_election"
+      "system": "parliamentary",
+      "leader_party": "N-VA",
+      "coalition_parties": ["N-VA", "MR", "Les Engagés", "CD&V", "Vooruit"],
+      "far_right_party": "Vlaams Belang"
     },
     {
       "id": "luxon",
@@ -213,10 +249,12 @@
       "country_code": "NZ",
       "flag": "🇳🇿",
       "wiki_slug": "Christopher_Luxon",
-      "party": "National",
       "role": "Prime Minister",
       "took_office": "2023-11-27",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_New_Zealand_general_election"
+      "system": "parliamentary",
+      "leader_party": "National",
+      "coalition_parties": ["National", "ACT", "NZ First"],
+      "far_right_party": "NZ First"
     },
     {
       "id": "meloni",
@@ -225,10 +263,12 @@
       "country_code": "IT",
       "flag": "🇮🇹",
       "wiki_slug": "Giorgia_Meloni",
-      "party": "Brothers of Italy",
       "role": "Prime Minister",
       "took_office": "2022-10-22",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      "system": "parliamentary",
+      "leader_party": "Brothers of Italy",
+      "coalition_parties": ["Brothers of Italy", "Lega", "Forza Italia"],
+      "far_right_party": null
     },
     {
       "id": "babis",
@@ -237,10 +277,12 @@
       "country_code": "CZ",
       "flag": "🇨🇿",
       "wiki_slug": "Andrej_Babiš",
-      "party": "ANO",
       "role": "Prime Minister",
       "took_office": "2025-12-09",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Czech_legislative_election"
+      "system": "parliamentary",
+      "leader_party": "ANO",
+      "coalition_parties": ["ANO", "SPD", "Motorists"],
+      "far_right_party": "SPD"
     },
     {
       "id": "trump",
@@ -249,22 +291,26 @@
       "country_code": "US",
       "flag": "🇺🇸",
       "wiki_slug": "Donald_Trump",
-      "party": "Republican",
       "role": "President",
       "took_office": "2025-01-20",
-      "polling_url": "https://en.wikipedia.org/wiki/Approval_rating_of_Donald_Trump"
+      "system": "presidential",
+      "leader_party": "Republican",
+      "coalition_parties": null,
+      "far_right_party": null
     },
     {
-      "id": "orban",
-      "name": "Viktor Orbán",
+      "id": "magyar",
+      "name": "Péter Magyar",
       "country": "Hungary",
       "country_code": "HU",
       "flag": "🇭🇺",
-      "wiki_slug": "Viktor_Orbán",
-      "party": "Fidesz",
+      "wiki_slug": "Péter_Magyar",
       "role": "Prime Minister",
-      "took_office": "2010-05-29",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Hungarian_parliamentary_election"
+      "took_office": "2026-05-09",
+      "system": "parliamentary",
+      "leader_party": "Tisza",
+      "coalition_parties": ["Tisza"],
+      "far_right_party": "Mi Hazánk"
     },
     {
       "id": "fico",
@@ -273,10 +319,12 @@
       "country_code": "SK",
       "flag": "🇸🇰",
       "wiki_slug": "Robert_Fico",
-      "party": "Smer-SD",
       "role": "Prime Minister",
       "took_office": "2023-10-25",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Slovak_parliamentary_election"
+      "system": "parliamentary",
+      "leader_party": "Smer-SD",
+      "coalition_parties": ["Smer-SD", "Hlas-SD", "SNS"],
+      "far_right_party": null
     },
     {
       "id": "milei",
@@ -285,10 +333,12 @@
       "country_code": "AR",
       "flag": "🇦🇷",
       "wiki_slug": "Javier_Milei",
-      "party": "LLA",
       "role": "President",
       "took_office": "2023-12-10",
-      "polling_url": "https://en.wikipedia.org/wiki/Public_image_of_Javier_Milei"
+      "system": "presidential",
+      "leader_party": "La Libertad Avanza",
+      "coalition_parties": null,
+      "far_right_party": null
     },
     {
       "id": "netanyahu",
@@ -297,10 +347,12 @@
       "country_code": "IL",
       "flag": "🇮🇱",
       "wiki_slug": "Benjamin_Netanyahu",
-      "party": "Likud",
       "role": "Prime Minister",
       "took_office": "2022-12-29",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Israeli_legislative_election"
+      "system": "parliamentary",
+      "leader_party": "Likud",
+      "coalition_parties": ["Likud", "Shas", "United Torah Judaism", "Religious Zionist Party", "Otzma Yehudit", "Noam"],
+      "far_right_party": "Otzma Yehudit"
     },
     {
       "id": "erdogan",
@@ -309,10 +361,12 @@
       "country_code": "TR",
       "flag": "🇹🇷",
       "wiki_slug": "Recep_Tayyip_Erdoğan",
-      "party": "AKP",
       "role": "President",
       "took_office": "2014-08-28",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Turkish_presidential_election"
+      "system": "presidential",
+      "leader_party": "AKP",
+      "coalition_parties": null,
+      "far_right_party": null
     },
     {
       "id": "tusk",
@@ -321,10 +375,12 @@
       "country_code": "PL",
       "flag": "🇵🇱",
       "wiki_slug": "Donald_Tusk",
-      "party": "KO",
       "role": "Prime Minister",
       "took_office": "2023-12-13",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Polish_parliamentary_election"
+      "system": "parliamentary",
+      "leader_party": "KO",
+      "coalition_parties": ["KO", "Third Way", "The Left"],
+      "far_right_party": "Confederation"
     },
     {
       "id": "carney",
@@ -333,10 +389,12 @@
       "country_code": "CA",
       "flag": "🇨🇦",
       "wiki_slug": "Mark_Carney",
-      "party": "Liberal",
       "role": "Prime Minister",
       "took_office": "2025-03-14",
-      "polling_url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Canadian_federal_election"
+      "system": "parliamentary",
+      "leader_party": "Liberal",
+      "coalition_parties": ["Liberal"],
+      "far_right_party": "People's Party of Canada"
     },
     {
       "id": "lee",
@@ -345,10 +403,12 @@
       "country_code": "KR",
       "flag": "🇰🇷",
       "wiki_slug": "Lee_Jae-myung",
-      "party": "Democratic Party",
       "role": "President",
       "took_office": "2025-06-04",
-      "polling_url": "https://en.wikipedia.org/wiki/Approval_rating_of_Lee_Jae-myung"
+      "system": "presidential",
+      "leader_party": "Democratic Party",
+      "coalition_parties": null,
+      "far_right_party": null
     },
     {
       "id": "sheinbaum",
@@ -357,10 +417,12 @@
       "country_code": "MX",
       "flag": "🇲🇽",
       "wiki_slug": "Claudia_Sheinbaum",
-      "party": "Morena",
       "role": "President",
       "took_office": "2024-10-01",
-      "polling_url": "https://en.wikipedia.org/wiki/Public_image_of_Claudia_Sheinbaum"
+      "system": "presidential",
+      "leader_party": "Morena",
+      "coalition_parties": null,
+      "far_right_party": null
     }
   ]
 }

@@ -1,0 +1,214 @@
+{
+  "run_timestamp": "2026-05-16T10:51:32.517820+00:00",
+  "model": "claude-sonnet-4-5",
+  "results": {
+    "starmer": {
+      "status": "confirmed",
+      "current_leader": "Keir Starmer",
+      "current_party": "Labour",
+      "took_office": "2024-07-05",
+      "source_url": "https://www.gov.uk/government/ministers/prime-minister"
+    },
+    "merz": {
+      "status": "confirmed",
+      "current_leader": "Friedrich Merz",
+      "current_party": "CDU/CSU",
+      "took_office": "2025-05-06",
+      "source_url": "https://en.wikipedia.org/wiki/Friedrich_Merz"
+    },
+    "macron": {
+      "status": "confirmed",
+      "current_leader": "Emmanuel Macron",
+      "current_party": "Renaissance",
+      "took_office": "2017-05-14",
+      "source_url": "https://www.washingtonpost.com/world/2026/05/12/kenya-france-africa-summit-investments-macron-ruto/ebd78216-4def-11f1-97e7-22c6c29ff0d8_story.html"
+    },
+    "sanchez": {
+      "status": "confirmed",
+      "current_leader": "Pedro Sánchez",
+      "current_party": "PSOE",
+      "took_office": "2018-06-02",
+      "source_url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Spain"
+    },
+    "frederiksen": {
+      "status": "error",
+      "error": "no JSON found",
+      "raw": "I need to search for more recent information about who is currently the Prime Minister of Denmark in May 2026, since the search results show information about March 2026 election and resignation but are not clear on the final outcome.\nBased on my search results, I can see that:\n\n1. \nMette Frederikse"
+    },
+    "albanese": {
+      "status": "confirmed",
+      "current_leader": "Anthony Albanese",
+      "current_party": "Labor",
+      "took_office": "2022-05-23",
+      "source_url": "https://www.pm.gov.au/"
+    },
+    "martin": {
+      "status": "confirmed",
+      "current_leader": "Micheál Martin",
+      "current_party": "Fianna Fáil",
+      "took_office": "2025-01-23",
+      "source_url": "https://en.wikipedia.org/wiki/Taoiseach"
+    },
+    "schoof": {
+      "status": "outdated",
+      "current_leader": "Rob Jetten",
+      "current_party": "D66",
+      "took_office": "2026-02-23",
+      "source_url": "https://en.wikipedia.org/wiki/Prime_Minister_of_the_Netherlands"
+    },
+    "montenegro": {
+      "status": "confirmed",
+      "current_leader": "Luís Montenegro",
+      "current_party": "PSD",
+      "took_office": "2024-04-02",
+      "source_url": "https://en.wikipedia.org/wiki/Lu%C3%ADs_Montenegro"
+    },
+    "store": {
+      "status": "confirmed",
+      "current_leader": "Jonas Gahr Støre",
+      "current_party": "Labour",
+      "took_office": "2021-10-14",
+      "source_url": "https://www.regjeringen.no/en/dep/smk/id875/"
+    },
+    "takaichi": {
+      "status": "confirmed",
+      "current_leader": "Sanae Takaichi",
+      "current_party": "LDP",
+      "took_office": "2025-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Japan"
+    },
+    "michal": {
+      "status": "confirmed",
+      "current_leader": "Kristen Michal",
+      "current_party": "Reform",
+      "took_office": "2024-07-23",
+      "source_url": "https://valitsus.ee/en"
+    },
+    "kristersson": {
+      "status": "confirmed",
+      "current_leader": "Ulf Kristersson",
+      "current_party": "Moderate",
+      "took_office": "2022-10-18",
+      "source_url": "https://www.government.se/government-of-sweden/prime-ministers-office/ulf-kristersson/"
+    },
+    "orpo": {
+      "status": "confirmed",
+      "current_leader": "Petteri Orpo",
+      "current_party": "National Coalition Party",
+      "took_office": "2023-06-20",
+      "source_url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Finland"
+    },
+    "mitsotakis": {
+      "status": "confirmed",
+      "current_leader": "Kyriakos Mitsotakis",
+      "current_party": "New Democracy",
+      "took_office": "2019-07-08",
+      "source_url": "https://www.primeminister.gr/en/2026/05/12/38485"
+    },
+    "stocker": {
+      "status": "confirmed",
+      "current_leader": "Christian Stocker",
+      "current_party": "ÖVP",
+      "took_office": "2025-03-03",
+      "source_url": "https://en.wikipedia.org/wiki/Christian_Stocker"
+    },
+    "dewever": {
+      "status": "confirmed",
+      "current_leader": "Bart De Wever",
+      "current_party": "N-VA",
+      "took_office": "2025-02-03",
+      "source_url": "https://www.belgium.be/en/about_belgium/government/federal_authorities/federal_government/composition_government"
+    },
+    "luxon": {
+      "status": "confirmed",
+      "current_leader": "Christopher Luxon",
+      "current_party": "National",
+      "took_office": "2023-11-27",
+      "source_url": "https://www.mfa.gov.sg/newsroom/press-statements-transcripts-and-photos/official-visit-of-prime-minister-of-new-zealand-christopher-luxon--4-may-2026/"
+    },
+    "meloni": {
+      "status": "confirmed",
+      "current_leader": "Giorgia Meloni",
+      "current_party": "Brothers of Italy",
+      "took_office": "2022-10-22",
+      "source_url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Italy"
+    },
+    "babis": {
+      "status": "confirmed",
+      "current_leader": "Andrej Babiš",
+      "current_party": "ANO",
+      "took_office": "2025-12-09",
+      "source_url": "https://en.wikipedia.org/wiki/Andrej_Babi%C5%A1"
+    },
+    "trump": {
+      "status": "confirmed",
+      "current_leader": "Donald Trump",
+      "current_party": "Republican",
+      "took_office": "2025-01-20",
+      "source_url": "https://www.usa.gov/presidents"
+    },
+    "orban": {
+      "status": "outdated",
+      "current_leader": "Péter Magyar",
+      "current_party": "Tisza Party",
+      "took_office": "2026-05-09",
+      "source_url": "https://www.aljazeera.com/news/2026/5/9/peter-magyar-sworn-in-as-hungarys-pm-ending-orbans-16-years-in-power"
+    },
+    "fico": {
+      "status": "confirmed",
+      "current_leader": "Robert Fico",
+      "current_party": "Smer-SD",
+      "took_office": "2023-10-25",
+      "source_url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Slovakia"
+    },
+    "milei": {
+      "status": "confirmed",
+      "current_leader": "Javier Milei",
+      "current_party": "La Libertad Avanza",
+      "took_office": "2023-12-10",
+      "source_url": "https://en.wikipedia.org/wiki/Presidency_of_Javier_Milei"
+    },
+    "netanyahu": {
+      "status": "confirmed",
+      "current_leader": "Benjamin Netanyahu",
+      "current_party": "Likud",
+      "took_office": "2022-12-29",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Israel"
+    },
+    "erdogan": {
+      "status": "confirmed",
+      "current_leader": "Recep Tayyip Erdoğan",
+      "current_party": "AKP",
+      "took_office": "2014-08-28",
+      "source_url": "https://en.wikipedia.org/wiki/President_of_Turkey"
+    },
+    "tusk": {
+      "status": "confirmed",
+      "current_leader": "Donald Tusk",
+      "current_party": "KO",
+      "took_office": "2023-12-13",
+      "source_url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Poland"
+    },
+    "carney": {
+      "status": "confirmed",
+      "current_leader": "Mark Carney",
+      "current_party": "Liberal",
+      "took_office": "2025-03-14",
+      "source_url": "https://www.pm.gc.ca/en"
+    },
+    "lee": {
+      "status": "confirmed",
+      "current_leader": "Lee Jae-myung",
+      "current_party": "Democratic Party",
+      "took_office": "2025-06-04",
+      "source_url": "https://en.wikipedia.org/wiki/President_of_South_Korea"
+    },
+    "sheinbaum": {
+      "status": "confirmed",
+      "current_leader": "Claudia Sheinbaum",
+      "current_party": "Morena",
+      "took_office": "2024-10-01",
+      "source_url": "https://en.wikipedia.org/wiki/President_of_Mexico"
+    }
+  }
+}
