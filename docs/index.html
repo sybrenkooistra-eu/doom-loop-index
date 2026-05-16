@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Doom Loop Political Index</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f1e9d8;
+  --bg-warm: #ebe1cc;
+  --ink: #1a1410;
+  --ink-mid: #5a4a3a;
+  --ink-soft: #9a8a73;
+  --rule: #1a1410;
+  --oxblood: #6b1f1f;
+  --gold: #b8843a;
+  --paper-stain: rgba(107, 31, 31, 0.04);
+
+  --phase-1: #3a5a7a;
+  --phase-2: #b8843a;
+  --phase-3: #6b1f1f;
+  --phase-4: #4a6b3a;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-font-smoothing: antialiased; }
+
+body {
+  background: var(--bg);
+  background-image:
+    radial-gradient(circle at 15% 20%, var(--paper-stain), transparent 35%),
+    radial-gradient(circle at 85% 75%, var(--paper-stain), transparent 35%),
+    radial-gradient(circle at 50% 50%, rgba(184, 132, 58, 0.025), transparent 60%);
+  color: var(--ink);
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.55;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  z-index: 1;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/><feColorMatrix values='0 0 0 0 0.1  0 0 0 0 0.08  0 0 0 0 0.06  0 0 0 0.08 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+.masthead {
+  border-bottom: 3px double var(--ink);
+  padding: 1.25rem 2rem 1rem;
+  position: relative;
+  background: var(--bg-warm);
+  border-top: 6px solid var(--ink);
+}
+
+.masthead-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-mid);
+  margin-bottom: 0.4rem;
+  border-bottom: 1px solid var(--ink-soft);
+  padding-bottom: 0.5rem;
+}
+
+.masthead-meta span { white-space: nowrap; }
+.masthead-meta .dot { color: var(--oxblood); font-weight: 700; }
+
+.masthead h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: clamp(1.8rem, 4.5vw, 3.8rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-variation-settings: "opsz" 144, "SOFT" 30;
+  text-align: center;
+  margin: 0.4rem 0 0.2rem;
+}
+
+.masthead h1 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--oxblood);
+  font-variation-settings: "opsz" 144, "SOFT" 100;
+}
+
+.masthead .deck {
+  text-align: center;
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink-mid);
+  margin: 0.6rem auto 0;
+  max-width: 62ch;
+}
+
+.masthead .rules {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ink-soft);
+  flex-wrap: wrap;
+}
+.masthead .rules span:not(:first-child)::before {
+  content: '◆ ';
+  color: var(--oxblood);
+  margin-right: 0.5rem;
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 2.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 1050px) {
+  .container { grid-template-columns: 1fr; gap: 2rem; padding: 1.5rem 1rem 2rem; }
+}
+
+.state-banner {
+  max-width: 760px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  color: var(--ink-mid);
+  border: 1px dashed var(--ink-soft);
+}
+.state-banner.error {
+  color: var(--oxblood);
+  border-color: var(--oxblood);
+  font-style: normal;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+}
+
+.wheel-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wheel-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.wheel-eyebrow::before, .wheel-eyebrow::after {
+  content: '';
+  width: 40px; height: 1px;
+  background: var(--ink-soft);
+}
+
+.wheel-stage {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 1;
+}
+
+.wheel-svg { width: 100%; height: 100%; display: block; }
+
+.phase-arc { stroke: none; }
+.phase-arc.p1 { fill: var(--phase-1); }
+.phase-arc.p2 { fill: var(--phase-2); }
+.phase-arc.p3 { fill: var(--phase-3); }
+.phase-arc.p4 { fill: var(--phase-4); }
+
+.phase-label-text {
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  fill: var(--bg);
+}
+
+.tick { stroke: var(--ink); stroke-width: 1; }
+.tick-major { stroke-width: 2; }
+
+.center-medallion {
+  fill: var(--bg-warm);
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+
+.center-sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  fill: var(--ink-mid);
+  text-anchor: middle;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.center-number {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 56px;
+  fill: var(--oxblood);
+  text-anchor: middle;
+  font-variation-settings: "opsz" 144;
+}
+
+.roman {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 28px;
+  fill: var(--ink-mid);
+  text-anchor: middle;
+  dominant-baseline: middle;
+  opacity: 0.55;
+}
+
+.leader-pin {
+  cursor: pointer;
+}
+.leader-pin .pin-bg {
+  stroke: var(--ink);
+  stroke-width: 1.5;
+  filter: drop-shadow(1.5px 1.5px 0 rgba(26,20,16,0.5));
+}
+.leader-pin .pin-photo { display: none; }
+.leader-pin.loaded .pin-photo { display: block; }
+.leader-pin.loaded .pin-initials { display: none; }
+.leader-pin .pin-initials {
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  font-size: 11px;
+  text-anchor: middle;
+  dominant-baseline: central;
+  fill: var(--bg);
+  pointer-events: none;
+}
+.leader-pin .pin-flag {
+  font-size: 13px;
+  text-anchor: middle;
+  pointer-events: none;
+}
+.leader-pin .pin-flag-bg {
+  fill: var(--bg);
+  stroke: var(--ink);
+  stroke-width: 1;
+}
+.leader-pin.active .pin-bg {
+  stroke-width: 3;
+  stroke: var(--oxblood);
+}
+
+.phase-legend {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 760px;
+}
+
+.phase-card {
+  border-top: 3px solid;
+  padding: 0.75rem 0.25rem 0;
+}
+.phase-card.p1 { border-color: var(--phase-1); }
+.phase-card.p2 { border-color: var(--phase-2); }
+.phase-card.p3 { border-color: var(--phase-3); }
+.phase-card.p4 { border-color: var(--phase-4); }
+
+.phase-card .num {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--ink-mid);
+}
+.phase-card .name {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+  letter-spacing: -0.01em;
+}
+.phase-card .desc {
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--ink-mid);
+  font-family: 'Newsreader', serif;
+}
+
+@media (max-width: 700px) {
+  .phase-legend { grid-template-columns: repeat(2, 1fr); }
+}
+
+.sidebar {
+  border-left: 1px solid var(--ink-soft);
+  padding-left: 2rem;
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+}
+
+@media (max-width: 1050px) {
+  .sidebar { border-left: none; padding-left: 0; border-top: 3px double var(--ink); padding-top: 2rem; position: static; max-height: none; }
+}
+
+.sidebar-section { margin-bottom: 2rem; }
+
+.sidebar h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--ink);
+  color: var(--ink);
+}
+
+.detail-card {
+  background: var(--bg-warm);
+  border: 1px solid var(--ink);
+  padding: 1.25rem;
+  position: relative;
+  min-height: 200px;
+}
+.detail-card::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border: 1px solid var(--ink-soft);
+  pointer-events: none;
+}
+
+.detail-empty {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  color: var(--ink-mid);
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.95rem;
+}
+
+.detail-flag { font-size: 1.6rem; line-height: 1; }
+.detail-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.detail-photo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink);
+  object-fit: cover;
+  background: var(--ink-soft);
+  flex-shrink: 0;
+}
+.detail-name {
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.detail-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-mid);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dotted var(--ink-soft);
+}
+
+.detail-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.stat {
+  border-left: 2px solid var(--ink);
+  padding-left: 0.6rem;
+}
+.stat .label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  margin-bottom: 0.1rem;
+}
+.stat .value {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.stat .value em {
+  font-family: 'JetBrains Mono', monospace;
+  font-style: normal;
+  font-size: 0.75rem;
+  color: var(--ink-mid);
+  font-weight: 400;
+  margin-left: 0.2rem;
+}
+.stat .trend {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  color: var(--ink-mid);
+  margin-top: 0.2rem;
+  letter-spacing: 0.05em;
+}
+.stat .trend.up { color: var(--phase-3); }
+.stat .trend.down { color: var(--phase-4); }
+
+.detail-phase {
+  display: inline-block;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  color: var(--bg);
+  margin-bottom: 1rem;
+}
+.detail-phase.p1 { background: var(--phase-1); }
+.detail-phase.p2 { background: var(--phase-2); }
+.detail-phase.p3 { background: var(--phase-3); }
+.detail-phase.p4 { background: var(--phase-4); }
+
+.detail-analysis {
+  font-family: 'Newsreader', serif;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.detail-analysis::first-letter {
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  font-size: 2.4rem;
+  float: left;
+  line-height: 0.9;
+  margin: 0.1rem 0.3rem 0 0;
+  color: var(--oxblood);
+}
+
+.ranking-list { list-style: none; }
+.ranking-row {
+  display: grid;
+  grid-template-columns: 24px 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted var(--ink-soft);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.ranking-row:hover { background: rgba(107, 31, 31, 0.05); }
+.ranking-row.active { background: rgba(107, 31, 31, 0.09); }
+.ranking-row .rank {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--ink-mid);
+  font-size: 0.9rem;
+  text-align: right;
+}
+.ranking-row .name {
+  font-family: 'Newsreader', serif;
+  font-size: 0.92rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.ranking-row .score {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.15rem 0.45rem;
+  color: var(--bg);
+}
+.score.p1 { background: var(--phase-1); }
+.score.p2 { background: var(--phase-2); }
+.score.p3 { background: var(--phase-3); }
+.score.p4 { background: var(--phase-4); }
+
+.footer {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 2rem 2rem 3rem;
+  border-top: 3px double var(--ink);
+  position: relative;
+  z-index: 2;
+}
+
+.footer-section {
+  margin-bottom: 2rem;
+}
+.footer-section h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--ink);
+}
+
+.methodology {
+  font-family: 'Newsreader', serif;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--ink);
+  max-width: 720px;
+  column-count: 2;
+  column-gap: 2rem;
+}
+@media (max-width: 700px) { .methodology { column-count: 1; } }
+
+.sources-list {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  line-height: 1.7;
+  list-style: none;
+  columns: 2;
+  column-gap: 2rem;
+  max-width: 1100px;
+}
+@media (max-width: 700px) { .sources-list { columns: 1; } }
+.sources-list li {
+  break-inside: avoid;
+  margin-bottom: 0.3rem;
+  word-break: break-all;
+}
+.sources-list a {
+  color: var(--ink-mid);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--ink-soft);
+}
+.sources-list a:hover { color: var(--oxblood); border-color: var(--oxblood); }
+
+.colophon {
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ink-soft);
+}
+.colophon span { color: var(--oxblood); }
+
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-meta">
+    <span id="volume-label">Vol. I</span>
+    <span><span class="dot">●</span> Weekly Index</span>
+    <span id="dateline">Loading…</span>
+  </div>
+  <h1>The Doom Loop <em>Political</em> Index</h1>
+  <p class="deck">A weekly assessment of where the leaders of the OECD's democracies stand on the eternal cycle of centrist failure and far-right destruction.</p>
+  <div class="rules">
+    <span id="leader-count">— Leaders Tracked</span>
+    <span>Updated Mondays</span>
+    <span>Tap a Leader</span>
+  </div>
+</header>
+
+<div id="loading-banner" class="state-banner">Loading the latest classification…</div>
+
+<div class="container" id="main-container" style="display:none;">
+  <section class="wheel-section">
+    <div class="wheel-eyebrow">The Cycle as it Stands</div>
+
+    <div class="wheel-stage">
+      <!-- viewBox stays 800x800; pins can extend to ~400 radius -->
+      <svg class="wheel-svg" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <!--
+            Phase arrows: filled SVG paths shaped like arrows.
+            Each consists of:
+              - inner arc (R=248) from start angle to (end - 6°)
+              - tip flare inward, point outward at R=263, base outward
+              - outer arc (R=272) back to start
+              - closed with Z
+
+            Sweep ranges (each 72° body, ending in a 6° tip):
+              p1: 9°  → 81°
+              p2: 99° → 171°
+              p3: 189°→ 261°
+              p4: 279°→ 351°
+
+            textPath uses a thinner construction line at R=260.
+          -->
+
+          <!-- Text-path guides for arc labels. R = 260 (mid-band) -->
+          <path id="arc-p1-text" d="M 440.66,143.30 A 260,260 0 0,1 656.70,440.66" fill="none"/>
+          <path id="arc-p2-text" d="M 656.70,459.34 A 260,260 0 0,1 440.66,656.70" fill="none"/>
+          <path id="arc-p3-text" d="M 359.34,656.70 A 260,260 0 0,1 143.30,459.34" fill="none"/>
+          <path id="arc-p4-text" d="M 143.30,440.66 A 260,260 0 0,1 359.34,143.30" fill="none"/>
+        </defs>
+
+        <circle cx="400" cy="400" r="295" fill="none" stroke="var(--ink-soft)" stroke-width="0.5"/>
+        <circle cx="400" cy="400" r="305" fill="none" stroke="var(--ink-soft)" stroke-width="0.5"/>
+
+        <g id="ticks"></g>
+
+        <!-- Phase arrows: filled paths with true triangular tips that flare beyond the arc band -->
+        <path class="phase-arc p1" d="M 438.80 155.05 A 248 248 0 0 1 638.39 331.64 L 624.94 335.50 L 656.80 359.33 L 674.92 321.17 L 661.46 325.03 A 272 272 0 0 0 442.55 131.35 Z"/>
+        <path class="phase-arc p2" d="M 644.95 438.80 A 248 248 0 0 1 468.36 638.39 L 464.50 624.94 L 440.67 656.80 L 478.83 674.92 L 474.97 661.46 A 272 272 0 0 0 668.65 442.55 Z"/>
+        <path class="phase-arc p3" d="M 361.20 644.95 A 248 248 0 0 1 161.61 468.36 L 175.06 464.50 L 143.20 440.67 L 125.08 478.83 L 138.54 474.97 A 272 272 0 0 0 357.45 668.65 Z"/>
+        <path class="phase-arc p4" d="M 155.05 361.20 A 248 248 0 0 1 331.64 161.61 L 335.50 175.06 L 359.33 143.20 L 321.17 125.08 L 325.03 138.54 A 272 272 0 0 0 131.35 357.45 Z"/>
+
+        <!-- Roman numerals: mid-quadrant, on the INSIDE of the wheel.
+             Mid-angles: I=45°, II=135°, III=225°, IV=315°
+             At radius 200 (inside the arcs which are at 260). -->
+        <text class="roman" x="541.42" y="258.58">Ⅰ</text>
+        <text class="roman" x="541.42" y="541.42">Ⅱ</text>
+        <text class="roman" x="258.58" y="541.42">Ⅲ</text>
+        <text class="roman" x="258.58" y="258.58">Ⅳ</text>
+
+        <text class="phase-label-text">
+          <textPath href="#arc-p1-text" startOffset="50%" text-anchor="middle">CENTRIST DENIAL</textPath>
+        </text>
+        <text class="phase-label-text">
+          <textPath href="#arc-p2-text" startOffset="50%" text-anchor="middle">FAR-RIGHT RISES</textPath>
+        </text>
+        <text class="phase-label-text">
+          <textPath href="#arc-p3-text" startOffset="50%" text-anchor="middle">DESTRUCTION</textPath>
+        </text>
+        <text class="phase-label-text">
+          <textPath href="#arc-p4-text" startOffset="50%" text-anchor="middle">PROMISE OF CHANGE</textPath>
+        </text>
+
+        <circle class="center-medallion" cx="400" cy="400" r="92"/>
+        <circle class="center-medallion" cx="400" cy="400" r="86" fill="none"/>
+        <text class="center-sub" x="400" y="358">THE DOOM LOOP</text>
+        <line x1="345" y1="368" x2="455" y2="368" stroke="var(--ink-soft)" stroke-width="0.5"/>
+        <text id="aggregate-number" class="center-number" x="400" y="415">–</text>
+        <line x1="345" y1="432" x2="455" y2="432" stroke="var(--ink-soft)" stroke-width="0.5"/>
+        <text class="center-sub" x="400" y="450">AGGREGATE</text>
+        <text class="center-sub" x="400" y="463">INDEX</text>
+
+        <g id="leader-pins"></g>
+      </svg>
+    </div>
+
+    <div class="phase-legend">
+      <div class="phase-card p1">
+        <div class="num">I.</div>
+        <div class="name">Centrist Denial</div>
+        <div class="desc">Uninspiring centrist refuses to tackle the underlying social problems that led to the rise of the far-right.</div>
+      </div>
+      <div class="phase-card p2">
+        <div class="num">II.</div>
+        <div class="name">Far-Right Rises</div>
+        <div class="desc">Stagnating living standards create fertile ground for fascism. Far-right wins elections.</div>
+      </div>
+      <div class="phase-card p3">
+        <div class="num">III.</div>
+        <div class="name">Destruction</div>
+        <div class="desc">Far-right drives the economy off a cliff, degrades public life, makes everything objectively worse.</div>
+      </div>
+      <div class="phase-card p4">
+        <div class="num">IV.</div>
+        <div class="name">Promise of Change</div>
+        <div class="desc">Uninspiring centrist defeats the far-right with a vague promise of change. Loop restarts.</div>
+      </div>
+    </div>
+  </section>
+
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <h2>Selected Leader</h2>
+      <div class="detail-card" id="detail-card">
+        <div class="detail-empty">Tap any leader on the wheel to read their week-in-review and current phase position.</div>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <h2>Ranked by Doom Score</h2>
+      <ol class="ranking-list" id="ranking-list"></ol>
+    </div>
+  </aside>
+</div>
+
+<footer class="footer" id="footer" style="display:none;">
+  <div class="footer-section">
+    <h3>Methodology</h3>
+    <div class="methodology">
+      Each Monday, an automated pipeline gathers tenure data and macroeconomic indicators for every tracked leader, then asks Claude (with web search enabled) to verify current polling, review the past seven days of news, and place the leader on the doom-loop circle. The angle on the circle reflects where the leader sits in the four-phase cycle. The doom score is normalized per phase so that a higher score consistently means "deeper into the doom loop" — a leader in Phase III will always score higher than a comparable one in Phase I. Both are produced by a language model and should be read as commentary, not as data in a scientific sense.
+    </div>
+  </div>
+
+  <div class="footer-section">
+    <h3>Sources for This Week</h3>
+    <ul class="sources-list" id="sources-list"></ul>
+  </div>
+
+  <div class="colophon">
+    The Doom Loop Political Index <span>◆</span> Open Source <span>◆</span> Updated Weekly <span>◆</span> <span id="footer-timestamp"></span>
+  </div>
+</footer>
+
+<script>
+const DATA_URL = "../data/latest.json";
+
+// ─────────── Geometry helpers ───────────
+const CX = 400, CY = 400, R = 260;
+const PIN_RADIUS_OUTSIDE = 312;
+const RING_STEP = 24;        // pixels per additional ring outward
+const MAX_RINGS = 5;         // 0, +24, +48, +72, +96
+const CROWD_THRESHOLD_DEG = 12;   // less than this between two pins → push outward
+
+function angleToXY(a, r=R) {
+  const rad = (a-90) * Math.PI/180;
+  return { x: CX + r*Math.cos(rad), y: CY + r*Math.sin(rad) };
+}
+function phaseOf(a) {
+  const x = ((a%360)+360)%360;
+  return x<90?1 : x<180?2 : x<270?3 : 4;
+}
+
+// ─────────── Doom score normalization (Variant A2) ───────────
+const PHASE_BANDS = {
+  1: [0, 40],
+  2: [25, 65],
+  3: [50, 90],
+  4: [0, 25],
+};
+
+function normalizeDoom(rawDoom, phase) {
+  if (rawDoom == null || phase == null || !PHASE_BANDS[phase]) return rawDoom;
+  const [min, max] = PHASE_BANDS[phase];
+  const scaled = min + (rawDoom / 100) * (max - min);
+  return Math.round(scaled);
+}
+
+// ─────────── Data transform ───────────
+function transformData(latest) {
+  const out = [];
+  for (const [id, L] of Object.entries(latest.leaders)) {
+    const c = L.classification || {};
+    if (typeof c.angle !== 'number') continue;
+
+    const flag = codeToFlag(L.country_code);
+    const parts = (L.name || '').split(/\s+/);
+    const initials = (parts[0]?.[0] || '') + (parts[parts.length-1]?.[0] || '');
+
+    out.push({
+      id,
+      name: L.name,
+      country: L.country,
+      countryCode: L.country_code,
+      flag,
+      initials: initials.toUpperCase(),
+      wikiSlug: encodeURIComponent(L.name?.replaceAll(' ', '_') || id),
+      party: L.leader_party,
+      role: L.role,
+      system: L.system,
+      tookOffice: L.tenure?.took_office,
+      yearsInOffice: L.tenure?.years_in_office,
+      coalitionParties: L.coalition_parties,
+      farRightParty: L.far_right_party,
+      angle: c.angle,
+      rawDoomScore: c.doom_score,
+      doomScore: normalizeDoom(c.doom_score, c.phase),
+      phase: c.phase,
+      coalitionPctNow: c.coalition_pct_now,
+      coalitionPct3moAgo: c.coalition_pct_3mo_ago,
+      farRightPctNow: c.far_right_pct_now,
+      farRightPct3moAgo: c.far_right_pct_3mo_ago,
+      approvalNow: c.approval_now,
+      approvalPrior: c.approval_3mo_ago,
+      analysis: c.analysis,
+      sources: c.sources || [],
+      manualOverride: c.manual_override === true,
+    });
+  }
+  return out;
+}
+
+function codeToFlag(cc) {
+  if (!cc || cc.length !== 2) return '🏳️';
+  return String.fromCodePoint(...cc.toUpperCase().split('').map(c => 0x1F1E6 + c.charCodeAt(0) - 65));
+}
+
+// ─────────── Collision avoidance: 5-ring outward stack ───────────
+// Walks angle-sorted pins; if a pin is within CROWD_THRESHOLD_DEG of any of
+// the last few placed pins, place it on a higher ring than the closest one,
+// up to MAX_RINGS, then wrap back to 0.
+function computeRadialOffsets(arr) {
+  const sorted = [...arr].sort((a,b) => a.angle - b.angle);
+  const ringOf = {};
+  const placed = []; // [{angle, ring}, ...]
+
+  for (const cur of sorted) {
+    // Find rings that are crowded near cur.angle
+    const conflictsRings = new Set();
+    for (const p of placed) {
+      const diff = Math.min(
+        Math.abs(cur.angle - p.angle),
+        360 - Math.abs(cur.angle - p.angle)
+      );
+      if (diff < CROWD_THRESHOLD_DEG) {
+        conflictsRings.add(p.ring);
+      }
+    }
+    // Pick the lowest free ring
+    let ring = 0;
+    while (conflictsRings.has(ring) && ring < MAX_RINGS - 1) ring++;
+    ringOf[cur.id] = ring * RING_STEP;
+    placed.push({ angle: cur.angle, ring });
+  }
+  return ringOf;
+}
+
+// ─────────── Photo cache ───────────
+const photoCache = {};
+async function fetchPhoto(L) {
+  try {
+    const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${L.wikiSlug}`;
+    const res = await fetch(url);
+    if (!res.ok) return null;
+    const j = await res.json();
+    return j.thumbnail?.source || j.originalimage?.source || null;
+  } catch (e) { return null; }
+}
+
+// ─────────── Render ───────────
+const SVGNS = 'http://www.w3.org/2000/svg';
+const PIN_R = 22;
+
+function renderTicks() {
+  const g = document.getElementById('ticks');
+  g.innerHTML = '';
+  for (let a = 0; a < 360; a += 15) {
+    const inner = angleToXY(a, 295);
+    const outer = angleToXY(a, a % 90 === 0 ? 320 : 305);
+    const t = document.createElementNS(SVGNS, 'line');
+    t.setAttribute('x1', inner.x); t.setAttribute('y1', inner.y);
+    t.setAttribute('x2', outer.x); t.setAttribute('y2', outer.y);
+    t.setAttribute('class', a % 90 === 0 ? 'tick tick-major' : 'tick');
+    g.appendChild(t);
+  }
+}
+
+function renderPins(leaders, offsets) {
+  const pinsGroup = document.getElementById('leader-pins');
+  pinsGroup.innerHTML = '';
+
+  for (const L of leaders) {
+    const r = PIN_RADIUS_OUTSIDE + (offsets[L.id] || 0);
+    const { x, y } = angleToXY(L.angle, r);
+
+    const g = document.createElementNS(SVGNS, 'g');
+    g.setAttribute('class', 'leader-pin');
+    g.setAttribute('data-id', L.id);
+    g.setAttribute('transform', `translate(${x},${y})`);
+
+    const phaseColor = `var(--phase-${L.phase})`;
+    const bg = document.createElementNS(SVGNS, 'circle');
+    bg.setAttribute('class', 'pin-bg');
+    bg.setAttribute('cx', 0); bg.setAttribute('cy', 0); bg.setAttribute('r', PIN_R);
+    bg.setAttribute('fill', phaseColor);
+    g.appendChild(bg);
+
+    const clipId = `clip-${L.id}`;
+    const defs = document.createElementNS(SVGNS, 'defs');
+    const clip = document.createElementNS(SVGNS, 'clipPath');
+    clip.setAttribute('id', clipId);
+    const clipCircle = document.createElementNS(SVGNS, 'circle');
+    clipCircle.setAttribute('cx', 0); clipCircle.setAttribute('cy', 0); clipCircle.setAttribute('r', PIN_R-1.5);
+    clip.appendChild(clipCircle);
+    defs.appendChild(clip);
+    g.appendChild(defs);
+
+    const photo = document.createElementNS(SVGNS, 'image');
+    photo.setAttribute('class', 'pin-photo');
+    photo.setAttribute('x', -PIN_R+1.5);
+    photo.setAttribute('y', -PIN_R+1.5);
+    photo.setAttribute('width', (PIN_R-1.5)*2);
+    photo.setAttribute('height', (PIN_R-1.5)*2);
+    photo.setAttribute('preserveAspectRatio', 'xMidYMid slice');
+    photo.setAttribute('clip-path', `url(#${clipId})`);
+    g.appendChild(photo);
+
+    const initials = document.createElementNS(SVGNS, 'text');
+    initials.setAttribute('class', 'pin-initials');
+    initials.setAttribute('x', 0); initials.setAttribute('y', 0);
+    initials.textContent = L.initials;
+    g.appendChild(initials);
+
+    const flagBg = document.createElementNS(SVGNS, 'circle');
+    flagBg.setAttribute('class', 'pin-flag-bg');
+    flagBg.setAttribute('cx', 16); flagBg.setAttribute('cy', 17); flagBg.setAttribute('r', 8.5);
+    g.appendChild(flagBg);
+    const flag = document.createElementNS(SVGNS, 'text');
+    flag.setAttribute('class', 'pin-flag');
+    flag.setAttribute('x', 16); flag.setAttribute('y', 21);
+    flag.textContent = L.flag;
+    g.appendChild(flag);
+
+    g.addEventListener('click', () => showDetail(L));
+    pinsGroup.appendChild(g);
+  }
+
+  // Lazy-load photos
+  leaders.forEach(async L => {
+    const src = await fetchPhoto(L);
+    if (!src) return;
+    photoCache[L.id] = src;
+    const pin = document.querySelector(`[data-id="${L.id}"]`);
+    if (!pin) return;
+    const photo = pin.querySelector('.pin-photo');
+    photo.setAttributeNS('http://www.w3.org/1999/xlink', 'href', src);
+    photo.setAttribute('href', src);
+    pin.classList.add('loaded');
+  });
+}
+
+// ─────────── Detail panel ───────────
+function renderTrend(now, prior, label) {
+  if (now == null) return '';
+  const delta = (prior != null) ? (now - prior) : null;
+  const trendClass = delta == null ? '' : (delta > 0.5 ? 'up' : delta < -0.5 ? 'down' : '');
+  const arrow = delta == null ? '' : (delta > 0.5 ? '↑' : delta < -0.5 ? '↓' : '→');
+  const trendStr = delta == null ? '' : `${arrow} ${Math.abs(delta).toFixed(1)}pt ${label}`;
+  return trendStr ? `<div class="trend ${trendClass}">${trendStr}</div>` : '';
+}
+
+function showDetail(L) {
+  document.querySelectorAll('.leader-pin').forEach(p => p.classList.remove('active'));
+  document.querySelector(`[data-id="${L.id}"]`)?.classList.add('active');
+  document.querySelectorAll('.ranking-row').forEach(r => r.classList.toggle('active', r.dataset.id === L.id));
+
+  const phaseNames = {1:'I · Centrist Denial', 2:'II · Far-Right Rises', 3:'III · Destruction', 4:'IV · Promise of Change'};
+  const monthsInOffice = L.yearsInOffice != null ? Math.round(L.yearsInOffice * 12) : null;
+  const tenure = monthsInOffice == null ? '—' : (monthsInOffice < 24 ? `${monthsInOffice} mo` : `${L.yearsInOffice} yr`);
+  const photo = photoCache[L.id];
+
+  let pollingStats = '';
+  if (L.system === 'parliamentary') {
+    const coalitionVal = L.coalitionPctNow != null ? `${L.coalitionPctNow}<em>%</em>` : '—';
+    const farRightVal = L.farRightPctNow != null ? `${L.farRightPctNow}<em>%</em>` : '—';
+    pollingStats = `
+      <div class="stat">
+        <div class="label">Coalition</div>
+        <div class="value">${coalitionVal}</div>
+        ${renderTrend(L.coalitionPctNow, L.coalitionPct3moAgo, 'in 3mo')}
+      </div>
+      <div class="stat">
+        <div class="label">Far-Right</div>
+        <div class="value">${farRightVal}</div>
+        ${renderTrend(L.farRightPctNow, L.farRightPct3moAgo, 'in 3mo')}
+      </div>
+    `;
+  } else {
+    const approvalVal = L.approvalNow != null ? `${L.approvalNow}<em>%</em>` : '—';
+    pollingStats = `
+      <div class="stat">
+        <div class="label">Approval</div>
+        <div class="value">${approvalVal}</div>
+        ${renderTrend(L.approvalNow, L.approvalPrior, 'in 3mo')}
+      </div>
+      <div class="stat">
+        <div class="label">Doom Score</div>
+        <div class="value">${L.doomScore}<em>/100</em></div>
+      </div>
+    `;
+  }
+
+  const doomStat = L.system === 'parliamentary' ? `
+    <div class="detail-stats" style="margin-bottom: 1rem;">
+      <div class="stat">
+        <div class="label">Doom Score</div>
+        <div class="value">${L.doomScore}<em>/100</em></div>
+      </div>
+      <div class="stat">
+        <div class="label">Phase Angle</div>
+        <div class="value">${L.angle}<em>°</em></div>
+      </div>
+    </div>
+  ` : '';
+
+  document.getElementById('detail-card').innerHTML = `
+    <div class="detail-header">
+      ${photo ? `<img class="detail-photo" src="${photo}" alt="${L.name}">` : `<span class="detail-flag">${L.flag}</span>`}
+      <div>
+        <div class="detail-name">${L.name}</div>
+      </div>
+    </div>
+    <div class="detail-meta">${L.flag} ${L.country} · ${L.party || '—'} · ${tenure} in office</div>
+    <div class="detail-phase p${L.phase}">Phase ${phaseNames[L.phase]}</div>
+    <div class="detail-stats">${pollingStats}</div>
+    ${doomStat}
+    <div class="detail-analysis">${L.analysis || '(no analysis)'}</div>
+  `;
+}
+
+function renderRanking(leaders) {
+  const ranked = [...leaders].sort((a,b) => b.doomScore - a.doomScore);
+  const list = document.getElementById('ranking-list');
+  list.innerHTML = '';
+  ranked.forEach((L, i) => {
+    const li = document.createElement('li');
+    li.className = 'ranking-row';
+    li.dataset.id = L.id;
+    li.innerHTML = `
+      <span class="rank">${i+1}.</span>
+      <span class="name">${L.flag} ${L.name}</span>
+      <span class="score p${L.phase}">${L.doomScore}</span>
+    `;
+    li.addEventListener('click', () => showDetail(L));
+    list.appendChild(li);
+  });
+}
+
+function renderSources(sources) {
+  const list = document.getElementById('sources-list');
+  if (!sources || sources.length === 0) {
+    list.innerHTML = '<li><em>No sources recorded for this run.</em></li>';
+    return;
+  }
+  list.innerHTML = sources.map(url => {
+    let display = url;
+    try {
+      const u = new URL(url);
+      display = u.hostname.replace(/^www\./, '') + (u.pathname.length > 1 ? u.pathname : '');
+      if (display.length > 60) display = display.slice(0, 57) + '…';
+    } catch {}
+    return `<li><a href="${url}" target="_blank" rel="noopener">${display}</a></li>`;
+  }).join('');
+}
+
+function renderMasthead(latest, leaders) {
+  const ts = new Date(latest.run_timestamp);
+  const opts = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+  const dateline = ts.toLocaleDateString('en-GB', opts);
+
+  document.getElementById('dateline').textContent = dateline;
+  document.getElementById('leader-count').textContent = `${leaders.length} Leaders Tracked`;
+  document.getElementById('volume-label').textContent = `Issue ${latest.week_label || '—'}`;
+  document.getElementById('footer-timestamp').textContent = `Last update: ${ts.toISOString().slice(0, 10)}`;
+
+  const avg = leaders.reduce((s, L) => s + (L.doomScore || 0), 0) / leaders.length;
+  document.getElementById('aggregate-number').textContent = Math.round(avg);
+}
+
+async function main() {
+  let latest;
+  try {
+    const res = await fetch(DATA_URL, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    latest = await res.json();
+  } catch (e) {
+    document.getElementById('loading-banner').className = 'state-banner error';
+    document.getElementById('loading-banner').textContent = `Failed to load ${DATA_URL}: ${e.message}`;
+    return;
+  }
+
+  const leaders = transformData(latest);
+  if (leaders.length === 0) {
+    document.getElementById('loading-banner').className = 'state-banner error';
+    document.getElementById('loading-banner').textContent = 'No valid leader classifications found in latest.json';
+    return;
+  }
+
+  document.getElementById('loading-banner').style.display = 'none';
+  document.getElementById('main-container').style.display = 'grid';
+  document.getElementById('footer').style.display = 'block';
+
+  renderMasthead(latest, leaders);
+  renderTicks();
+  const offsets = computeRadialOffsets(leaders);
+  renderPins(leaders, offsets);
+  renderRanking(leaders);
+  renderSources(latest.all_sources || []);
+
+  const ranked = [...leaders].sort((a,b) => b.doomScore - a.doomScore);
+  if (ranked[0]) showDetail(ranked[0]);
+}
+
+main();
+</script>
+</body>
+</html>
