@@ -32,7 +32,7 @@ WEEKLY_DIR = REPO_ROOT / "data" / "weekly"
 MODEL = "claude-sonnet-4-5"
 MAX_TOKENS = 2000
 
-DELAY_BETWEEN_CALLS = 25
+DELAY_BETWEEN_CALLS = 15
 RATE_LIMIT_BACKOFF = 60
 MAX_RETRIES = 3
 
@@ -242,7 +242,7 @@ def classify_leader(client: Anthropic, leader_data: dict, attempt: int = 1) -> d
             tools=[{
                 "type": "web_search_20250305",
                 "name": "web_search",
-                "max_uses": 6,
+                "max_uses": 5,
             }],
             messages=[{
                 "role": "user",
