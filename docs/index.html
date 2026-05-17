@@ -443,18 +443,22 @@ body::before {
 
 .detail-stats {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 0.75rem;
   margin-bottom: 1rem;
 }
+.detail-stats.stats-grid-1 { grid-template-columns: 1fr; }
+.detail-stats.stats-grid-2 { grid-template-columns: 1fr 1fr; }
+.detail-stats.stats-grid-3 { grid-template-columns: 1fr 1fr; }
+.detail-stats.stats-grid-4 { grid-template-columns: 1fr 1fr; }
+
 .stat {
   border-left: 2px solid var(--ink);
   padding-left: 0.6rem;
 }
 .stat .label {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.6rem;
-  letter-spacing: 0.15em;
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-mid);
   margin-bottom: 0.1rem;
@@ -462,7 +466,8 @@ body::before {
 .stat .value {
   font-family: 'Fraunces', serif;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
+  line-height: 1.1;
 }
 .stat .value em {
   font-family: 'JetBrains Mono', monospace;
@@ -470,17 +475,27 @@ body::before {
   font-size: 0.75rem;
   color: var(--ink-mid);
   font-weight: 400;
-  margin-left: 0.2rem;
+  margin-left: 0.15rem;
 }
 .stat .trend {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.62rem;
+  font-size: 0.6rem;
   color: var(--ink-mid);
   margin-top: 0.2rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
 }
 .stat .trend.up { color: var(--phase-3); }
 .stat .trend.down { color: var(--phase-4); }
+
+.stat .stat-footer {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.55rem;
+  color: var(--ink-soft);
+  margin-top: 0.15rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
 
 .detail-phase {
   display: inline-block;
@@ -822,6 +837,8 @@ function transformData(latest) {
     const parts = (L.name || '').split(/\s+/);
     const initials = (parts[0]?.[0] || '') + (parts[parts.length-1]?.[0] || '');
 
+    const macro = L.macro || {};
+
     out.push({
       id,
       name: L.name,
@@ -841,12 +858,24 @@ function transformData(latest) {
       rawDoomScore: c.doom_score,
       doomScore: normalizeDoom(c.doom_score, c.phase),
       phase: c.phase,
+      // Polling for parliamentary
       coalitionPctNow: c.coalition_pct_now,
-      coalitionPct3moAgo: c.coalition_pct_3mo_ago,
+      coalitionPctLastElection: c.coalition_pct_last_election,
       farRightPctNow: c.far_right_pct_now,
-      farRightPct3moAgo: c.far_right_pct_3mo_ago,
+      farRightPctLastElection: c.far_right_pct_last_election,
+      lastElectionYear: c.last_election_year,
+      // Polling for presidential
       approvalNow: c.approval_now,
-      approvalPrior: c.approval_3mo_ago,
+      approvalAtInauguration: c.approval_at_inauguration,
+      // Consumer Confidence (from Claude web search)
+      cciNow: c.cci_now,
+      cciYearAgo: c.cci_year_ago,
+      cciSource: c.cci_source,
+      // Macro (from World Bank, with YoY delta)
+      inflationNow: macro.inflation_yoy_pct,
+      inflationPrevYear: macro.inflation_prev_year_pct,
+      gdpNow: macro.gdp_growth_yoy_pct,
+      gdpPrevYear: macro.gdp_growth_prev_year_pct,
       analysis: c.analysis,
       sources: c.sources || [],
       manualOverride: c.manual_override === true,
@@ -995,13 +1024,34 @@ function renderPins(leaders, offsets) {
 }
 
 // ─────────── Detail panel ───────────
-function renderTrend(now, prior, label) {
-  if (now == null) return '';
-  const delta = (prior != null) ? (now - prior) : null;
-  const trendClass = delta == null ? '' : (delta > 0.5 ? 'up' : delta < -0.5 ? 'down' : '');
-  const arrow = delta == null ? '' : (delta > 0.5 ? '↑' : delta < -0.5 ? '↓' : '→');
-  const trendStr = delta == null ? '' : `${arrow} ${Math.abs(delta).toFixed(1)}pt ${label}`;
-  return trendStr ? `<div class="trend ${trendClass}">${trendStr}</div>` : '';
+// Render a "↑/↓ Xpt label" line for stat deltas.
+// CSS classes:
+//   .trend.down → green (positive change)
+//   .trend.up   → red (negative change)
+// flipColors=true is for metrics where rising values are BAD
+// (e.g. far-right support, inflation). Falsy default is for metrics
+// where rising values are GOOD (approval, coalition support, CCI).
+function renderDelta(now, prior, label, flipColors = false) {
+  if (now == null || prior == null) return '';
+  const delta = now - prior;
+  if (Math.abs(delta) < 0.05) {
+    return `<div class="trend">→ flat ${label}</div>`;
+  }
+  const arrow = delta > 0 ? '↑' : '↓';
+  const isGood = flipColors ? delta < 0 : delta > 0;
+  const semanticClass = isGood ? 'down' : 'up';
+  const fmt = Math.abs(delta) >= 10
+    ? Math.round(Math.abs(delta))
+    : Math.abs(delta).toFixed(1);
+  return `<div class="trend ${semanticClass}">${arrow} ${fmt}pt ${label}</div>`;
+}
+
+// CCI values vary widely by source (OECD ~100, CBS NL ~-30, INEGI ~40).
+// Format respects the value's natural range.
+function formatCciValue(v) {
+  if (v == null) return '—';
+  if (Math.abs(v) < 10) return v.toFixed(1);
+  return Math.round(v).toString();
 }
 
 function showDetail(L) {
@@ -1017,49 +1067,86 @@ function showDetail(L) {
   const tenure = monthsInOffice == null ? '—' : (monthsInOffice < 24 ? `${monthsInOffice} mo` : `${L.yearsInOffice} yr`);
   const photo = photoCache[L.id];
 
-  let pollingStats = '';
+  // Build 4 stat blocks: 2 polling + 2 macro
+  const statBlocks = [];
+
   if (L.system === 'parliamentary') {
-    const coalitionVal = L.coalitionPctNow != null ? `${L.coalitionPctNow}<em>%</em>` : '—';
-    const farRightVal = L.farRightPctNow != null ? `${L.farRightPctNow}<em>%</em>` : '—';
-    pollingStats = `
-      <div class="stat">
-        <div class="label">Coalition</div>
-        <div class="value">${coalitionVal}</div>
-        ${renderTrend(L.coalitionPctNow, L.coalitionPct3moAgo, 'in 3mo')}
-      </div>
-      <div class="stat">
-        <div class="label">Far-Right</div>
-        <div class="value">${farRightVal}</div>
-        ${renderTrend(L.farRightPctNow, L.farRightPct3moAgo, 'in 3mo')}
-      </div>
-    `;
+    // Block 1: Coalition support
+    if (L.coalitionPctNow != null) {
+      statBlocks.push({
+        label: 'Coalition',
+        value: `${L.coalitionPctNow}<em>%</em>`,
+        trend: renderDelta(L.coalitionPctNow, L.coalitionPctLastElection,
+                           L.lastElectionYear ? `vs ${L.lastElectionYear}` : 'vs election'),
+      });
+    }
+    // Block 2: Far-Right support
+    if (L.farRightPctNow != null) {
+      statBlocks.push({
+        label: 'Far-Right',
+        value: `${L.farRightPctNow}<em>%</em>`,
+        trend: renderDelta(L.farRightPctNow, L.farRightPctLastElection,
+                           L.lastElectionYear ? `vs ${L.lastElectionYear}` : 'vs election',
+                           /*flipColors=*/true),
+      });
+    }
   } else {
-    const approvalVal = L.approvalNow != null ? `${L.approvalNow}<em>%</em>` : '—';
+    // Presidential: Block 1 = Approval
+    if (L.approvalNow != null) {
+      statBlocks.push({
+        label: 'Approval',
+        value: `${L.approvalNow}<em>%</em>`,
+        trend: renderDelta(L.approvalNow, L.approvalAtInauguration, 'vs inauguration'),
+      });
+    }
+    // Presidential: Block 2 = Far-right opposition (only if present in data;
+    // for presidents who are themselves the far-right this stays blank).
+    if (L.farRightPctNow != null) {
+      statBlocks.push({
+        label: 'Far-Right',
+        value: `${L.farRightPctNow}<em>%</em>`,
+        trend: renderDelta(L.farRightPctNow, L.farRightPctLastElection,
+                           L.lastElectionYear ? `vs ${L.lastElectionYear}` : 'vs election',
+                           /*flipColors=*/true),
+      });
+    }
+  }
+
+  // Block 3 (both systems): Consumer Confidence
+  if (L.cciNow != null) {
+    statBlocks.push({
+      label: `Consumer Confidence`,
+      value: formatCciValue(L.cciNow),
+      trend: renderDelta(L.cciNow, L.cciYearAgo, 'YoY'),
+      footer: L.cciSource || '',
+    });
+  }
+
+  // Block 4 (both systems): Inflation
+  if (L.inflationNow != null) {
+    statBlocks.push({
+      label: 'Inflation',
+      value: `${L.inflationNow}<em>%</em>`,
+      trend: renderDelta(L.inflationNow, L.inflationPrevYear, 'vs prev. year', /*flipColors=*/true),
+    });
+  }
+
+  // Render the grid
+  let pollingStats = '';
+  if (statBlocks.length > 0) {
     pollingStats = `
-      <div class="stat">
-        <div class="label">Approval</div>
-        <div class="value">${approvalVal}</div>
-        ${renderTrend(L.approvalNow, L.approvalPrior, 'in 3mo')}
-      </div>
-      <div class="stat">
-        <div class="label">Doom Score</div>
-        <div class="value">${L.doomScore}<em>/100</em></div>
+      <div class="detail-stats stats-grid-${statBlocks.length}">
+        ${statBlocks.map(s => `
+          <div class="stat">
+            <div class="label">${s.label}</div>
+            <div class="value">${s.value}</div>
+            ${s.trend || ''}
+            ${s.footer ? `<div class="stat-footer">${s.footer}</div>` : ''}
+          </div>
+        `).join('')}
       </div>
     `;
   }
-
-  const doomStat = L.system === 'parliamentary' ? `
-    <div class="detail-stats" style="margin-bottom: 1rem;">
-      <div class="stat">
-        <div class="label">Doom Score</div>
-        <div class="value">${L.doomScore}<em>/100</em></div>
-      </div>
-      <div class="stat">
-        <div class="label">Phase Angle</div>
-        <div class="value">${L.angle}<em>°</em></div>
-      </div>
-    </div>
-  ` : '';
 
   document.getElementById('detail-card').innerHTML = `
     <div class="detail-header">
@@ -1070,8 +1157,7 @@ function showDetail(L) {
     </div>
     <div class="detail-meta">${L.flag} ${L.country} · ${L.party || '—'} · ${tenure} in office</div>
     <div class="detail-phase p${L.phase}">Phase ${phaseNames[L.phase]}</div>
-    <div class="detail-stats">${pollingStats}</div>
-    ${doomStat}
+    ${pollingStats}
     <div class="detail-analysis">${L.analysis || '(no analysis)'}</div>
   `;
 }

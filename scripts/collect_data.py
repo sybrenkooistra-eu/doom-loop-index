@@ -5,12 +5,15 @@ Wekelijks data-verzamelscript voor de Doom Loop Political Index.
 
 Voor elke leider in data/leaders.json verzamelt dit script:
   1. Tijd in functie (uit took_office datum)
-  2. Macro-economische indicatoren (van World Bank API)
+  2. Macro-economische indicatoren (van World Bank API):
+     - GDP growth YoY %, current and previous year
+     - Inflation YoY %, current and previous year
+     - Unemployment %
 
-Peilingen en nieuws worden NIET hier opgehaald — die regelt classify.py
-later met Claude API + web search in één call.
+Consumer confidence en peilingen worden via classify.py opgehaald
+(Claude API met web search).
 
-Output: data/inputs.json — wordt later door classify.py gelezen.
+Output: data/inputs.json
 
 Usage:
     python scripts/collect_data.py
@@ -24,9 +27,6 @@ from pathlib import Path
 import requests
 
 
-# ───────────────────────────────────────────────────────────────
-# Paden
-# ───────────────────────────────────────────────────────────────
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent
 LEADERS_FILE = REPO_ROOT / "data" / "leaders.json"
@@ -37,11 +37,7 @@ HTTP_HEADERS = {
 }
 
 
-# ───────────────────────────────────────────────────────────────
-# Tijd-in-functie
-# ───────────────────────────────────────────────────────────────
 def compute_tenure(took_office_str: str) -> dict:
-    """Bereken dagen en jaren in functie."""
     took_office = datetime.fromisoformat(took_office_str)
     today = datetime.now()
     days = (today - took_office).days
@@ -52,52 +48,70 @@ def compute_tenure(took_office_str: str) -> dict:
     }
 
 
-# ───────────────────────────────────────────────────────────────
-# World Bank macro-indicatoren
-# ───────────────────────────────────────────────────────────────
+# World Bank indicators
 WB_INDICATORS = {
-    "gdp_growth_yoy_pct": "NY.GDP.MKTP.KD.ZG",   # GDP growth annual %
-    "inflation_yoy_pct": "FP.CPI.TOTL.ZG",       # Inflation, consumer prices annual %
-    "unemployment_pct": "SL.UEM.TOTL.ZS",        # Unemployment, total (% labor force)
+    "gdp_growth_yoy_pct": "NY.GDP.MKTP.KD.ZG",
+    "inflation_yoy_pct": "FP.CPI.TOTL.ZG",
+    "unemployment_pct": "SL.UEM.TOTL.ZS",
 }
 
 
-def fetch_world_bank_indicator(country_code: str, indicator: str) -> tuple[float | None, int | None]:
-    """Haal meest recente niet-null waarde voor een World Bank indicator."""
+def fetch_world_bank_series(country_code: str, indicator: str) -> list[tuple[int, float]]:
+    """
+    Returns list of (year, value) tuples, sorted with most recent first.
+    Only non-null values.
+    """
     url = f"https://api.worldbank.org/v2/country/{country_code}/indicator/{indicator}"
-    params = {"format": "json", "per_page": 10}
+    params = {"format": "json", "per_page": 20}
     try:
         resp = requests.get(url, params=params, headers=HTTP_HEADERS, timeout=20)
         resp.raise_for_status()
         data = resp.json()
         if not isinstance(data, list) or len(data) < 2:
-            return None, None
+            return []
+        results = []
         for entry in data[1]:
             if entry.get("value") is not None:
-                return round(float(entry["value"]), 2), int(entry["date"])
-        return None, None
+                results.append((int(entry["date"]), round(float(entry["value"]), 2)))
+        results.sort(reverse=True)
+        return results
     except (requests.RequestException, ValueError, KeyError) as e:
         print(f"      ⚠ World Bank fetch failed for {country_code}/{indicator}: {e}", file=sys.stderr)
-        return None, None
+        return []
 
 
 def collect_macro(leader: dict) -> dict:
-    """Verzamel macro-economische indicatoren voor een leider's land."""
+    """Macro-economische data met vorige-jaar-vergelijkingen voor inflation en GDP."""
     cc = leader["country_code"]
     macro = {}
     most_recent_year = None
+
     for field, indicator in WB_INDICATORS.items():
-        val, year = fetch_world_bank_indicator(cc, indicator)
-        macro[field] = val
-        if year and (most_recent_year is None or year > most_recent_year):
-            most_recent_year = year
+        series = fetch_world_bank_series(cc, indicator)
+        if not series:
+            macro[field] = None
+            if field in ("inflation_yoy_pct", "gdp_growth_yoy_pct"):
+                macro[field.replace("_yoy_pct", "_prev_year_pct")] = None
+                macro[field.replace("_yoy_pct", "_data_year")] = None
+            continue
+
+        year_current, val_current = series[0]
+        macro[field] = val_current
+
+        if most_recent_year is None or year_current > most_recent_year:
+            most_recent_year = year_current
+
+        # For inflation and GDP: also track previous year (for YoY delta)
+        if field in ("inflation_yoy_pct", "gdp_growth_yoy_pct"):
+            prev_field = field.replace("_yoy_pct", "_prev_year_pct")
+            year_field = field.replace("_yoy_pct", "_data_year")
+            macro[year_field] = year_current
+            macro[prev_field] = series[1][1] if len(series) > 1 else None
+
     macro["data_year"] = most_recent_year
     return macro
 
 
-# ───────────────────────────────────────────────────────────────
-# Main
-# ───────────────────────────────────────────────────────────────
 def main():
     print(f"Reading leaders from {LEADERS_FILE}")
     with LEADERS_FILE.open() as f:
@@ -131,11 +145,13 @@ def main():
 
         m = leader_output["macro"]
         t = leader_output["tenure"]
+        infl_now = m.get("inflation_yoy_pct")
+        infl_prev = m.get("inflation_prev_year_pct")
+        infl_delta = f"({infl_now - infl_prev:+.1f}pt)" if (infl_now is not None and infl_prev is not None) else ""
         print(
             f"      tenure: {t['years_in_office']}y · "
-            f"macro ({m['data_year']}): "
-            f"GDP {m['gdp_growth_yoy_pct']}%, "
-            f"infl {m['inflation_yoy_pct']}%, "
+            f"macro ({m['data_year']}): GDP {m['gdp_growth_yoy_pct']}%, "
+            f"infl {infl_now}% {infl_delta}, "
             f"unemp {m['unemployment_pct']}%"
         )
 

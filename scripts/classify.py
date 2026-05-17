@@ -1,15 +1,15 @@
 """
-classify.py — v3
+classify.py — v4
 =================
 Wekelijks classificatie-script voor de Doom Loop Political Index.
 
-Verbeteringen t.o.v. v2:
-  - Phase II definitie verruimd: far-right hoeft niet in de regering te
-    zitten; leiden in peilingen is ook Phase II.
-  - Daarmee verschuiven leiders als Starmer/Macron/Frederiksen/Merz/
-    Stocker van late Phase I naar Phase II.
-  - Doom score wordt door de frontend genormaliseerd per phase; in de
-    prompt blijft het 0-100 binnen de eigen phase.
+Nieuw t.o.v. v3:
+  - Vraagt Claude om coalition/far-right delta vs. laatste nationale verkiezing
+  - Voor presidentiëlen: approval delta vs. inauguratie
+  - Vraagt om Consumer Confidence Index (huidige + ~12 maanden geleden)
+  - Geeft inflation YoY delta mee als context
+
+Output: data/latest.json
 """
 
 import json
@@ -30,7 +30,7 @@ LATEST_FILE = REPO_ROOT / "data" / "latest.json"
 WEEKLY_DIR = REPO_ROOT / "data" / "weekly"
 
 MODEL = "claude-sonnet-4-5"
-MAX_TOKENS = 1500
+MAX_TOKENS = 2000
 
 DELAY_BETWEEN_CALLS = 25
 RATE_LIMIT_BACKOFF = 60
@@ -44,135 +44,122 @@ THE FOUR PHASES (angle on a 360° circle)
 ═══════════════════════════════════════════════════════════════════
 
 PHASE I — CENTRIST DENIAL (0°–90°)
-  A centrist/mainstream party is in office, has a clear mandate, and the
-  far-right is NOT yet a top-2 polling force. The government is failing
-  to address root causes but is still electorally dominant.
-
-  Use Phase I ONLY when ALL of the following hold:
-    • The far-right is below ~15% in polls, OR is not the leading
-      opposition force
-    • The government is not facing imminent electoral collapse
-    • The leader has a clear mandate (recent election, stable approval)
-
+  Centrist/mainstream party in office, clear mandate, far-right NOT yet
+  a top-2 polling force (below ~15%, not the leading opposition).
   Sub-positions:
-   • 0–25°  : New centrist, just elected, riding high. Far-right contained.
-              (early Albanese 2022, Martin 2025)
-   • 25–55° : Established. Approval middling. Far-right exists but ≤15%
-              and not the top opposition. Government clearly in control.
-              (Albanese 2025, Martin)
-   • 55–85° : Mid-term strain. Approval slipping, but far-right STILL
-              below opposition leaders and below 15%. Honest "centrist
-              still trying" cases. (Sánchez actively resisting Vox at ~14%)
+   0–25°  : Fresh, popular, far-right contained. (Albanese, early Martin)
+   25–55° : Established, governing competently, far-right ≤15% and not
+            the top opposition. (Sánchez actively resisting Vox)
+   55–85° : Mid-term, slipping, but far-right still below 15% and below
+            opposition leaders.
 
 PHASE II — FAR-RIGHT RISES (90°–180°)
-  The far-right is now consequential — EITHER (a) actively governing in
-  coalition / supporting government externally, OR (b) leading or
-  co-leading the polls without yet holding power. This is the CORE
-  doom-loop dynamic and most struggling Western centrists belong here.
-
-  Use Phase II when ANY of these hold:
-    • Far-right is in the governing coalition (Schoof era NL,
-      Tidö Sweden, Orpo Finland, Babiš Czechia with SPD)
-    • Far-right leads polls but isn't in government (Reform UK leads
-      → Starmer is Phase II; RN leads → Macron is Phase II;
-      AfD leads → Merz is Phase II; FPÖ leads → Stocker is Phase II)
-    • Far-right is polling above 20% AND is the top opposition force
-
+  Far-right is consequential — EITHER in coalition / supporting govt,
+  OR leading polls (>20%, ahead of incumbent or top opposition).
   Sub-positions:
-   • 90–115°  : Far-right has overtaken the government in polls or just
-                entered coalition as junior partner. (Starmer with Reform
-                leading; Merz with AfD #1; Macron with RN ahead)
-   • 115–145° : Far-right consolidating; centrist visibly losing the
-                argument; government polling 15-20 points behind.
-                (Late-cycle Macron; Stocker AT where FPÖ leads polls
-                AND only an exclusion cordon keeps them out)
-   • 145–175° : Far-right at or near governing majority. Cordon collapsing.
-                (Schoof NL while Wilders coalition was forming;
-                pre-power Meloni)
-   • 175–180° : Far-right takes the premiership.
+   90–115°  : Far-right overtaken government in polls or entered as
+              junior coalition partner. (Starmer w/ Reform leading)
+   115–145° : Far-right consolidating; centrist losing ground.
+              (Macron w/ RN ahead, Merz w/ AfD #1)
+   145–175° : Far-right at/near governing majority. Cordon collapsing.
+              (Pre-power Meloni; Schoof's last weeks)
+   175–180° : Far-right takes premiership.
 
 PHASE III — DESTRUCTION (180°–270°)
-  Far-right or far-right-led government in power. Institutional erosion,
-  judicial capture, media pressure, economic damage.
-
+  Far-right or far-right-led government in power. Active institutional
+  erosion, judicial capture, economic damage, deteriorating public life.
   Sub-positions:
-   • 180–200° : Just took power. (Early Meloni — though she has stayed
-                technocratic, which is a judgment call)
-   • 200–230° : Active dismantling. (Trump 2025-26, Fico SK active phase)
-   • 230–260° : Peak destruction or very long tenure.
-                (Erdoğan TR, late Orbán pre-defeat)
-   • 260–270° : Late-stage, defeat imminent or just happened.
+   180–200° : Just took power, dismantling beginning. (Early Meloni)
+   200–230° : Active dismantling phase. (Trump, Fico)
+   230–260° : Peak destruction or long tenure. (Erdoğan, Netanyahu)
+   260–270° : Late-stage, defeat imminent.
 
 PHASE IV — PROMISE OF CHANGE (270°–360°)
-  A new (often centrist, sometimes left, sometimes technocratic) leader
-  defeats the far-right or far-right-adjacent government with a promise
-  of change.
-
+  New leader (often centrist, sometimes left, sometimes technocratic)
+  defeats the far-right with a promise of change.
   Sub-positions:
-   • 270–290° : Just took power. Honeymoon. (Magyar HU 2026,
-                Carney CA 2025, Lee KR 2025)
-   • 290–320° : First year. Reality biting. (Sheinbaum MX one year in)
-   • 320–355° : Late Phase IV — becoming the next "uninspiring centrist".
-                (Tusk PL 2025-26)
-   • 355–360° : Transition to Phase I.
+   270–290° : Just took power, honeymoon. (Magyar, Carney, Lee)
+   290–320° : First year, reality biting. (Sheinbaum one year in)
+   320–355° : Late Phase IV, becoming next "uninspiring centrist". (Tusk)
+   355–360° : Transition to Phase I.
 
 ═══════════════════════════════════════════════════════════════════
 PRESIDENTIAL SYSTEMS
 ═══════════════════════════════════════════════════════════════════
-  - Trump = far-right president in office = Phase III
-  - Macron = centrist with RN leading polls for 2027 = Phase II
-    (not Phase I — the far-right consequence is already present)
-  - Milei = libertarian-right in office damaging public services = Phase III
-  - Erdoğan = long-running authoritarian-right = Phase III, late
-  - Lee = anti-far-right Democrat after Yoon impeachment = Phase IV
-  - Sheinbaum = continuation of AMLO's left project = Phase IV (broad sense)
+  Trump = Phase III (far-right in office)
+  Macron = Phase II (centrist, RN leads polls)
+  Milei = Phase III
+  Erdoğan = Phase III, late
+  Lee = Phase IV (after Yoon impeachment)
+  Sheinbaum = Phase IV (continuation of AMLO's change project)
 
 ═══════════════════════════════════════════════════════════════════
 THE DOOM SCORE (0–100, within the leader's phase)
 ═══════════════════════════════════════════════════════════════════
-NOTE: The frontend re-scales this number per phase, so don't worry that
-a Phase I leader with doom 90 might look "worse" than a Phase III leader
-with doom 50. Just rate doom 0-100 within the context of THIS phase:
+NOTE: The frontend rescales doom per phase, so don't worry about absolute
+levels across phases. Just rate doom 0-100 within the context of THIS phase:
+  0–20   : Stable. Fresh honeymoon (P1/P4) or contained govt (P2/P3 lite)
+  20–40  : Mild tension within the phase
+  40–60  : Standard mid-cycle pressure
+  60–80  : Severe deterioration
+  80–100 : Peak intensity (collapse imminent / active destruction)
 
-  0–20   : Stable for this phase. Either fresh honeymoon (P1/P4) or
-           a contained government (P2/P3 lite).
-  20–40  : Mild tension. The phase dynamics are present but not severe.
-  40–60  : Standard mid-cycle for this phase. Real pressure but not
-           extreme.
-  60–80  : Severe. Clear deterioration within the phase.
-  80–100 : Peak intensity. Either election-collapse imminent (P1/P2),
-           or active institutional destruction (P3), or honeymoon
-           rapidly failing (P4).
+═══════════════════════════════════════════════════════════════════
+WHAT YOU MUST RESEARCH (via web search, up to 6 searches)
+═══════════════════════════════════════════════════════════════════
+1. Current polling (last 30 days average):
+   - For parliamentary: % for governing coalition AND for named far-right party
+   - For presidential: % approval rating
+2. Comparison baseline:
+   - For parliamentary: % each got at the LAST NATIONAL ELECTION
+     (so you can compute coalition_delta_vs_election and
+      far_right_delta_vs_election)
+   - For presidential: approval at INAUGURATION (or first month if
+     no inauguration polling)
+3. Consumer Confidence Index for the country:
+   - Current value (or most recent monthly value)
+   - Value from ~12 months ago
+   - Source priority (use the first available, in this order):
+       a. OECD CCI (covers most OECD countries; ~100-centered, monthly)
+       b. European Commission Economic Sentiment Indicator (ESI) for EU countries (~100-centered)
+       c. Ipsos Global Consumer Confidence Index (covers many G20 + emerging markets)
+       d. Conference Board Global Consumer Confidence Index
+       e. National statistical office indicator (INDEC for AR, CBS for IL, TÜİK for TR, etc)
+   - In cci_source, state which source you used (e.g. "OECD CCI", "EU ESI", "Ipsos", "INDEC")
+   - If genuinely no value is findable, set cci_now and cci_year_ago to null.
+     Don't invent. Stick to authoritative indices only.
+4. Most important political news of the past 7 days.
 
 ═══════════════════════════════════════════════════════════════════
 SPREADING REQUIREMENT
 ═══════════════════════════════════════════════════════════════════
-Use the full circle. Differentiate leaders within phases. Albanese with
-no far-right threat is very different from Sánchez actively fighting
-Vox — both Phase I but at very different angles.
-
-═══════════════════════════════════════════════════════════════════
-RESEARCH
-═══════════════════════════════════════════════════════════════════
-Web searches: current polling (30-day avg), 3-months-ago polling,
-past-7-days news.
+Use the full circle. Differentiate within phases. Don't cluster everyone
+at 75-85°. Match the angle to the leader's actual position.
 
 ═══════════════════════════════════════════════════════════════════
 OUTPUT — CRITICAL
 ═══════════════════════════════════════════════════════════════════
-End your response with EXACTLY ONE LINE of JSON. No markdown fences.
-Verify phase matches angle range.
+End your response with EXACTLY ONE LINE of valid JSON, no markdown fences.
+Verify: phase matches angle range. Verify: polling fields are filled
+appropriately for the system type.
 
-Schema:
-{"angle": 105, "doom_score": 60, "phase": 2, "coalition_pct_now": 23.0, "coalition_pct_3mo_ago": 26.0, "far_right_pct_now": 30.5, "far_right_pct_3mo_ago": 27.8, "approval_now": null, "approval_3mo_ago": null, "analysis": "60-80 words referencing a specific recent news event.", "sources": ["https://url1", "https://url2"]}
+Schema (parliamentary):
+{"angle": 105, "doom_score": 60, "phase": 2, "coalition_pct_now": 23.0, "coalition_pct_last_election": 38.5, "far_right_pct_now": 30.5, "far_right_pct_last_election": 25.0, "last_election_year": 2024, "approval_now": null, "approval_at_inauguration": null, "cci_now": 96.5, "cci_year_ago": 99.2, "cci_source": "OECD CCI", "analysis": "60-80 words referencing recent news.", "sources": ["https://url1", "https://url2"]}
+
+Schema (presidential):
+{"angle": 215, "doom_score": 78, "phase": 3, "coalition_pct_now": null, "coalition_pct_last_election": null, "far_right_pct_now": null, "far_right_pct_last_election": null, "last_election_year": null, "approval_now": 37.0, "approval_at_inauguration": 49.0, "cci_now": 96.5, "cci_year_ago": 102.1, "cci_source": "OECD CCI", "analysis": "60-80 words referencing recent news.", "sources": ["https://url1", "https://url2"]}
 
 Rules:
-  - phase ∈ {1,2,3,4}; angle must be in that phase's range
-  - parliamentary: coalition_pct_* and far_right_pct_* filled; approval_* = null
-  - presidential: approval_* filled; coalition_pct_* and far_right_pct_* = null
-  - null for unknown values (do not invent)
-  - analysis: 60-80 words exact
-  - sources: 2-4 URLs"""
+  - phase ∈ {1,2,3,4}; angle in correct range
+  - For parliamentary: fill coalition_pct_* and far_right_pct_*, plus last_election_year. approval fields = null.
+  - For presidential: fill approval fields. coalition/far_right fields = null.
+  - cci_now and cci_year_ago: fill if you can find them via one of the
+    priority sources above. null if nothing authoritative.
+  - cci_source: short name matching the source priority list ("OECD CCI",
+    "EU ESI", "Ipsos", "Conference Board", "INDEC", "TÜİK", "CBS", etc).
+    null if no value.
+  - analysis: 60-80 words exact, reference a specific recent event
+  - sources: 2-4 most important URLs"""
 
 
 def build_user_prompt(leader_data: dict) -> str:
@@ -193,16 +180,35 @@ def build_user_prompt(leader_data: dict) -> str:
         parts.append(f"Coalition parties: {', '.join(coalition) if coalition else '(single-party government)'}")
         parts.append(f"Far-right party to track: {far_right or '(no distinct far-right opposition)'}")
     else:
-        parts.append("(Presidential system — look for approval rating, not coalition polling)")
+        parts.append("(Presidential system — look for approval rating)")
 
     parts.append("")
-    parts.append("Macro context (most recent year):")
-    parts.append(f"  GDP growth: {m.get('gdp_growth_yoy_pct')}%")
-    parts.append(f"  Inflation: {m.get('inflation_yoy_pct')}%")
+    parts.append("Macro context (latest year vs previous year, World Bank):")
+    infl_now = m.get("inflation_yoy_pct")
+    infl_prev = m.get("inflation_prev_year_pct")
+    if infl_now is not None and infl_prev is not None:
+        infl_delta = infl_now - infl_prev
+        parts.append(f"  Inflation YoY: {infl_now}% (vs {infl_prev}% a year ago, delta {infl_delta:+.1f}pt)")
+    else:
+        parts.append(f"  Inflation YoY: {infl_now}%")
+
+    gdp_now = m.get("gdp_growth_yoy_pct")
+    gdp_prev = m.get("gdp_growth_prev_year_pct")
+    if gdp_now is not None and gdp_prev is not None:
+        parts.append(f"  GDP growth: {gdp_now}% (vs {gdp_prev}% a year ago)")
+    else:
+        parts.append(f"  GDP growth: {gdp_now}%")
+
     parts.append(f"  Unemployment: {m.get('unemployment_pct')}%")
+
     parts.append("")
     parts.append(f"Today is {datetime.now().strftime('%d %B %Y')}.")
-    parts.append("Search the web for polling, trends, and past-7-days news, then classify. CRITICAL: if the far-right party leads polls or polls above 20%, this is Phase II, not late Phase I. End with ONE LINE of JSON in the schema.")
+    parts.append(
+        "Research and classify. Required JSON fields: angle, doom_score, phase, "
+        "polling fields (coalition+far-right OR approval depending on system), "
+        "last_election_year (parliamentary only), cci_now + cci_year_ago + cci_source, "
+        "analysis (60-80 words), sources (2-4 URLs)."
+    )
 
     return "\n".join(parts)
 
@@ -236,7 +242,7 @@ def classify_leader(client: Anthropic, leader_data: dict, attempt: int = 1) -> d
             tools=[{
                 "type": "web_search_20250305",
                 "name": "web_search",
-                "max_uses": 4,
+                "max_uses": 6,
             }],
             messages=[{
                 "role": "user",
