@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Doom Loop Political Index</title>
 
-<meta name="description" content="A monthly assessment of where the leaders of the OECD's democracies stand on the eternal cycle of centrist failure and far-right destruction.">
+<meta name="description" content="A monthly assessment of where the leaders of the OECD's democracies stand on the cycle of centrist failure and far-right destruction.">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://doomloopindex.org/">
 <meta property="og:title" content="The Doom Loop Political Index">
-<meta property="og:description" content="A monthly assessment of where the leaders of the OECD's democracies stand on the eternal cycle of centrist failure and far-right destruction.">
+<meta property="og:description" content="A monthly assessment of where the leaders of the OECD's democracies stand on the cycle of centrist failure and far-right destruction.">
 <meta property="og:image" content="https://doomloopindex.org/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -18,7 +18,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Doom Loop Political Index">
-<meta name="twitter:description" content="A monthly assessment of where the leaders of the OECD's democracies stand on the eternal cycle of centrist failure and far-right destruction.">
+<meta name="twitter:description" content="A monthly assessment of where the leaders of the OECD's democracies stand on the cycle of centrist failure and far-right destruction.">
 <meta name="twitter:image" content="https://doomloopindex.org/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -660,10 +660,10 @@ body::before {
 
 <header class="masthead">
   <h1>The Doom Loop <em>Political</em> Index</h1>
-  <p class="deck">A monthly assessment of where the leaders of the OECD's democracies stand on the eternal cycle of centrist failure and far-right destruction.</p>
+  <p class="deck">A monthly assessment of where the leaders of the OECD's democracies stand on the cycle of centrist failure and far-right destruction.</p>
   <div class="rules">
+    <span id="hero-last-update">Last update —</span>
     <span>Updated monthly</span>
-    <span>Tap a Leader</span>
   </div>
 </header>
 
@@ -1220,6 +1220,11 @@ function renderMasthead(latest, leaders) {
 
   document.getElementById('dateline').textContent = dateline;
   document.getElementById('footer-timestamp').textContent = `Last update: ${ts.toISOString().slice(0, 10)}`;
+
+  // Hero subtitle: "Last update [date]"
+  const heroOpts = { day: 'numeric', month: 'short', year: 'numeric' };
+  const heroDate = ts.toLocaleDateString('en-GB', heroOpts);
+  document.getElementById('hero-last-update').textContent = `Last update ${heroDate}`;
 
   const avg = leaders.reduce((s, L) => s + (L.doomScore || 0), 0) / leaders.length;
   document.getElementById('aggregate-number').textContent = Math.round(avg);
