@@ -186,23 +186,6 @@ body::before {
   align-items: center;
 }
 
-.wheel-eyebrow {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--ink-mid);
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-.wheel-eyebrow::before, .wheel-eyebrow::after {
-  content: '';
-  width: 40px; height: 1px;
-  background: var(--ink-soft);
-}
-
 .wheel-stage {
   position: relative;
   width: 100%;
@@ -671,8 +654,6 @@ body::before {
 
 <div class="container" id="main-container" style="display:none;">
   <section class="wheel-section">
-    <div class="wheel-eyebrow"><span id="dateline">Loading…</span></div>
-
     <div class="wheel-stage">
       <!-- viewBox stays 800x800; pins can extend to ~400 radius -->
       <svg class="wheel-svg" viewBox="-60 -60 920 920" xmlns="http://www.w3.org/2000/svg">
@@ -1215,10 +1196,7 @@ function renderSources(sources) {
 
 function renderMasthead(latest, leaders) {
   const ts = new Date(latest.run_timestamp);
-  const opts = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
-  const dateline = ts.toLocaleDateString('en-GB', opts);
 
-  document.getElementById('dateline').textContent = dateline;
   document.getElementById('footer-timestamp').textContent = `Last update: ${ts.toISOString().slice(0, 10)}`;
 
   // Hero subtitle: "Last update [date]"
