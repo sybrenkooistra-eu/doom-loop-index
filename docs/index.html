@@ -636,6 +636,16 @@ body::before {
   border-top: 1px solid var(--ink-soft);
 }
 .colophon span { color: var(--oxblood); }
+.colophon a {
+  color: var(--ink-mid);
+  text-decoration: none;
+  border-bottom: 1px solid var(--ink-soft);
+  transition: color 0.2s, border-color 0.2s;
+}
+.colophon a:hover {
+  color: var(--oxblood);
+  border-bottom-color: var(--oxblood);
+}
 
 </style>
 </head>
@@ -775,7 +785,7 @@ body::before {
   <div class="footer-section">
     <h3>Methodology</h3>
     <div class="methodology">
-      Each Monday, an automated pipeline gathers tenure data and macroeconomic indicators for every tracked leader, then asks Claude (with web search enabled) to verify current polling, review the past seven days of news, and place the leader on the doom-loop circle. The angle on the circle reflects where the leader sits in the four-phase cycle. The doom score is normalized per phase so that a higher score consistently means "deeper into the doom loop" — a leader in Phase III will always score higher than a comparable one in Phase I. Both are produced by a language model and should be read as commentary, not as data in a scientific sense.
+      Each month, an automated pipeline gathers tenure data and macroeconomic indicators for every tracked leader, then asks Claude (with web search enabled) to verify current polling, review the past month of news, and place the leader on the doom-loop circle. The angle on the circle reflects where the leader sits in the four-phase cycle. The doom score is normalized per phase so that a higher score consistently means "deeper into the doom loop" — a leader in Phase III will always score higher than a comparable one in Phase I. Both are produced by a language model and should be read as commentary, not as data in a scientific sense.
     </div>
   </div>
 
@@ -785,7 +795,7 @@ body::before {
   </div>
 
   <div class="colophon">
-    The Doom Loop Political Index <span>◆</span> Open Source <span>◆</span> Updated monthly <span>◆</span> <span id="footer-timestamp"></span>
+    Made by <a href="https://www.linkedin.com/in/sybrenkooistra/" target="_blank" rel="noopener">Sybren Kooistra</a> <span>◆</span> <a href="https://bsky.app/profile/sybren.bsky.social" target="_blank" rel="noopener">Bluesky</a> <span>◆</span> Open Source <span>◆</span> Updated monthly <span>◆</span> <span id="footer-timestamp"></span>
   </div>
 </footer>
 
