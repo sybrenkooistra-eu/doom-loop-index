@@ -1,6 +1,6 @@
 {
-  "run_timestamp": "2026-06-01T13:46:41.529406+00:00",
-  "week_label": "2026-W23",
+  "run_timestamp": "2026-07-01T11:30:46.301179+00:00",
+  "week_label": "2026-W27",
   "model": "claude-sonnet-4-5",
   "leaders": {
     "starmer": {
@@ -16,39 +16,39 @@
       "far_right_party": "Reform UK",
       "tenure": {
         "took_office": "2024-07-05",
-        "days_in_office": 696,
-        "years_in_office": 1.91
+        "days_in_office": 726,
+        "years_in_office": 1.99
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.13,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 0.27,
-        "inflation_yoy_pct": 3.27,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 6.79,
-        "unemployment_pct": 4.75,
+        "gdp_growth_yoy_pct": 1.39,
+        "gdp_growth_data_year": 2025,
+        "gdp_growth_prev_year_pct": 1.08,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
         "data_year": 2025
       },
       "classification": {
-        "angle": 105,
-        "doom_score": 72,
+        "angle": 112,
+        "doom_score": 78,
         "phase": 2,
-        "coalition_pct_now": 18.7,
+        "coalition_pct_now": 19.5,
         "coalition_pct_last_election": 33.7,
-        "far_right_pct_now": 26.9,
+        "far_right_pct_now": 26.0,
         "far_right_pct_last_election": 14.3,
         "last_election_year": 2024,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": 99.62,
-        "cci_year_ago": 98.93,
+        "cci_now": 97.9,
+        "cci_year_ago": 98.8,
         "cci_source": "OECD CCI",
-        "analysis": "Labour collapsed from 33.7% (2024 election) to 18.7% in polling, overtaken by Reform UK at 26.9%. Historic May 2026 local election losses triggered internal party calls for Starmer's resignation. Economic malaise and far-right surge define a government in crisis barely two years into office.",
+        "analysis": "Starmer resigned June 22 after catastrophic May local elections saw Labour lose 1,500 councillors and 35 councils. Reform UK now leads polls at 26%, nearly double their 2024 result, while Labour collapsed from 34% to under 20%. Andy Burnham expected to succeed as PM. Party in crisis mode.",
         "sources": [
-          "https://www.pollcheck.co.uk/gb-polls",
-          "https://yougov.com/en-gb/articles/54701-voting-intention-4-5-may-2026-ref-25-lab-18-con-17-grn-15-ld-14",
-          "https://www.nbcnews.com/world/united-kingdom/starmer-labour-reform-farage-uk-election-rcna344013",
-          "https://www.statista.com/statistics/623579/consumer-confidence-in-the-uk/"
+          "https://yougov.com/en-gb/articles/55019-voting-intention-21-22-june-2026-ref-25-con-20-lab-18-grn-15-ld-14",
+          "https://edition.cnn.com/2026/06/22/world/live-news/keir-starmer-uk-pm",
+          "https://www.statista.com/statistics/623579/consumer-confidence-in-the-uk/",
+          "https://en.wikipedia.org/wiki/2026_Labour_Party_leadership_crisis"
         ]
       }
     },
@@ -66,39 +66,39 @@
       "far_right_party": "AfD",
       "tenure": {
         "took_office": "2025-05-06",
-        "days_in_office": 391,
-        "years_in_office": 1.07
+        "days_in_office": 421,
+        "years_in_office": 1.15
       },
       "macro": {
-        "gdp_growth_yoy_pct": -0.5,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -0.87,
-        "inflation_yoy_pct": 2.26,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 5.95,
-        "unemployment_pct": 3.71,
+        "gdp_growth_yoy_pct": 0.24,
+        "gdp_growth_data_year": 2025,
+        "gdp_growth_prev_year_pct": -0.5,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
         "data_year": 2025
       },
       "classification": {
-        "angle": 125,
+        "angle": 135,
         "doom_score": 72,
         "phase": 2,
-        "coalition_pct_now": 35.7,
+        "coalition_pct_now": 34.6,
         "coalition_pct_last_election": 44.9,
-        "far_right_pct_now": 27.5,
+        "far_right_pct_now": 28.0,
         "far_right_pct_last_election": 20.8,
         "last_election_year": 2025,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": 98.2,
-        "cci_year_ago": 99.1,
-        "cci_source": "OECD CCI",
-        "analysis": "Merz government faces historic collapse just 13 months in. AfD overtakes coalition in polls for first time. Chancellor's 15% approval is lowest ever recorded. Consumer confidence plunged in May amid energy crisis fears and Iran conflict spillover. Coalition infighting mirrors previous government failures. Five state elections in 2026 threaten further AfD gains, especially in eastern states where party polls near 40%.",
+        "cci_now": -29.2,
+        "cci_year_ago": -24.8,
+        "cci_source": "GfK Consumer Climate",
+        "analysis": "Merz's grand coalition is collapsing after just over a year. AfD now leads all polls at 28%, while the CDU/CSU-SPD coalition has plummeted to 34.6% from 44.9% at election. With 71% disapproval and only 15% satisfaction, Merz faces internal disputes over key policies. Consumer confidence remains deeply negative amid economic stagnation and energy concerns.",
         "sources": [
           "https://politpro.eu/en/germany",
-          "https://www.irishtimes.com/world/europe/2026/05/05/merzs-first-year-germanys-impulsive-chancellor-sees-poll-ratings-slump-to-record-low/",
+          "https://www.statista.com/statistics/1257178/voting-intention-in-germany/",
           "https://tradingeconomics.com/germany/consumer-confidence",
-          "https://en.wikipedia.org/wiki/2025_German_federal_election"
+          "https://en.wikipedia.org/wiki/Friedrich_Merz"
         ]
       }
     },
@@ -113,22 +113,22 @@
       "far_right_party": "National Rally",
       "tenure": {
         "took_office": "2017-05-14",
-        "days_in_office": 3305,
-        "years_in_office": 9.05
+        "days_in_office": 3335,
+        "years_in_office": 9.13
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.19,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 1.44,
-        "inflation_yoy_pct": 2.0,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 4.88,
-        "unemployment_pct": 7.54,
+        "gdp_growth_yoy_pct": 0.84,
+        "gdp_growth_data_year": 2025,
+        "gdp_growth_prev_year_pct": 1.19,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
         "data_year": 2025
       },
       "classification": {
-        "angle": 140,
-        "doom_score": 75,
+        "angle": 130,
+        "doom_score": 72,
         "phase": 2,
         "coalition_pct_now": null,
         "coalition_pct_last_election": null,
@@ -137,15 +137,15 @@
         "last_election_year": null,
         "approval_now": 18.0,
         "approval_at_inauguration": 62.0,
-        "cci_now": 82.0,
-        "cci_year_ago": 90.0,
-        "cci_source": "INSEE",
-        "analysis": "Macron faces catastrophic collapse with record-low 18% approval. Rassemblement National dominates at 35% as cordon sanitaire crumbles. May Day saw massive protests against austerity while PM Lecornu barely survived no-confidence votes. Consumer confidence hit three-year low amid Iran war fallout. Far-right positioned to win 2027 presidency as political establishment disintegrates.",
+        "cci_now": 84.0,
+        "cci_year_ago": 89.0,
+        "cci_source": "INSEE France",
+        "analysis": "Macron's approval hit historic low of 18% in April 2026 amid rising unemployment (8.1%, highest in 5 years) and political instability. Far-right RN dominates 2027 election polling at 31-37%, more than double any centrist alternative. Budget passed in February only after four-month deadlock and failed no-confidence votes, exposing government fragility.",
         "sources": [
+          "https://caliber.az/en/post/french-president-approval-rating-hits-record-low",
           "https://www.statista.com/statistics/1456852/world-leader-approval-ratings/",
-          "https://politpro.eu/en/france",
-          "https://www.briefs.co/news/french-consumer-confidence-just-hit-a-three-year-low/",
-          "https://www.ispionline.it/en/publication/country-to-watch-in-2026-france-226556"
+          "https://www.hungarianconservative.com/articles/current/jordan-bardella-marine-le-pen-french-presidential-election-2027-poll-france/",
+          "https://politpro.eu/en/france"
         ]
       }
     },
@@ -163,39 +163,39 @@
       "far_right_party": "Vox",
       "tenure": {
         "took_office": "2018-06-02",
-        "days_in_office": 2921,
-        "years_in_office": 8.0
+        "days_in_office": 2951,
+        "years_in_office": 8.08
       },
       "macro": {
-        "gdp_growth_yoy_pct": 3.46,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 2.46,
-        "inflation_yoy_pct": 2.77,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 3.53,
-        "unemployment_pct": 10.38,
+        "gdp_growth_yoy_pct": 2.82,
+        "gdp_growth_data_year": 2025,
+        "gdp_growth_prev_year_pct": 3.46,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
         "data_year": 2025
       },
       "classification": {
-        "angle": 78,
-        "doom_score": 72,
+        "angle": 85,
+        "doom_score": 75,
         "phase": 1,
-        "coalition_pct_now": 34.7,
+        "coalition_pct_now": 39.0,
         "coalition_pct_last_election": 44.3,
         "far_right_pct_now": 17.6,
         "far_right_pct_last_election": 12.4,
         "last_election_year": 2023,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": 46.6,
-        "cci_year_ago": 50.1,
-        "cci_source": "Ipsos",
-        "analysis": "Sánchez faces cascading corruption scandals: his wife indicted for influence peddling, brother on trial, Socialist Party headquarters raided May 2026. Thousands marched demanding resignation May 23. Coalition polling 10 points below 2023 election. Former PM Zapatero under investigation. Opposition PP leads comfortably while Vox consolidates third position at 17.6%.",
+        "cci_now": 49.7,
+        "cci_year_ago": 46.6,
+        "cci_source": "Ipsos PCSI",
+        "analysis": "Sánchez governs precariously after Junts withdrew support in October 2025, though opposition cannot muster no-confidence motion. May 2026 Andalusian election delivered PSOE's worst-ever regional result. Multiple corruption scandals involving his wife, brother, and senior party officials compound political pressure. Vox rising but PP remains leading opposition force.",
         "sources": [
           "https://politpro.eu/en/spain",
-          "https://www.aljazeera.com/news/2026/5/23/thousands-march-in-madrid-demanding-spanish-pm-quit-over-graft-allegations",
-          "https://www.euronews.com/my-europe/2026/05/30/psoes-legal-storm-nine-cases-closing-in-on-spanish-pm-pedro-sanchez",
-          "https://communicateonline.me/news/global-consumer-confidence-holds-steady-across-30-countries/"
+          "https://en.wikipedia.org/wiki/Next_Spanish_general_election",
+          "https://www.ipsos.com/en/ipsos-consumer-confidence-june-2026",
+          "https://en.wikipedia.org/wiki/2026_Andalusian_regional_election"
         ]
       }
     },
@@ -214,39 +214,39 @@
       "far_right_party": "Danish People's Party",
       "tenure": {
         "took_office": "2019-06-27",
-        "days_in_office": 2531,
-        "years_in_office": 6.93
+        "days_in_office": 2561,
+        "years_in_office": 7.01
       },
       "macro": {
-        "gdp_growth_yoy_pct": 3.48,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 0.6,
-        "inflation_yoy_pct": 1.37,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 3.31,
-        "unemployment_pct": 5.53,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 75,
-        "doom_score": 65,
-        "phase": 1,
-        "coalition_pct_now": 38.0,
-        "coalition_pct_last_election": 50.7,
+        "angle": 108,
+        "doom_score": 68,
+        "phase": 2,
+        "coalition_pct_now": 45.9,
+        "coalition_pct_last_election": 53.3,
         "far_right_pct_now": 11.1,
-        "far_right_pct_last_election": 2.6,
+        "far_right_pct_last_election": 2.8,
         "last_election_year": 2022,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": -18.6,
-        "cci_year_ago": -13.1,
+        "cci_now": -14.0,
+        "cci_year_ago": -18.6,
         "cci_source": "Statistics Denmark",
-        "analysis": "Following Denmark's March 2026 election delivering the Social Democrats their worst result since 1903, Frederiksen remains caretaker PM after two months of failed coalition talks. Centre-right negotiations collapsed in May, returning mandate to Frederiksen. Consumer confidence plunged to -18.6 in April while the far-right Danish People's Party surged from 2.6% to 11.1%, quadrupling support amid fragmentation across twelve parliamentary parties.",
+        "analysis": "After March 2026's historic election defeat—Social Democrats' worst result since 1903—Frederiksen spent over two months in caretaker limbo before forming a fragile minority government on June 1. The far-right Danish People's Party has tripled its vote share and now leads the blue bloc at 11%, while the new coalition commands just 46% versus 53% at the 2022 election. Immediate challenge: navigating Trump's Greenland crisis.",
         "sources": [
           "https://politpro.eu/en/denmark",
           "https://en.wikipedia.org/wiki/2026_Danish_general_election",
           "https://tradingeconomics.com/denmark/consumer-confidence",
-          "https://www.usnews.com/news/world/articles/2026-05-23/denmarks-frederiksen-gets-new-chance-to-form-government-after-centre-right-talks-fail"
+          "https://www.aljazeera.com/news/2026/6/1/denmark-gets-new-government-as-greenland-crisis-persists"
         ]
       }
     },
@@ -263,39 +263,39 @@
       "far_right_party": "One Nation",
       "tenure": {
         "took_office": "2022-05-23",
-        "days_in_office": 1470,
-        "years_in_office": 4.02
+        "days_in_office": 1500,
+        "years_in_office": 4.11
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.37,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 3.58,
-        "inflation_yoy_pct": 3.17,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 5.6,
-        "unemployment_pct": 4.09,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 110,
-        "doom_score": 68,
+        "angle": 115,
+        "doom_score": 72,
         "phase": 2,
-        "coalition_pct_now": 28.0,
+        "coalition_pct_now": 27.5,
         "coalition_pct_last_election": 34.7,
-        "far_right_pct_now": 30.0,
+        "far_right_pct_now": 29.5,
         "far_right_pct_last_election": 6.2,
         "last_election_year": 2025,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": 83.0,
-        "cci_year_ago": 87.5,
-        "cci_source": "Westpac Consumer Sentiment",
-        "analysis": "One Nation overtook Labor in May 2026 polling for the first time, reaching 28-31% after the government's unpopular property tax budget. Albanese holds a net -20% approval rating. Labor won a landslide reelection just one year ago with 34.7%, but has collapsed to 26-28% as One Nation surges from 6.2%.",
+        "cci_now": 80.6,
+        "cci_year_ago": 83.0,
+        "cci_source": "Westpac-Melbourne Institute",
+        "analysis": "One Nation's surge to 29-30% has overtaken Labor at 27% in June polling, a dramatic reversal from the May 2025 election when Labor won 34.7% to One Nation's 6.2%. The government's May budget flopped badly, and One Nation's 'Fire The Liar' fundraiser raised $4 million targeting Albanese. Despite a landmark $2.5 billion defence export to Canada, consumer confidence remains stuck near 80, well below the neutral 100 level.",
         "sources": [
-          "https://www.usnews.com/news/world/articles/2026-05-31/australias-far-right-party-leads-in-national-poll-for-first-time",
-          "https://demosau.com/news/one-nation-leads-alp-and-coalition-as-voters-sour-on-budget/",
-          "https://www.westpac.com.au/about-westpac/media/reports/australian-economic-reports/",
-          "https://theconversation.com/labor-wins-surprise-landslide-returned-with-a-thumping-majority-255518"
+          "https://www.pollbludger.net/",
+          "https://demosau.com/news/one-nation-lead-grows-as-l-np-primary-sinks-to-18/",
+          "https://tradingeconomics.com/australia/consumer-confidence",
+          "https://www.internationalaffairs.org.au/australianoutlook/26-june-2026-the-week-in-australian-foreign-affairs/"
         ]
       }
     },
@@ -313,39 +313,39 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2025-01-23",
-        "days_in_office": 494,
-        "years_in_office": 1.35
+        "days_in_office": 524,
+        "years_in_office": 1.43
       },
       "macro": {
-        "gdp_growth_yoy_pct": 2.6,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -2.54,
-        "inflation_yoy_pct": 2.11,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 6.3,
-        "unemployment_pct": 4.63,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 77,
-        "doom_score": 55,
+        "angle": 62,
+        "doom_score": 65,
         "phase": 1,
-        "coalition_pct_now": 33.7,
-        "coalition_pct_last_election": 42.7,
-        "far_right_pct_now": null,
-        "far_right_pct_last_election": null,
+        "coalition_pct_now": 36.0,
+        "coalition_pct_last_election": 40.5,
+        "far_right_pct_now": 0.0,
+        "far_right_pct_last_election": 0.0,
         "last_election_year": 2024,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": 59.4,
-        "cci_year_ago": 60.6,
+        "cci_now": 62.2,
+        "cci_year_ago": 65.2,
         "cci_source": "Credit Union Consumer Sentiment Index",
-        "analysis": "Martin's coalition has dropped 9 points since the 2024 election, trailing Sinn Féin by 10+ points. Fuel protests in April sparked internal party criticism and questions about his leadership. Consumer confidence remains depressed despite slight May recovery. Housing crisis and cost-of-living pressures dominate discourse as Ireland prepares for EU Council presidency.",
+        "analysis": "Martin faces mounting internal pressure to resign after Ireland's EU presidency ends, with a majority of Fianna Fáil parliamentarians favoring leadership change. The coalition was punished over an energy crisis in May, with consumer confidence declining from year-ago levels. Recent by-election defeats for Sinn Féin have paradoxically complicated coalition calculations as Social Democrats emerge as potential kingmakers. Housing crisis remains politically charged.",
         "sources": [
-          "https://politpro.eu/en/ireland",
-          "https://www.rte.ie/news/politics/2026/0502/1571477-opinion-poll-ireland/",
-          "https://www.irishtimes.com/business/2026/05/22/consumer-sentiment-improves-but-public-still-nervous-about-household-finances/",
-          "https://www.statista.com/statistics/1546035/irish-election-vote-share/"
+          "https://www.irishexaminer.com/news/politics/arid-41866611.html",
+          "https://en.wikipedia.org/wiki/Next_Irish_general_election",
+          "https://tradingeconomics.com/ireland/consumer-confidence",
+          "https://www.gov.uk/government/news/pm-call-with-taoiseach-micheal-martin-of-ireland-12-june-2026"
         ]
       }
     },
@@ -365,39 +365,39 @@
       "far_right_party": "PVV",
       "tenure": {
         "took_office": "2026-02-23",
-        "days_in_office": 98,
-        "years_in_office": 0.27
+        "days_in_office": 128,
+        "years_in_office": 0.35
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.08,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -0.6,
-        "inflation_yoy_pct": 3.35,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 3.84,
-        "unemployment_pct": 3.87,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 32,
+        "angle": 65,
         "doom_score": 52,
         "phase": 1,
-        "coalition_pct_now": 52.0,
-        "coalition_pct_last_election": 57.3,
-        "far_right_pct_now": 13.0,
-        "far_right_pct_last_election": 17.3,
+        "coalition_pct_now": 36.2,
+        "coalition_pct_last_election": 42.7,
+        "far_right_pct_now": 13.5,
+        "far_right_pct_last_election": 16.7,
         "last_election_year": 2025,
         "approval_now": null,
         "approval_at_inauguration": null,
         "cci_now": -46.0,
-        "cci_year_ago": -22.0,
-        "cci_source": "CBS Netherlands (balance measure)",
-        "analysis": "Jetten's three-month-old centrist coalition faces headwinds from plummeting consumer confidence and unpopular austerity (pension age hikes, benefit cuts), yet D66 gained seats in March municipal elections. PVV has collapsed from 24.7% (2023) to 13% now, firmly contained. Coalition polls 52% versus 57% at election—modest erosion but stable governance. Far-right remains fragmented and excluded.",
+        "cci_year_ago": -10.0,
+        "cci_source": "CBS Netherlands",
+        "analysis": "Jetten's minority coalition faces mounting pressure as consumer confidence plummets to -46, the weakest since January 2023. In April, the Senate rejected his asylum bill, prompting accusations of PVV sabotage. Coalition polling has dropped 6.5 points since the October election, though the fractured far-right remains contained at 13.5%. The housing crisis and healthcare cuts test his centrist mandate.",
         "sources": [
-          "https://politpro.eu/en/netherlands/opinion-polls/2026",
           "https://tradingeconomics.com/netherlands/consumer-confidence",
-          "https://en.wikipedia.org/wiki/2025%E2%80%932026_Dutch_cabinet_formation",
-          "https://dutchreview.com/news/2026-dutch-municipal-election-results/"
+          "https://www.dutchnews.nl/2026/04/jetten-promises-new-restrictions-on-asylum-in-two-weeks/",
+          "https://politpro.eu/en/netherlands/opinion-polls/2026",
+          "https://en.wikipedia.org/wiki/2025_Dutch_general_election"
         ]
       }
     },
@@ -415,39 +415,39 @@
       "far_right_party": "Chega",
       "tenure": {
         "took_office": "2024-04-02",
-        "days_in_office": 790,
-        "years_in_office": 2.16
+        "days_in_office": 820,
+        "years_in_office": 2.25
       },
       "macro": {
-        "gdp_growth_yoy_pct": 2.14,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 3.1,
-        "inflation_yoy_pct": 2.42,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 4.31,
-        "unemployment_pct": 6.16,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 125,
-        "doom_score": 72,
+        "angle": 110,
+        "doom_score": 65,
         "phase": 2,
-        "coalition_pct_now": 25.3,
-        "coalition_pct_last_election": 31.8,
-        "far_right_pct_now": 21.6,
+        "coalition_pct_now": 23.7,
+        "coalition_pct_last_election": 32.0,
+        "far_right_pct_now": 22.5,
         "far_right_pct_last_election": 22.8,
         "last_election_year": 2025,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": -27.1,
-        "cci_year_ago": -18.2,
+        "cci_now": -25.9,
+        "cci_year_ago": -16.0,
         "cci_source": "EU ESI",
-        "analysis": "Montenegro's minority coalition has plunged from 32% to 25% in polls while Chega consolidates at 22% as second force. Government backed Chega-supported migration crackdown expelling 18,000 people and pursues constitutional reform with far-right votes. Storm Kristin disaster response and Iran war fallout deepen crisis as consumer confidence hits two-year low and Socialist president enters cohabitation.",
+        "analysis": "Montenegro's minority government faces mounting pressure after a nationwide general strike paralyzed Portugal on June 3 over controversial labor reforms. Polling shows the coalition collapsing from 32% to 23.7%, now trailing the opposition PS. The government increasingly relies on far-right Chega's support for key legislation, including transgender restrictions approved in March, marking deepening political fragmentation.",
         "sources": [
           "https://politpro.eu/en/portugal",
-          "https://en.wikipedia.org/wiki/Next_Portuguese_legislative_election",
-          "https://www.fxstreet.com/news/portugal-consumer-confidence-declined-to-271-in-may-from-previous-239-202605280830",
-          "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages/portugal/economic-forecast-portugal_en"
+          "https://en.wikipedia.org/wiki/2025_Portuguese_legislative_election",
+          "https://www.fx.co/en/forex-news/3042882",
+          "https://en.wikipedia.org/wiki/Next_Portuguese_legislative_election"
         ]
       }
     },
@@ -464,39 +464,39 @@
       "far_right_party": "Progress Party",
       "tenure": {
         "took_office": "2021-10-14",
-        "days_in_office": 1691,
-        "years_in_office": 4.63
+        "days_in_office": 1721,
+        "years_in_office": 4.71
       },
       "macro": {
-        "gdp_growth_yoy_pct": 2.1,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 0.07,
-        "inflation_yoy_pct": 3.15,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 5.52,
-        "unemployment_pct": 4.64,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 125,
-        "doom_score": 68,
+        "angle": 115,
+        "doom_score": 65,
         "phase": 2,
-        "coalition_pct_now": 22.0,
+        "coalition_pct_now": 21.7,
         "coalition_pct_last_election": 28.0,
-        "far_right_pct_now": 30.0,
+        "far_right_pct_now": 30.7,
         "far_right_pct_last_election": 24.0,
         "last_election_year": 2025,
         "approval_now": null,
         "approval_at_inauguration": null,
         "cci_now": -3.7,
-        "cci_year_ago": -7.5,
-        "cci_source": "Finance Norway/TNS Gallup CCI",
-        "analysis": "Støre's Labour government faces a dramatic polling collapse just eight months after re-election victory. Progress Party now leads by 8 points, reversing September's result. Despite improving consumer confidence and securing the landmark Narvik defense pact with France on May 27, Labour has shed 6 points while the far-right surges. Economic improvements haven't translated to political support.",
+        "cci_year_ago": -16.4,
+        "cci_source": "Finance Norway/TNS Gallup",
+        "analysis": "Støre faces severe polling erosion just ten months after re-election. Progress Party now leads at 31% versus Labour's 22%, a dramatic reversal. Government signed major defence pact with France including nuclear deterrence cooperation, while tightening immigration policy and providing substantial military aid to Ukraine amid rising far-right consolidation.",
         "sources": [
           "https://politpro.eu/en/norway",
-          "https://en.wikipedia.org/wiki/2025_Norwegian_parliamentary_election",
+          "https://www.estimite.com/post/norwegian-poll-tracker/",
           "https://tradingeconomics.com/norway/consumer-confidence",
-          "https://meta-defense.fr/en/2026/05/28/norvege-narvik-dissuasion-francaise/"
+          "https://www.regjeringen.no/en/whatsnew/news-and-press-releases/id2006120/"
         ]
       }
     },
@@ -514,39 +514,39 @@
       "far_right_party": "Sanseito",
       "tenure": {
         "took_office": "2025-10-21",
-        "days_in_office": 223,
-        "years_in_office": 0.61
+        "days_in_office": 253,
+        "years_in_office": 0.69
       },
       "macro": {
-        "gdp_growth_yoy_pct": 0.1,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 1.48,
-        "inflation_yoy_pct": 2.74,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 3.27,
-        "unemployment_pct": 2.45,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 185,
-        "doom_score": 35,
-        "phase": 3,
-        "coalition_pct_now": 67.0,
+        "angle": 40,
+        "doom_score": 55,
+        "phase": 1,
+        "coalition_pct_now": 75.7,
         "coalition_pct_last_election": 46.2,
         "far_right_pct_now": 3.2,
         "far_right_pct_last_election": 0.6,
-        "last_election_year": 2024,
+        "last_election_year": 2026,
         "approval_now": null,
         "approval_at_inauguration": null,
         "cci_now": 33.6,
-        "cci_year_ago": 37.9,
-        "cci_source": "Cabinet Office Japan CCI",
-        "analysis": "Takaichi's far-right-aligned LDP government secured historic supermajority in February, absorbing Sanseito's anti-immigrant agenda. Recent smear campaign scandal and persistent local election defeats reveal authoritarian drift beneath high national approval. Consumer confidence declining from February peak as economic anxieties mount.",
+        "cci_year_ago": 37.0,
+        "cci_source": "Cabinet Office Japan",
+        "analysis": "Takaichi's historic February landslide delivered a two-thirds supermajority, but her honeymoon is fading fast. Cabinet approval has plummeted from 69% in February to 51% by late June, hammered by a defamatory video scandal and parliamentary stonewalling allegations. Party support languishes in the 20s despite the coalition's dominance. Far-right Sanseito quintupled its seats to 15 but remains marginal at 3%.",
         "sources": [
-          "https://www.bloomberg.com/graphics/2026-japan-election-results/",
-          "https://www.japantimes.co.jp/news/2026/05/21/japan/takaichi-cabinet-approval-may/",
-          "https://www.scmp.com/week-asia/people/article/3353289/japans-takaichi-backs-aide-over-smear-claims-against-ldp-rivals",
-          "https://www.rttnews.com/3656418/japan-consumer-confidence-rises-in-may.aspx"
+          "https://en.wikipedia.org/wiki/2026_Japanese_general_election",
+          "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Japanese_general_election",
+          "https://www.nippon.com/en/japan-data/h02703/",
+          "https://www.esri.cao.go.jp/en/stat/shouhi/shouhi-e.html"
         ]
       }
     },
@@ -565,39 +565,39 @@
       "far_right_party": "EKRE",
       "tenure": {
         "took_office": "2024-07-23",
-        "days_in_office": 678,
-        "years_in_office": 1.86
+        "days_in_office": 708,
+        "years_in_office": 1.94
       },
       "macro": {
-        "gdp_growth_yoy_pct": -0.09,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -2.74,
-        "inflation_yoy_pct": 3.52,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 9.16,
-        "unemployment_pct": 8.31,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 82,
-        "doom_score": 75,
+        "angle": 75,
+        "doom_score": 72,
         "phase": 1,
-        "coalition_pct_now": 14.1,
-        "coalition_pct_last_election": 44.5,
+        "coalition_pct_now": 27.9,
+        "coalition_pct_last_election": 53.8,
         "far_right_pct_now": 13.5,
         "far_right_pct_last_election": 16.1,
         "last_election_year": 2023,
         "approval_now": null,
         "approval_at_inauguration": null,
         "cci_now": -32.5,
-        "cci_year_ago": -26.0,
-        "cci_source": "EU ESI",
-        "analysis": "Michal's Reform-Eesti 200 coalition has collapsed to a record-low 14.1% from 44.5% at the 2023 election. Parliament approved a supplementary budget with deficit rising to 4.3% of GDP driven by defense spending. EKRE has slightly declined to 13.5% while conservative Isamaa leads opposition at 26.3%. Nuclear energy debate and cyberattack concerns dominate recent discourse.",
+        "cci_year_ago": -28.0,
+        "cci_source": "OECD CCI",
+        "analysis": "Michal's coalition has collapsed from 53.8% to 27.9% in polls since the 2023 election, with Reform down to 11.8%. Consumer confidence remains deeply negative at -32.5. Recent focus on Ukraine support and Nordic-Baltic cooperation. Coalition faces likely defeat to conservative Isamaa (26.3%) in 2027, though far-right EKRE remains contained at 13.5%.",
         "sources": [
           "https://politpro.eu/en/estonia",
-          "https://news.err.ee/1610031535/ratings-reform-eesti-200-coalition-rating-falls-to-all-time-low",
+          "https://en.wikipedia.org/wiki/2023_Estonian_parliamentary_election",
           "https://www.theglobaleconomy.com/Estonia/consumer_confidence_survey/",
-          "https://www.cnn.com/2026/05/21/business/video/estonia-russia-cyberattacks-michal-intv-052104pseg1-cnni-world-fast"
+          "https://monocle.com/affairs/kristen-michal-estonian-leader-at-the-sharp-edge-of-nato/"
         ]
       }
     },
@@ -616,39 +616,39 @@
       "far_right_party": "Sweden Democrats",
       "tenure": {
         "took_office": "2022-10-18",
-        "days_in_office": 1322,
-        "years_in_office": 3.62
+        "days_in_office": 1352,
+        "years_in_office": 3.7
       },
       "macro": {
-        "gdp_growth_yoy_pct": 0.82,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -0.2,
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
         "inflation_yoy_pct": null,
         "inflation_prev_year_pct": null,
         "inflation_data_year": null,
-        "unemployment_pct": 8.69,
-        "data_year": 2025
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 150,
+        "angle": 125,
         "doom_score": 72,
         "phase": 2,
-        "coalition_pct_now": 25.2,
-        "coalition_pct_last_election": 29.0,
-        "far_right_pct_now": 19.7,
+        "coalition_pct_now": 25.1,
+        "coalition_pct_last_election": 28.8,
+        "far_right_pct_now": 19.4,
         "far_right_pct_last_election": 20.5,
         "last_election_year": 2022,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": 91.5,
-        "cci_year_ago": 91.1,
-        "cci_source": "National Institute of Economic Research",
-        "analysis": "Coalition collapsed to 25% from 29% in 2022, losing parliamentary majority. Sweden Democrats negotiated March agreement for cabinet positions, ending cordon sanitaire. Consumer confidence hit lowest level since August 2025. Ukraine fighter jet deal announced late May as September election approaches with far-right poised to enter government directly.",
+        "cci_now": 96.5,
+        "cci_year_ago": 98.0,
+        "cci_source": "OECD CCI",
+        "analysis": "Kristersson's coalition trails badly at 43.8% ahead of September election, down from 50.4% in 2022. Sweden Democrats now dominate the right bloc at 19.4%, overtaking Moderates at 17.2%. March agreement promised SD cabinet posts if coalition wins. Senior Moderates reportedly want Kristersson replaced. Government making desperate last-minute tax cut promises to families.",
         "sources": [
           "https://politpro.eu/en/sweden",
           "https://en.wikipedia.org/wiki/2026_Swedish_general_election",
-          "https://tradingeconomics.com/sweden/consumer-confidence",
-          "https://www.government.se/"
+          "https://www.thelocal.se/20260627/was-this-a-leaving-party-for-swedish-prime-minister-ulf-kristersson/",
+          "https://tradingeconomics.com/sweden/consumer-confidence"
         ]
       }
     },
@@ -668,25 +668,25 @@
       "far_right_party": "Finns Party",
       "tenure": {
         "took_office": "2023-06-20",
-        "days_in_office": 1077,
-        "years_in_office": 2.95
+        "days_in_office": 1107,
+        "years_in_office": 3.03
       },
       "macro": {
-        "gdp_growth_yoy_pct": 0.42,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -0.94,
-        "inflation_yoy_pct": 1.57,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 6.25,
-        "unemployment_pct": 9.46,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 205,
+        "angle": 185,
         "doom_score": 72,
         "phase": 3,
-        "coalition_pct_now": 38.0,
-        "coalition_pct_last_election": 48.0,
+        "coalition_pct_now": 38.3,
+        "coalition_pct_last_election": 48.8,
         "far_right_pct_now": 13.6,
         "far_right_pct_last_election": 20.1,
         "last_election_year": 2023,
@@ -694,13 +694,13 @@
         "approval_at_inauguration": null,
         "cci_now": -8.7,
         "cci_year_ago": -6.5,
-        "cci_source": "Statistics Finland",
-        "analysis": "Orpo's coalition faces mounting pressure as support collapses to 38% from 48% at election, losing parliamentary majority. May drone scare exposed preparedness gaps, prompting emergency household safety guides. Consumer confidence hit -8.7, worst since February 2025, amid 9.5% unemployment and continued austerity. Finns Party polling halved to 13.6% as economic malaise deepens.",
+        "cci_source": "Statistics Finland CCI",
+        "analysis": "Orpo's coalition faces severe pressure with opposition filing no-confidence motion over poverty and youth unemployment hitting 28%. Government support has collapsed from 48.8% at election to just 38.3%, while SDP leads polls at 23.9%. Consumer confidence deteriorated to -8.7, lowest since early 2025. Finns Party remains in government despite losing a third of its 2023 support.",
         "sources": [
           "https://politpro.eu/en/finland",
           "https://tradingeconomics.com/finland/consumer-confidence",
-          "https://www.helsinkitimes.fi/finland/finland-news/politics/28872-orpo-finland-plans-household-guide-for-drone-threats.html",
-          "https://www.oecd.org/en/publications/oecd-economic-surveys-finland-2025_985d0555-en.html"
+          "https://www.helsinkitimes.fi/finland/finland-news/politics.html",
+          "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election"
         ]
       }
     },
@@ -717,39 +717,39 @@
       "far_right_party": "Greek Solution",
       "tenure": {
         "took_office": "2019-07-08",
-        "days_in_office": 2520,
-        "years_in_office": 6.9
+        "days_in_office": 2550,
+        "years_in_office": 6.98
       },
       "macro": {
-        "gdp_growth_yoy_pct": 2.09,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 2.14,
-        "inflation_yoy_pct": 2.74,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 3.46,
-        "unemployment_pct": 8.54,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 68,
-        "doom_score": 55,
+        "angle": 75,
+        "doom_score": 58,
         "phase": 1,
-        "coalition_pct_now": 29.1,
-        "coalition_pct_last_election": 40.55,
-        "far_right_pct_now": 5.6,
-        "far_right_pct_last_election": 4.45,
+        "coalition_pct_now": 29.7,
+        "coalition_pct_last_election": 40.6,
+        "far_right_pct_now": 7.5,
+        "far_right_pct_last_election": 4.6,
         "last_election_year": 2023,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": -47.0,
-        "cci_year_ago": -48.8,
+        "cci_now": -46.9,
+        "cci_year_ago": -42.7,
         "cci_source": "EU ESI",
-        "analysis": "Mitsotakis governs with majority but faces 11-point polling decline since 2023 amid Tempi rail disaster aftermath, OPEKEPE farm-subsidy scandal, and persistent inflation. Alexis Tsipras launched new ELAS party May 27, fragmenting opposition into political 'Babel'. Greek Solution remains marginal at 5.6%. New Democracy entered pre-election mode targeting 2027, banking on opposition disarray and stability narrative despite consumer confidence below historical average.",
+        "analysis": "Mitsotakis faces mounting pressure as New Democracy polling drops 11 points since 2023 while Greek Solution gains modestly. June consumer confidence hit -46.9, worst in EU. Despite EU praise for removing Greece from macroeconomic imbalance list, the OPEKEPE farm subsidy scandal damaged credibility. Opposition fragmentation with Tsipras launching new ELAS party creates political instability ahead of 2027 election.",
         "sources": [
-          "https://en.protothema.gr/2026/05/27/real-polls-new-democracy-up-three-points-to-29-1-tsipras-at-16-1-karystianou-at-13-1-pasok-falls-to-single-digits/",
-          "https://greekreporter.com/2026/05/27/mitsotakis-mocks-tsipras-new-elas-party-greece-political-babel/",
-          "https://tradingeconomics.com/greece/consumer-confidence",
-          "https://greekcitytimes.com/2026/05/23/new-democracy-pre-election-mode-greece"
+          "https://politpro.eu/en/greece",
+          "https://en.wikipedia.org/wiki/Next_Greek_parliamentary_election",
+          "https://www.tovima.com/finance/from-saving-to-surviving-greek-households-under-pressure/",
+          "https://greekreporter.com/2026/05/27/mitsotakis-mocks-tsipras-new-elas-party-greece-political-babel/"
         ]
       }
     },
@@ -768,39 +768,39 @@
       "far_right_party": "FPÖ",
       "tenure": {
         "took_office": "2025-03-03",
-        "days_in_office": 455,
-        "years_in_office": 1.25
+        "days_in_office": 485,
+        "years_in_office": 1.33
       },
       "macro": {
         "gdp_growth_yoy_pct": null,
         "gdp_growth_prev_year_pct": null,
         "gdp_growth_data_year": null,
-        "inflation_yoy_pct": 2.94,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 7.81,
-        "unemployment_pct": 5.58,
-        "data_year": 2025
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
         "angle": 130,
         "doom_score": 72,
         "phase": 2,
-        "coalition_pct_now": 45.7,
+        "coalition_pct_now": 45.8,
         "coalition_pct_last_election": 56.5,
-        "far_right_pct_now": 37.0,
-        "far_right_pct_last_election": 28.8,
+        "far_right_pct_now": 37.3,
+        "far_right_pct_last_election": 28.9,
         "last_election_year": 2024,
         "approval_now": null,
         "approval_at_inauguration": null,
         "cci_now": -16.0,
-        "cci_year_ago": -18.6,
+        "cci_year_ago": -18.0,
         "cci_source": "EU ESI",
-        "analysis": "Stocker's three-party coalition has collapsed from 56.5% at the 2024 election to just 45.7% now, with their majority on a knife-edge. FPÖ dominates at 37%, up from 28.8%. In late May, Stocker adopted hardline rhetoric on deportations and ECHR reinterpretation, mimicking far-right positions. The coalition passed EU migration laws over FPÖ opposition, but voter flight continues unabated.",
+        "analysis": "Stocker's three-party coalition faces severe internal divisions over EU directives, paralyzing legislation. FPÖ dominates polls at 37%, up 8 points since the election, while the coalition has collapsed to 46%, teetering on the edge of losing its majority. Budget disputes and coalition infighting define Austria's political landscape.",
         "sources": [
           "https://politpro.eu/en/austria",
           "https://en.wikipedia.org/wiki/2024_Austrian_legislative_election",
-          "https://voiceofvienna.org/austria-chancellor-calls-for-stronger-security-and-policy-shift/",
-          "https://tradingeconomics.com/austria/consumer-confidence"
+          "https://tradingeconomics.com/austria/consumer-confidence",
+          "https://en.wikipedia.org/wiki/Christian_Stocker"
         ]
       }
     },
@@ -821,39 +821,39 @@
       "far_right_party": "Vlaams Belang",
       "tenure": {
         "took_office": "2025-02-03",
-        "days_in_office": 483,
-        "years_in_office": 1.32
+        "days_in_office": 513,
+        "years_in_office": 1.4
       },
       "macro": {
         "gdp_growth_yoy_pct": null,
         "gdp_growth_prev_year_pct": null,
         "gdp_growth_data_year": null,
-        "inflation_yoy_pct": 3.14,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 4.05,
-        "unemployment_pct": 5.91,
-        "data_year": 2025
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 42,
-        "doom_score": 33,
+        "angle": 55,
+        "doom_score": 48,
         "phase": 1,
-        "coalition_pct_now": 57.3,
-        "coalition_pct_last_election": 49.83,
+        "coalition_pct_now": 66.7,
+        "coalition_pct_last_election": 67.0,
         "far_right_pct_now": 16.0,
-        "far_right_pct_last_election": 13.77,
+        "far_right_pct_last_election": 15.4,
         "last_election_year": 2024,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": 41.9,
-        "cci_year_ago": 45.5,
-        "cci_source": "Ipsos",
-        "analysis": "De Wever's Arizona coalition polls at 57.3%, up from 49.8% at election, maintaining comfortable majority. Vlaams Belang rises modestly to 16% but remains contained below coalition partners. Government enacted labor market reforms and austerity measures for defense spending. De Wever made headlines warning Europe against U.S. dependence at Davos and controversially suggesting normalizing Russia ties amid Iranian conflict.",
+        "cci_now": -7.0,
+        "cci_year_ago": -12.9,
+        "cci_source": "National Bank of Belgium",
+        "analysis": "De Wever's Arizona coalition maintains solid parliamentary support at 57.3% of seats despite implementing deeply unpopular austerity measures including VAT hikes and pension reforms. Consumer confidence has improved from -12.9 to -7 over the past year. Vlaams Belang remains excluded by cordon sanitaire despite polling at 16%, while national strikes signal rising discontent with spending cuts.",
         "sources": [
           "https://politpro.eu/en/belgium",
-          "https://communicateonline.me/news/global-consumer-confidence-holds-steady-across-30-countries/",
-          "https://en.wikipedia.org/wiki/Bart_De_Wever",
-          "https://data.ipu.org/parliament/BE/BE-LC01/election/BE-LC01-E20240609/"
+          "https://fr.tradingeconomics.com/belgium/consumer-confidence",
+          "https://www.brusselstimes.com/1951865/from-eu-critical-to-european-statesman-one-year-of-belgian-pm-bart-de-wever",
+          "https://en.wikipedia.org/wiki/2024_Belgian_federal_election"
         ]
       }
     },
@@ -872,39 +872,39 @@
       "far_right_party": "NZ First",
       "tenure": {
         "took_office": "2023-11-27",
-        "days_in_office": 917,
-        "years_in_office": 2.51
+        "days_in_office": 947,
+        "years_in_office": 2.59
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.29,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 1.39,
-        "inflation_yoy_pct": 2.92,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 5.73,
-        "unemployment_pct": 5.08,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 125,
-        "doom_score": 65,
-        "phase": 2,
-        "coalition_pct_now": 47.5,
-        "coalition_pct_last_election": 55.7,
+        "angle": 78,
+        "doom_score": 72,
+        "phase": 1,
+        "coalition_pct_now": 49.0,
+        "coalition_pct_last_election": 53.1,
         "far_right_pct_now": 12.0,
-        "far_right_pct_last_election": 6.5,
+        "far_right_pct_last_election": 6.1,
         "last_election_year": 2023,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": 86.5,
-        "cci_year_ago": 107.2,
-        "cci_source": "ANZ-Roy Morgan Consumer Confidence",
-        "analysis": "Luxon survived a confidence vote in April as National dropped to 30%, down from 39% at election. NZ First has surged above 6%, eating National's lunch and causing coalition tensions. Consumer confidence crashed from 107 in January to 80 in April amid Middle East crisis before modest May recovery. Coalition clings to razor-thin polling lead six months before the November election.",
+        "cci_now": 80.4,
+        "cci_year_ago": 96.5,
+        "cci_source": "Westpac McDermott Miller CCI",
+        "analysis": "Luxon's coalition has collapsed from 53% to 49% since 2023, with National hemorrhaging support while NZ First doubles its vote share. Late-June scandals over emergency housing targets and rough sleepers revealed acute policy failures. Consumer confidence crashed to 80.4, lowest since 2023. Leadership speculation intensified after disastrous polling, with the November election looming and the coalition barely clinging to majority.",
         "sources": [
-          "https://www.rnz.co.nz/news/political/594972/new-poll-coalition-partners-tumble-but-could-still-form-government",
-          "https://www.roymorgan.com/findings/10211-nz-national-voting-intention-april-2026",
-          "https://www.roymorgan.com/findings/10232-anz-roy-morgan-new-zealand-consumer-confidence-may-2026",
-          "https://newsroom.co.nz/2026/05/14/luxon-shines-his-little-light-through-global-storms-and-political-gloom/"
+          "https://www.rnz.co.nz/news/politics/598196/national-slides-below-30-percent-in-latest-poll-act-and-nz-first-gain",
+          "https://www.roymorgan.com/findings/10271-nz-national-voting-intention-june-2026",
+          "https://www.nzherald.co.nz/business/economy/consumer-confidence-sinks-to-lowest-level-since-2023-amid-global-tensions/JODX3FUW4VAVBCT72ILNEDB7TA/",
+          "https://www.rnz.co.nz/news/politics/641578/watch-christopher-luxon-at-the-post-cabinet-press-conference"
         ]
       }
     },
@@ -923,39 +923,39 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2022-10-22",
-        "days_in_office": 1318,
-        "years_in_office": 3.61
+        "days_in_office": 1348,
+        "years_in_office": 3.69
       },
       "macro": {
-        "gdp_growth_yoy_pct": 0.69,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 0.98,
-        "inflation_yoy_pct": 0.98,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 5.62,
-        "unemployment_pct": 6.39,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 208,
-        "doom_score": 68,
+        "angle": 210,
+        "doom_score": 65,
         "phase": 3,
-        "coalition_pct_now": 43.2,
-        "coalition_pct_last_election": 43.0,
+        "coalition_pct_now": 42.3,
+        "coalition_pct_last_election": 43.7,
         "far_right_pct_now": null,
         "far_right_pct_last_election": null,
         "last_election_year": 2022,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": 93.4,
-        "cci_year_ago": 96.5,
+        "cci_now": 92.4,
+        "cci_year_ago": 96.1,
         "cci_source": "ISTAT",
-        "analysis": "Meloni's far-right government faces mounting pressure after March's judicial reform referendum defeat shattered her invincibility. Coalition polls show loss of parliamentary majority. Recent weeks saw aggressive EU confrontation over fiscal flexibility for energy costs, with Meloni attacking Brussels as a bureaucratic behemoth. Government slashed growth outlook to 0.6% amid energy crisis. Consumer confidence down 3 points year-over-year. Local elections this week test resilience ahead of 2027 national vote.",
+        "analysis": "Meloni's far-right government faces mounting pressures after nearly four years. A constitutional referendum defeat forced ministerial resignations, while the coalition has lost its parliamentary majority in polls, dropping to 42.3% from 44% at election. Consumer confidence fell nearly 4 points year-over-year. A stunning public rift with Trump and controversial school censorship laws mark institutional stress. Meloni now considers early elections, worried about sliding approval.",
         "sources": [
           "https://politpro.eu/en/italy",
-          "https://brusselssignal.eu/2026/05/italians-vote-in-local-elections-seen-as-test-for-meloni-government/",
-          "https://www.euronews.com/my-europe/2026/05/27/meloni-resorts-to-eu-bashing-to-seek-fiscal-flexibility-as-energy-crunch-bites",
-          "https://www.tradingview.com/news/te_news:554403:0-italy-consumer-confidence-improves-in-may/"
+          "https://www.istat.it/en/press-release/consumer-and-business-confidence-june-2026/",
+          "https://www.npr.org/2026/06/19/nx-s1-5864264/meloni-trump-fight-beg",
+          "https://www.bloomberg.com/news/articles/2026-06-23/meloni-is-considering-calling-italian-election-as-soon-as-april"
         ]
       }
     },
@@ -974,39 +974,39 @@
       "far_right_party": "SPD",
       "tenure": {
         "took_office": "2025-12-09",
-        "days_in_office": 174,
-        "years_in_office": 0.48
+        "days_in_office": 204,
+        "years_in_office": 0.56
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.23,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 0.05,
-        "inflation_yoy_pct": 2.44,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 10.66,
-        "unemployment_pct": 2.83,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 105,
-        "doom_score": 58,
-        "phase": 2,
-        "coalition_pct_now": 43.8,
-        "coalition_pct_last_election": 50.0,
-        "far_right_pct_now": 7.0,
+        "angle": 195,
+        "doom_score": 68,
+        "phase": 3,
+        "coalition_pct_now": 44.8,
+        "coalition_pct_last_election": 49.1,
+        "far_right_pct_now": 7.5,
         "far_right_pct_last_election": 7.8,
         "last_election_year": 2025,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": 107.6,
-        "cci_year_ago": 111.7,
-        "cci_source": "Czech Statistical Office",
-        "analysis": "Babiš's coalition with far-right SPD has sparked mass protests over media independence plans and renewed scrutiny of Agrofert conflicts. Coalition polling has dropped 6 points since October 2025 election. Consumer confidence declining amid media freedom concerns and persistent corruption allegations in first six months.",
+        "cci_now": 103.4,
+        "cci_year_ago": 110.4,
+        "cci_source": "OECD CCI",
+        "analysis": "Babiš's ANO-SPD-Motorists coalition faces mounting resistance seven months into power. A massive 250,000-person protest in March opposed democratic erosion. The coalition pushed controversial referendum thresholds requiring supermajority approval they lack by 12 votes. Consumer confidence dropped from 110.4 to 103.4 year-over-year. Coalition polling declined from 49.1% at election to 44.8% currently, reflecting early institutional consolidation meeting fierce public pushback.",
         "sources": [
           "https://politpro.eu/en/czechia",
           "https://tradingeconomics.com/czech-republic/consumer-confidence",
-          "https://www.expats.cz/czech-news/article/czech-news-in-brief-for-may-28-2026-thursday-top-afternoon-headlines",
-          "https://www.fpri.org/article/2025/12/czech-elections-back-to-the-future-as-andrej-babis-sweeps-to-victory/"
+          "https://en.wikipedia.org/wiki/Andrej_Babi%C5%A1",
+          "https://english.radio.cz/czechs-have-decided-ano-party-election-winner-8864705"
         ]
       }
     },
@@ -1021,39 +1021,39 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2025-01-20",
-        "days_in_office": 497,
-        "years_in_office": 1.36
+        "days_in_office": 527,
+        "years_in_office": 1.44
       },
       "macro": {
-        "gdp_growth_yoy_pct": 2.79,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 2.89,
-        "inflation_yoy_pct": 2.95,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 4.12,
-        "unemployment_pct": 4.2,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 220,
-        "doom_score": 75,
+        "angle": 215,
+        "doom_score": 78,
         "phase": 3,
         "coalition_pct_now": null,
         "coalition_pct_last_election": null,
         "far_right_pct_now": null,
         "far_right_pct_last_election": null,
         "last_election_year": null,
-        "approval_now": 37.0,
+        "approval_now": 39.4,
         "approval_at_inauguration": 47.0,
-        "cci_now": null,
-        "cci_year_ago": null,
-        "cci_source": null,
-        "analysis": "Trump's approval collapsed to 37% by May 2026 from 47% at inauguration, driven by tariff-induced inflation and economic anxiety. Independent approval at 34% has entered wave-election territory. Weekend military strikes with Iran continue as ceasefire negotiations stall, with gas prices elevated and consumer confidence on prices hitting record lows of -47.",
+        "cci_now": 91.2,
+        "cci_year_ago": 93.0,
+        "cci_source": "Conference Board CCI",
+        "analysis": "Trump's approval has collapsed to 39.4% from 47% at inauguration, driven by tariff-induced inflation hitting 4.5%. Consumer sentiment reached historic lows in May before modest June recovery. Independent approval at 34% signals potential Democratic wave in 2026 midterms. Economic anxiety dominates as cost-of-living pressures mount.",
         "sources": [
-          "https://fiftyplusone.news/polls/approval/president",
-          "https://www.newsweek.com/donald-trump-approval-rating-low-polls-12004099",
           "https://uspollingdata.com/polls/trump-approval/",
-          "https://www.cnn.com/2026/05/31/politics/trump-iran-deal-changes"
+          "https://www.natesilver.net/p/trump-approval-ratings-nate-silver-bulletin",
+          "https://www.conference-board.org/topics/consumer-confidence/",
+          "https://tradingeconomics.com/united-states/consumer-confidence"
         ]
       }
     },
@@ -1070,39 +1070,39 @@
       "far_right_party": "Mi Hazánk",
       "tenure": {
         "took_office": "2026-05-09",
-        "days_in_office": 23,
-        "years_in_office": 0.06
+        "days_in_office": 53,
+        "years_in_office": 0.15
       },
       "macro": {
-        "gdp_growth_yoy_pct": 0.56,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -0.82,
-        "inflation_yoy_pct": 3.7,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 17.12,
-        "unemployment_pct": 4.52,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 278,
-        "doom_score": 15,
+        "angle": 280,
+        "doom_score": 35,
         "phase": 4,
-        "coalition_pct_now": 68.4,
-        "coalition_pct_last_election": 53.18,
-        "far_right_pct_now": 6.0,
-        "far_right_pct_last_election": 5.63,
+        "coalition_pct_now": 67.4,
+        "coalition_pct_last_election": 53.2,
+        "far_right_pct_now": 5.6,
+        "far_right_pct_last_election": 5.7,
         "last_election_year": 2026,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": 48.05,
-        "cci_year_ago": 34.05,
-        "cci_source": "Ipsos PCSI",
-        "analysis": "Magyar secured landmark EU funds breakthrough worth €16.4 billion in Brussels talks with von der Leyen this week. Consumer confidence posted unprecedented 16-point monthly surge after his May 9 inauguration. Parliament reversed ICC withdrawal, signaling institutional reset. President Sulyok defied resignation demand, creating minor early friction, but polling shows Tisza support surging to 68%.",
+        "cci_now": -17.8,
+        "cci_year_ago": -22.0,
+        "cci_source": "OECD CCI",
+        "analysis": "Magyar's Tisza won a supermajority in April 2026, ousting Orbán after 16 years. Just two months in, polling shows Tisza at 67%. However, his constitutional amendment to remove President Sulyok has drawn criticism from Fidesz and international observers, with the Venice Commission reviewing the conflict. The amendment passed June 15, imposing term limits and enabling removal of Orbán-era appointees.",
         "sources": [
-          "https://dailynewshungary.com/hungary-weekly-briefing-31-may-2026-is-out/",
-          "https://dailynewshungary.com/hungary-news-31-may-2026/",
-          "https://www.ipsos.com/en/ipsos-consumer-confidence-may-2026",
-          "https://politpro.eu/en/hungary"
+          "https://www.aljazeera.com/news/2026/6/1/hungarys-magyar-to-amend-the-constitution-to-remove-president-tamas-sulyok",
+          "https://politpro.eu/en/hungary",
+          "https://dailynewshungary.com/hungary-election-2026-all-votes-counted-tisza/",
+          "https://fred.stlouisfed.org/series/CSCICP02HUM460S"
         ]
       }
     },
@@ -1121,39 +1121,39 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2023-10-25",
-        "days_in_office": 950,
-        "years_in_office": 2.6
+        "days_in_office": 980,
+        "years_in_office": 2.68
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.94,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 2.11,
-        "inflation_yoy_pct": 2.76,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 10.53,
-        "unemployment_pct": 5.36,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 210,
-        "doom_score": 72,
+        "angle": 215,
+        "doom_score": 70,
         "phase": 3,
-        "coalition_pct_now": 29.3,
+        "coalition_pct_now": 28.9,
         "coalition_pct_last_election": 43.2,
-        "far_right_pct_now": 11.0,
+        "far_right_pct_now": 10.7,
         "far_right_pct_last_election": 0.0,
         "last_election_year": 2023,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": -28.3,
+        "cci_now": -27.4,
         "cci_year_ago": -23.1,
         "cci_source": "EU ESI",
-        "analysis": "Fico's coalition has collapsed from 43% to 29% in polls while dismantling anti-corruption bodies and pursuing pro-Russian policy. His May 9 Moscow visit made him the EU's sole attending leader. Consumer confidence hit a three-year low. Republika's 11% represents opposition far-right, but SNS—already in government—provides nationalist governance.",
+        "analysis": "Fico's coalition has collapsed from 43% to 29% support as institutional dismantling accelerates. His son's alleged €100,000 party payments sparked corruption allegations. Consumer confidence hit three-year lows amid economic pressure. Republika at 11% represents far-right fragmentation. Progressive Slovakia leads polls at 20%, positioning as democratic alternative.",
         "sources": [
           "https://politpro.eu/en/slovakia",
-          "https://tradingview.com/news/te_news:554360:0-slovakia-consumer-morale-falls-to-over-3-year-low/",
-          "https://balkaninsight.com/2026/01/14/slovakia-in-2026-a-year-of-further-polarisation/rd/",
-          "http://en.kremlin.ru/events/president/news/79712"
+          "https://tradingeconomics.com/slovakia/consumer-confidence",
+          "https://en.wikipedia.org/wiki/Robert_Fico",
+          "https://balkaninsight.com/2026/01/14/slovakia-in-2026-a-year-of-further-polarisation/rd/"
         ]
       }
     },
@@ -1168,39 +1168,39 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2023-12-10",
-        "days_in_office": 904,
-        "years_in_office": 2.48
+        "days_in_office": 934,
+        "years_in_office": 2.56
       },
       "macro": {
-        "gdp_growth_yoy_pct": -1.34,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -1.86,
-        "inflation_yoy_pct": 219.88,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 133.49,
-        "unemployment_pct": 7.14,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
         "angle": 215,
-        "doom_score": 68,
+        "doom_score": 72,
         "phase": 3,
         "coalition_pct_now": null,
         "coalition_pct_last_election": null,
         "far_right_pct_now": null,
         "far_right_pct_last_election": null,
         "last_election_year": null,
-        "approval_now": 36.0,
-        "approval_at_inauguration": 70.0,
-        "cci_now": 40.14,
-        "cci_year_ago": 45.48,
-        "cci_source": "Torcuato Di Tella University",
-        "analysis": "Milei's approval plunged to 36% amid corruption scandals involving Chief of Staff Adorni and wage declines of 9% since taking office. Mass protests erupted May 12 as economic pain intensifies despite Fitch's B- upgrade. Opposition remains fragmented, with far-left Bregman now Argentina's most popular politician, not Peronist leaders.",
+        "approval_now": 40.0,
+        "approval_at_inauguration": 53.0,
+        "cci_now": 42.71,
+        "cci_year_ago": 41.7,
+        "cci_source": "UTDT Argentina CCI",
+        "analysis": "Milei's Cabinet chief Adorni resigned June 28 amid corruption scandal, undermining his anti-graft platform. Approval collapsed from 53% at inauguration to 40%, hitting 35% in April. Real wages down 9% despite inflation falling to 30%. Opposition fragmented but Peronists consolidating around Kicillof and Kirchner.",
         "sources": [
+          "https://www.nbcnews.com/world/argentina/argentine-president-javier-mileis-top-aide-cabinet-chief-resigns-spira-rcna352091",
           "https://foreignpolicy.com/2026/05/15/argentina-milei-economy-austerity-wages-approval-rating/",
-          "https://www.bloomberg.com/news/articles/2026-05-28/milei-approval-rises-from-lowest-point-as-inflation-worries-ease",
-          "https://thedialogue.org/analysis/why-are-mileis-approval-ratings-falling-in-argentina",
-          "https://www.tradingview.com/news/te_news:552823:0-argentina-consumer-confidence-rises-slightly-in-may/"
+          "https://www.batimes.com.ar/news/argentina/mileis-approval-rises-from-lowest-point-as-inflation-worries-ease.phtml",
+          "https://www.ipsos.com/en/ipsos-consumer-confidence-june-2026"
         ]
       }
     },
@@ -1222,39 +1222,39 @@
       "far_right_party": "Otzma Yehudit",
       "tenure": {
         "took_office": "2022-12-29",
-        "days_in_office": 1250,
-        "years_in_office": 3.42
+        "days_in_office": 1280,
+        "years_in_office": 3.5
       },
       "macro": {
         "gdp_growth_yoy_pct": null,
         "gdp_growth_prev_year_pct": null,
         "gdp_growth_data_year": null,
-        "inflation_yoy_pct": 3.07,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 4.23,
-        "unemployment_pct": 3.49,
-        "data_year": 2025
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 230,
-        "doom_score": 75,
+        "angle": 245,
+        "doom_score": 72,
         "phase": 3,
-        "coalition_pct_now": 23.3,
-        "coalition_pct_last_election": 48.0,
-        "far_right_pct_now": 8.3,
+        "coalition_pct_now": 43.3,
+        "coalition_pct_last_election": 53.3,
+        "far_right_pct_now": 7.5,
         "far_right_pct_last_election": 11.7,
         "last_election_year": 2022,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": 47.4,
-        "cci_year_ago": 43.1,
-        "cci_source": "Ipsos",
-        "analysis": "Netanyahu's coalition collapsed in May 2026 after ultra-Orthodox partners withdrew support over military conscription exemptions. Parliament voted 110-0 to dissolve, triggering early elections likely in September. Coalition polling has crashed from 64 seats in 2022 to just 56 now, losing its majority. Netanyahu vowed to seize 70% of Gaza despite ceasefire terms while facing corruption trials and 75%+ disapproval.",
+        "cci_now": 98.82,
+        "cci_year_ago": 99.5,
+        "cci_source": "OECD CCI",
+        "analysis": "Netanyahu's coalition collapsed in late June after ultra-Orthodox parties withdrew over draft legislation, leaving him with 50-52 seats versus 58 for the opposition. Former IDF chief Eisenkot has emerged as the leading challenger ahead of October elections. The far-right coalition faces near-certain defeat after 3.5 years marked by judicial overhaul attempts and October 7 failures.",
         "sources": [
-          "https://www.haaretz.com/israel-news/elections/2026-05-26/ty-article/poll-bennett-lapid-merger-party-loses-three-seats-likud-remains-largest-party/0000019e-63cc-d38b-a3df-7bcd71f60000",
-          "https://www.aljazeera.com/news/2026/5/20/israeli-lawmakers-advance-bill-to-dissolve-parliament",
-          "https://www.npr.org/2026/05/12/g-s1-121631/israel-military-ultra-orthodox-netanyahu-coalition",
-          "https://www.ipsos.com/en/ipsos-consumer-confidence-may-2026"
+          "https://www.haaretz.com/israel-news/elections/2026-06-26/ty-article/in-latest-poll-netanyahus-likud-gains-seat-as-bennetts-decline-continues/0000019f-0282-d76e-adbf-beb2cae70000",
+          "https://www.jpost.com/israel-news/politics-and-diplomacy/article-899199",
+          "https://www.aljazeera.com/news/2026/6/27/could-israels-coming-election-see-an-end-to-netanyahus-political-career",
+          "https://www.theglobaleconomy.com/Israel/consumer_confidence_survey/"
         ]
       }
     },
@@ -1269,39 +1269,39 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2014-08-28",
-        "days_in_office": 4295,
-        "years_in_office": 11.76
+        "days_in_office": 4325,
+        "years_in_office": 11.84
       },
       "macro": {
         "gdp_growth_yoy_pct": null,
         "gdp_growth_prev_year_pct": null,
         "gdp_growth_data_year": null,
-        "inflation_yoy_pct": 58.51,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 53.86,
-        "unemployment_pct": 8.52,
-        "data_year": 2025
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 240,
-        "doom_score": 85,
+        "angle": 245,
+        "doom_score": 82,
         "phase": 3,
         "coalition_pct_now": null,
         "coalition_pct_last_election": null,
         "far_right_pct_now": null,
         "far_right_pct_last_election": null,
         "last_election_year": null,
-        "approval_now": 46.0,
+        "approval_now": 42.0,
         "approval_at_inauguration": 52.0,
-        "cci_now": 85.8,
-        "cci_year_ago": 85.1,
-        "cci_source": "TÜİK",
-        "analysis": "Police violently raided opposition CHP headquarters in late May 2026 after courts nullified leader Özel's election. Istanbul Mayor İmamoğlu, Erdoğan's main rival, was arrested in March on 140+ charges. Systematic crackdown on opposition intensifies as inflation persists near 60% and consumer confidence remains deeply pessimistic.",
+        "cci_now": 87.9,
+        "cci_year_ago": 83.5,
+        "cci_source": "TurkStat CCI",
+        "analysis": "Erdoğan intensified authoritarian crackdown in June 2026, with Istanbul Mayor İmamoğlu jailed facing 2,000-year sentence and opposition CHP headquarters raided. Inflammatory rhetoric escalated as he declared Israeli strikes 'threaten Turkey.' Economic distress persists despite slight consumer confidence uptick. Systematic judicial capture eliminates credible opposition challengers ahead of 2028 election, consolidating one-man rule through institutional destruction.",
         "sources": [
-          "https://time.com/article/2026/05/25/turkiye-democracy-crisis-chp-erdogan-explainers/",
+          "https://www.turkishminute.com/2026/03/30/ankara-mayor-tops-approval-rankings-as-erdogan-gains-ground-over-jailed-rival/",
           "https://freedomhouse.org/country/turkey/freedom-world/2026",
-          "https://www.tradingview.com/news/te_news:551493:0-turkey-consumer-confidence-at-14-month-high/",
-          "https://www.turkishminute.com/2026/03/30/ankara-mayor-tops-approval-rankings-as-erdogan-gains-ground-over-jailed-rival/"
+          "https://tradingeconomics.com/turkey/consumer-confidence",
+          "https://time.com/article/2026/05/25/turkiye-democracy-crisis-chp-erdogan-explainers/"
         ]
       }
     },
@@ -1320,39 +1320,39 @@
       "far_right_party": "Confederation",
       "tenure": {
         "took_office": "2023-12-13",
-        "days_in_office": 901,
-        "years_in_office": 2.47
+        "days_in_office": 931,
+        "years_in_office": 2.55
       },
       "macro": {
-        "gdp_growth_yoy_pct": 3.03,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 0.25,
-        "inflation_yoy_pct": 3.79,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 11.53,
-        "unemployment_pct": 2.98,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 335,
-        "doom_score": 68,
+        "angle": 350,
+        "doom_score": 72,
         "phase": 4,
-        "coalition_pct_now": 47.7,
+        "coalition_pct_now": 46.4,
         "coalition_pct_last_election": 53.7,
-        "far_right_pct_now": 24.7,
+        "far_right_pct_now": 13.7,
         "far_right_pct_last_election": 7.2,
         "last_election_year": 2023,
         "approval_now": null,
         "approval_at_inauguration": null,
-        "cci_now": -12.2,
-        "cci_year_ago": -9.6,
-        "cci_source": "Poland Statistics (GUS balance indicator)",
-        "analysis": "Tusk's coalition crumbles as junior partners poll below threshold while far-right Confederation and KKP surge to combined 25%. Presidential vetoes block reforms. Combined right-wing forces poll at 51%, positioning for 2027 takeover. US troop withdrawal and Nawrocki's constitutional gambit deepen crisis. Coalition would lose majority on current numbers.",
+        "cci_now": -9.9,
+        "cci_year_ago": -10.5,
+        "cci_source": "Polish Statistical Office (GUS)",
+        "analysis": "Tusk's coalition has lost its majority in polls, dropping from 53.7% to 46.4% as Third Way collapses internally. President Nawrocki blocks key reforms including EU arms credits Tusk called 'treason.' June hospital corruption scandal further damaged credibility. Confederation doubled to 13.7% but remains secondary to PiS's 26.5%. Coalition fragmentation threatens governing capacity ahead of 2027 election.",
         "sources": [
           "https://politpro.eu/en/poland",
-          "https://notesfrompoland.com/2026/06/01/what-are-the-prospects-for-polands-ruling-coalition/",
-          "https://rmx.news/article/polish-nationalist-alliance-could-achieve-parliamentary-majority-after-next-election-as-tusk-allies-flounder-in-polls/",
-          "https://tradingeconomics.com/poland/consumer-confidence"
+          "https://en.wikipedia.org/wiki/Next_Polish_parliamentary_election",
+          "https://stat.gov.pl/en/topics/business-tendency/business-tendency/consumer-tendency-june-2026,3,78.html",
+          "https://notesfrompoland.com/2026/06/30/why-does-the-polish-peoples-party-matter-so-much/"
         ]
       }
     },
@@ -1369,39 +1369,39 @@
       "far_right_party": "People's Party of Canada",
       "tenure": {
         "took_office": "2025-03-14",
-        "days_in_office": 444,
-        "years_in_office": 1.22
+        "days_in_office": 474,
+        "years_in_office": 1.3
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.55,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 1.53,
-        "inflation_yoy_pct": 2.38,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 3.88,
-        "unemployment_pct": 6.91,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
         "angle": 280,
-        "doom_score": 35,
+        "doom_score": 25,
         "phase": 4,
         "coalition_pct_now": 44.0,
-        "coalition_pct_last_election": 43.7,
+        "coalition_pct_last_election": 43.8,
         "far_right_pct_now": 1.0,
         "far_right_pct_last_election": 0.7,
         "last_election_year": 2025,
         "approval_now": null,
         "approval_at_inauguration": null,
         "cci_now": 45.6,
-        "cci_year_ago": 49.2,
+        "cci_year_ago": 65.5,
         "cci_source": "Conference Board Canada",
-        "analysis": "Carney maintains strong 44% polling fourteen months after dramatic election victory driven by Trump threats. Liberals secured majority via four Conservative floor-crossings in April 2026. However, economy shed 110,000 jobs since late 2025 and consumer confidence declining. Pressure mounting to deliver on infrastructure, defense spending, and economic diversification promises. PPC remains negligible at 1%.",
+        "analysis": "Carney maintains commanding polling leads fifteen months into office, launching major AI and food security strategies in June. However, he conceded on June 30 that emissions targets will be missed, a politically risky move that signals growing economic pressures despite strong government approval ratings and continued Liberal dominance across key regions.",
         "sources": [
+          "https://338canada.com/",
           "https://www.ipsos.com/en-ca/liberal-lead-over-conservatives-grows-8-points",
-          "https://angusreid.org/poilievre-favourability-conservative-carney-liberal-majority/",
           "https://tradingeconomics.com/canada/consumer-confidence",
-          "https://en.wikipedia.org/wiki/2025_Canadian_federal_election"
+          "https://www.bnnbloomberg.ca/business/politics/2026/06/30/old-emission-plan-would-have-been-opportunity-to-pull-canada-apart-carney/"
         ]
       }
     },
@@ -1416,39 +1416,39 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2025-06-04",
-        "days_in_office": 362,
-        "years_in_office": 0.99
+        "days_in_office": 392,
+        "years_in_office": 1.07
       },
       "macro": {
-        "gdp_growth_yoy_pct": 2.0,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 1.58,
-        "inflation_yoy_pct": 2.32,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 3.6,
-        "unemployment_pct": 2.68,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
-        "angle": 280,
-        "doom_score": 25,
+        "angle": 290,
+        "doom_score": 55,
         "phase": 4,
         "coalition_pct_now": null,
         "coalition_pct_last_election": null,
         "far_right_pct_now": null,
         "far_right_pct_last_election": null,
         "last_election_year": null,
-        "approval_now": 64.0,
-        "approval_at_inauguration": 68.0,
-        "cci_now": 110.8,
+        "approval_now": 46.5,
+        "approval_at_inauguration": 49.0,
+        "cci_now": 106.6,
         "cci_year_ago": 108.7,
         "cci_source": "Bank of Korea CCSI",
-        "analysis": "Lee marks first year with 64% approval, second-highest since democratization. Stock market surged 90% under his presidency, fueling economic optimism. However, June 3 local elections have become a referendum on his administration, marking his first major political test beyond the initial honeymoon period.",
+        "analysis": "Lee's approval fell below 50% for first time, dropping to 46.5% after six consecutive weekly declines. Ballot shortage controversy from June 3 local elections and economic distrust drive discontent. Consumer confidence slipped from 108.7 to 106.6 year-over-year. Democratic Party tied with opposition at 41-42%. Recent G7 trip focused on North Korea diplomacy amid mounting governance pressures.",
         "sources": [
-          "https://en.sedaily.com/politics/2026/05/01/president-lee-jae-myungs-approval-rating-hits-64-percent",
-          "https://www.upi.com/Top_News/World-News/2026/05/31/president-lee-jae-myung-first-year-approval-rating/5121780285105/",
-          "https://www.koreaherald.com/article/10761101",
-          "https://tradingeconomics.com/south-korea/consumer-confidence"
+          "https://www.upi.com/Top_News/World-News/2026/06/29/president-lee-jae-myung-approval-rate-fell/6161782779478/",
+          "https://www.koreaherald.com/article/10783668",
+          "https://english.news.cn/20260623/3024e877145f4601a754afddb552b4c6/c.html",
+          "https://carnegieendowment.org/posts/2026/06/president-lee-jae-myung-a-year-in-power"
         ]
       }
     },
@@ -1463,18 +1463,18 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2024-10-01",
-        "days_in_office": 608,
-        "years_in_office": 1.66
+        "days_in_office": 638,
+        "years_in_office": 1.75
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.43,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 3.35,
-        "inflation_yoy_pct": 4.72,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 5.53,
-        "unemployment_pct": 2.67,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       },
       "classification": {
         "angle": 305,
@@ -1485,54 +1485,62 @@
         "far_right_pct_now": null,
         "far_right_pct_last_election": null,
         "last_election_year": null,
-        "approval_now": 53.0,
-        "approval_at_inauguration": 67.0,
-        "cci_now": 44.4,
-        "cci_year_ago": 46.5,
-        "cci_source": "INEGI",
-        "analysis": "Sheinbaum faces mounting corruption concerns after US indicted Sinaloa governor for cartel ties. On May 31, she accused Washington of political interference, claiming destabilization efforts intensified since April CIA agent deaths. Approval declined 14 points from inauguration but remains majority. Consumer confidence remains in pessimistic territory below 50 threshold.",
+        "approval_now": 69.0,
+        "approval_at_inauguration": 70.0,
+        "cci_now": 51.7,
+        "cci_year_ago": 54.2,
+        "cci_source": "Ipsos",
+        "analysis": "Sheinbaum faces mounting challenges 21 months into her transformational presidency. Her approval has declined from 70% at inauguration amid corruption and crime concerns. In early June 2026, she delivered an aggressive sovereignty speech pushing back against US pressure on trade and security matters. The OECD slashed Mexico's 2026 growth forecast to 0.8%, while teacher protests threaten World Cup disruptions.",
         "sources": [
-          "https://www.bloomberg.com/news/articles/2026-05-31/sheinbaum-accuses-us-of-interferering-in-mexico-s-politics",
-          "https://www.newstribune.com/news/2026/may/29/corruption-concerns-in-mexico-hit-high-under/",
-          "https://www.riotimesonline.com/latam-presidents-approval-ranking-may-2026/",
-          "https://tradingeconomics.com/mexico/consumer-confidence"
+          "https://mexiconewsdaily.com/news/poll-president-sheinbaum-69/",
+          "https://www.ipsos.com/en/ipsos-consumer-confidence-june-2026",
+          "https://mexiconewsdaily.com/news/mexicos-week-in-review-sheinbaum-us-pressure-world-cup/",
+          "https://www.as-coa.org/articles/approval-tracker-mexicos-president-claudia-sheinbaum"
         ]
       }
     }
   },
   "errors": [],
   "all_sources": [
-    "http://en.kremlin.ru/events/president/news/79712",
-    "https://angusreid.org/poilievre-favourability-conservative-carney-liberal-majority/",
+    "https://338canada.com/",
     "https://balkaninsight.com/2026/01/14/slovakia-in-2026-a-year-of-further-polarisation/rd/",
-    "https://brusselssignal.eu/2026/05/italians-vote-in-local-elections-seen-as-test-for-meloni-government/",
-    "https://communicateonline.me/news/global-consumer-confidence-holds-steady-across-30-countries/",
-    "https://dailynewshungary.com/hungary-news-31-may-2026/",
-    "https://dailynewshungary.com/hungary-weekly-briefing-31-may-2026-is-out/",
-    "https://data.ipu.org/parliament/BE/BE-LC01/election/BE-LC01-E20240609/",
-    "https://demosau.com/news/one-nation-leads-alp-and-coalition-as-voters-sour-on-budget/",
-    "https://dutchreview.com/news/2026-dutch-municipal-election-results/",
-    "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages/portugal/economic-forecast-portugal_en",
-    "https://en.protothema.gr/2026/05/27/real-polls-new-democracy-up-three-points-to-29-1-tsipras-at-16-1-karystianou-at-13-1-pasok-falls-to-single-digits/",
-    "https://en.sedaily.com/politics/2026/05/01/president-lee-jae-myungs-approval-rating-hits-64-percent",
+    "https://caliber.az/en/post/french-president-approval-rating-hits-record-low",
+    "https://carnegieendowment.org/posts/2026/06/president-lee-jae-myung-a-year-in-power",
+    "https://dailynewshungary.com/hungary-election-2026-all-votes-counted-tisza/",
+    "https://demosau.com/news/one-nation-lead-grows-as-l-np-primary-sinks-to-18/",
+    "https://edition.cnn.com/2026/06/22/world/live-news/keir-starmer-uk-pm",
+    "https://en.wikipedia.org/wiki/2023_Estonian_parliamentary_election",
+    "https://en.wikipedia.org/wiki/2023_Finnish_parliamentary_election",
     "https://en.wikipedia.org/wiki/2024_Austrian_legislative_election",
-    "https://en.wikipedia.org/wiki/2025%E2%80%932026_Dutch_cabinet_formation",
-    "https://en.wikipedia.org/wiki/2025_Canadian_federal_election",
-    "https://en.wikipedia.org/wiki/2025_German_federal_election",
-    "https://en.wikipedia.org/wiki/2025_Norwegian_parliamentary_election",
+    "https://en.wikipedia.org/wiki/2024_Belgian_federal_election",
+    "https://en.wikipedia.org/wiki/2025_Dutch_general_election",
+    "https://en.wikipedia.org/wiki/2025_Portuguese_legislative_election",
+    "https://en.wikipedia.org/wiki/2026_Andalusian_regional_election",
     "https://en.wikipedia.org/wiki/2026_Danish_general_election",
+    "https://en.wikipedia.org/wiki/2026_Japanese_general_election",
+    "https://en.wikipedia.org/wiki/2026_Labour_Party_leadership_crisis",
     "https://en.wikipedia.org/wiki/2026_Swedish_general_election",
-    "https://en.wikipedia.org/wiki/Bart_De_Wever",
+    "https://en.wikipedia.org/wiki/Andrej_Babi%C5%A1",
+    "https://en.wikipedia.org/wiki/Christian_Stocker",
+    "https://en.wikipedia.org/wiki/Friedrich_Merz",
+    "https://en.wikipedia.org/wiki/Next_Greek_parliamentary_election",
+    "https://en.wikipedia.org/wiki/Next_Irish_general_election",
+    "https://en.wikipedia.org/wiki/Next_Polish_parliamentary_election",
     "https://en.wikipedia.org/wiki/Next_Portuguese_legislative_election",
-    "https://fiftyplusone.news/polls/approval/president",
+    "https://en.wikipedia.org/wiki/Next_Spanish_general_election",
+    "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Japanese_general_election",
+    "https://en.wikipedia.org/wiki/Robert_Fico",
+    "https://english.news.cn/20260623/3024e877145f4601a754afddb552b4c6/c.html",
+    "https://english.radio.cz/czechs-have-decided-ano-party-election-winner-8864705",
     "https://foreignpolicy.com/2026/05/15/argentina-milei-economy-austerity-wages-approval-rating/",
+    "https://fr.tradingeconomics.com/belgium/consumer-confidence",
+    "https://fred.stlouisfed.org/series/CSCICP02HUM460S",
     "https://freedomhouse.org/country/turkey/freedom-world/2026",
-    "https://greekcitytimes.com/2026/05/23/new-democracy-pre-election-mode-greece",
     "https://greekreporter.com/2026/05/27/mitsotakis-mocks-tsipras-new-elas-party-greece-political-babel/",
-    "https://meta-defense.fr/en/2026/05/28/norvege-narvik-dissuasion-francaise/",
-    "https://news.err.ee/1610031535/ratings-reform-eesti-200-coalition-rating-falls-to-all-time-low",
-    "https://newsroom.co.nz/2026/05/14/luxon-shines-his-little-light-through-global-storms-and-political-gloom/",
-    "https://notesfrompoland.com/2026/06/01/what-are-the-prospects-for-polands-ruling-coalition/",
+    "https://mexiconewsdaily.com/news/mexicos-week-in-review-sheinbaum-us-pressure-world-cup/",
+    "https://mexiconewsdaily.com/news/poll-president-sheinbaum-69/",
+    "https://monocle.com/affairs/kristen-michal-estonian-leader-at-the-sharp-edge-of-nato/",
+    "https://notesfrompoland.com/2026/06/30/why-does-the-polish-peoples-party-matter-so-much/",
     "https://politpro.eu/en/austria",
     "https://politpro.eu/en/belgium",
     "https://politpro.eu/en/czechia",
@@ -1541,8 +1549,8 @@
     "https://politpro.eu/en/finland",
     "https://politpro.eu/en/france",
     "https://politpro.eu/en/germany",
+    "https://politpro.eu/en/greece",
     "https://politpro.eu/en/hungary",
-    "https://politpro.eu/en/ireland",
     "https://politpro.eu/en/italy",
     "https://politpro.eu/en/netherlands/opinion-polls/2026",
     "https://politpro.eu/en/norway",
@@ -1551,74 +1559,66 @@
     "https://politpro.eu/en/slovakia",
     "https://politpro.eu/en/spain",
     "https://politpro.eu/en/sweden",
-    "https://rmx.news/article/polish-nationalist-alliance-could-achieve-parliamentary-majority-after-next-election-as-tusk-allies-flounder-in-polls/",
-    "https://theconversation.com/labor-wins-surprise-landslide-returned-with-a-thumping-majority-255518",
-    "https://thedialogue.org/analysis/why-are-mileis-approval-ratings-falling-in-argentina",
+    "https://stat.gov.pl/en/topics/business-tendency/business-tendency/consumer-tendency-june-2026,3,78.html",
     "https://time.com/article/2026/05/25/turkiye-democracy-crisis-chp-erdogan-explainers/",
+    "https://tradingeconomics.com/australia/consumer-confidence",
     "https://tradingeconomics.com/austria/consumer-confidence",
     "https://tradingeconomics.com/canada/consumer-confidence",
     "https://tradingeconomics.com/czech-republic/consumer-confidence",
     "https://tradingeconomics.com/denmark/consumer-confidence",
     "https://tradingeconomics.com/finland/consumer-confidence",
     "https://tradingeconomics.com/germany/consumer-confidence",
-    "https://tradingeconomics.com/greece/consumer-confidence",
-    "https://tradingeconomics.com/mexico/consumer-confidence",
+    "https://tradingeconomics.com/ireland/consumer-confidence",
     "https://tradingeconomics.com/netherlands/consumer-confidence",
     "https://tradingeconomics.com/norway/consumer-confidence",
-    "https://tradingeconomics.com/poland/consumer-confidence",
-    "https://tradingeconomics.com/south-korea/consumer-confidence",
+    "https://tradingeconomics.com/slovakia/consumer-confidence",
     "https://tradingeconomics.com/sweden/consumer-confidence",
-    "https://tradingview.com/news/te_news:554360:0-slovakia-consumer-morale-falls-to-over-3-year-low/",
+    "https://tradingeconomics.com/turkey/consumer-confidence",
+    "https://tradingeconomics.com/united-states/consumer-confidence",
     "https://uspollingdata.com/polls/trump-approval/",
-    "https://voiceofvienna.org/austria-chancellor-calls-for-stronger-security-and-policy-shift/",
-    "https://www.aljazeera.com/news/2026/5/20/israeli-lawmakers-advance-bill-to-dissolve-parliament",
-    "https://www.aljazeera.com/news/2026/5/23/thousands-march-in-madrid-demanding-spanish-pm-quit-over-graft-allegations",
-    "https://www.bloomberg.com/graphics/2026-japan-election-results/",
-    "https://www.bloomberg.com/news/articles/2026-05-28/milei-approval-rises-from-lowest-point-as-inflation-worries-ease",
-    "https://www.bloomberg.com/news/articles/2026-05-31/sheinbaum-accuses-us-of-interferering-in-mexico-s-politics",
-    "https://www.briefs.co/news/french-consumer-confidence-just-hit-a-three-year-low/",
-    "https://www.cnn.com/2026/05/21/business/video/estonia-russia-cyberattacks-michal-intv-052104pseg1-cnni-world-fast",
-    "https://www.cnn.com/2026/05/31/politics/trump-iran-deal-changes",
-    "https://www.euronews.com/my-europe/2026/05/27/meloni-resorts-to-eu-bashing-to-seek-fiscal-flexibility-as-energy-crunch-bites",
-    "https://www.euronews.com/my-europe/2026/05/30/psoes-legal-storm-nine-cases-closing-in-on-spanish-pm-pedro-sanchez",
-    "https://www.expats.cz/czech-news/article/czech-news-in-brief-for-may-28-2026-thursday-top-afternoon-headlines",
-    "https://www.fpri.org/article/2025/12/czech-elections-back-to-the-future-as-andrej-babis-sweeps-to-victory/",
-    "https://www.fxstreet.com/news/portugal-consumer-confidence-declined-to-271-in-may-from-previous-239-202605280830",
-    "https://www.government.se/",
-    "https://www.haaretz.com/israel-news/elections/2026-05-26/ty-article/poll-bennett-lapid-merger-party-loses-three-seats-likud-remains-largest-party/0000019e-63cc-d38b-a3df-7bcd71f60000",
-    "https://www.helsinkitimes.fi/finland/finland-news/politics/28872-orpo-finland-plans-household-guide-for-drone-threats.html",
+    "https://www.aljazeera.com/news/2026/6/1/denmark-gets-new-government-as-greenland-crisis-persists",
+    "https://www.aljazeera.com/news/2026/6/1/hungarys-magyar-to-amend-the-constitution-to-remove-president-tamas-sulyok",
+    "https://www.aljazeera.com/news/2026/6/27/could-israels-coming-election-see-an-end-to-netanyahus-political-career",
+    "https://www.as-coa.org/articles/approval-tracker-mexicos-president-claudia-sheinbaum",
+    "https://www.batimes.com.ar/news/argentina/mileis-approval-rises-from-lowest-point-as-inflation-worries-ease.phtml",
+    "https://www.bloomberg.com/news/articles/2026-06-23/meloni-is-considering-calling-italian-election-as-soon-as-april",
+    "https://www.bnnbloomberg.ca/business/politics/2026/06/30/old-emission-plan-would-have-been-opportunity-to-pull-canada-apart-carney/",
+    "https://www.brusselstimes.com/1951865/from-eu-critical-to-european-statesman-one-year-of-belgian-pm-bart-de-wever",
+    "https://www.conference-board.org/topics/consumer-confidence/",
+    "https://www.dutchnews.nl/2026/04/jetten-promises-new-restrictions-on-asylum-in-two-weeks/",
+    "https://www.esri.cao.go.jp/en/stat/shouhi/shouhi-e.html",
+    "https://www.estimite.com/post/norwegian-poll-tracker/",
+    "https://www.fx.co/en/forex-news/3042882",
+    "https://www.gov.uk/government/news/pm-call-with-taoiseach-micheal-martin-of-ireland-12-june-2026",
+    "https://www.haaretz.com/israel-news/elections/2026-06-26/ty-article/in-latest-poll-netanyahus-likud-gains-seat-as-bennetts-decline-continues/0000019f-0282-d76e-adbf-beb2cae70000",
+    "https://www.helsinkitimes.fi/finland/finland-news/politics.html",
+    "https://www.hungarianconservative.com/articles/current/jordan-bardella-marine-le-pen-french-presidential-election-2027-poll-france/",
+    "https://www.internationalaffairs.org.au/australianoutlook/26-june-2026-the-week-in-australian-foreign-affairs/",
     "https://www.ipsos.com/en-ca/liberal-lead-over-conservatives-grows-8-points",
-    "https://www.ipsos.com/en/ipsos-consumer-confidence-may-2026",
-    "https://www.irishtimes.com/business/2026/05/22/consumer-sentiment-improves-but-public-still-nervous-about-household-finances/",
-    "https://www.irishtimes.com/world/europe/2026/05/05/merzs-first-year-germanys-impulsive-chancellor-sees-poll-ratings-slump-to-record-low/",
-    "https://www.ispionline.it/en/publication/country-to-watch-in-2026-france-226556",
-    "https://www.japantimes.co.jp/news/2026/05/21/japan/takaichi-cabinet-approval-may/",
-    "https://www.koreaherald.com/article/10761101",
-    "https://www.nbcnews.com/world/united-kingdom/starmer-labour-reform-farage-uk-election-rcna344013",
-    "https://www.newstribune.com/news/2026/may/29/corruption-concerns-in-mexico-hit-high-under/",
-    "https://www.newsweek.com/donald-trump-approval-rating-low-polls-12004099",
-    "https://www.npr.org/2026/05/12/g-s1-121631/israel-military-ultra-orthodox-netanyahu-coalition",
-    "https://www.oecd.org/en/publications/oecd-economic-surveys-finland-2025_985d0555-en.html",
-    "https://www.pollcheck.co.uk/gb-polls",
-    "https://www.riotimesonline.com/latam-presidents-approval-ranking-may-2026/",
-    "https://www.rnz.co.nz/news/political/594972/new-poll-coalition-partners-tumble-but-could-still-form-government",
-    "https://www.roymorgan.com/findings/10211-nz-national-voting-intention-april-2026",
-    "https://www.roymorgan.com/findings/10232-anz-roy-morgan-new-zealand-consumer-confidence-may-2026",
-    "https://www.rte.ie/news/politics/2026/0502/1571477-opinion-poll-ireland/",
-    "https://www.rttnews.com/3656418/japan-consumer-confidence-rises-in-may.aspx",
-    "https://www.scmp.com/week-asia/people/article/3353289/japans-takaichi-backs-aide-over-smear-claims-against-ldp-rivals",
+    "https://www.ipsos.com/en/ipsos-consumer-confidence-june-2026",
+    "https://www.irishexaminer.com/news/politics/arid-41866611.html",
+    "https://www.istat.it/en/press-release/consumer-and-business-confidence-june-2026/",
+    "https://www.jpost.com/israel-news/politics-and-diplomacy/article-899199",
+    "https://www.koreaherald.com/article/10783668",
+    "https://www.natesilver.net/p/trump-approval-ratings-nate-silver-bulletin",
+    "https://www.nbcnews.com/world/argentina/argentine-president-javier-mileis-top-aide-cabinet-chief-resigns-spira-rcna352091",
+    "https://www.nippon.com/en/japan-data/h02703/",
+    "https://www.npr.org/2026/06/19/nx-s1-5864264/meloni-trump-fight-beg",
+    "https://www.nzherald.co.nz/business/economy/consumer-confidence-sinks-to-lowest-level-since-2023-amid-global-tensions/JODX3FUW4VAVBCT72ILNEDB7TA/",
+    "https://www.pollbludger.net/",
+    "https://www.regjeringen.no/en/whatsnew/news-and-press-releases/id2006120/",
+    "https://www.rnz.co.nz/news/politics/598196/national-slides-below-30-percent-in-latest-poll-act-and-nz-first-gain",
+    "https://www.rnz.co.nz/news/politics/641578/watch-christopher-luxon-at-the-post-cabinet-press-conference",
+    "https://www.roymorgan.com/findings/10271-nz-national-voting-intention-june-2026",
+    "https://www.statista.com/statistics/1257178/voting-intention-in-germany/",
     "https://www.statista.com/statistics/1456852/world-leader-approval-ratings/",
-    "https://www.statista.com/statistics/1546035/irish-election-vote-share/",
     "https://www.statista.com/statistics/623579/consumer-confidence-in-the-uk/",
     "https://www.theglobaleconomy.com/Estonia/consumer_confidence_survey/",
-    "https://www.tradingview.com/news/te_news:551493:0-turkey-consumer-confidence-at-14-month-high/",
-    "https://www.tradingview.com/news/te_news:552823:0-argentina-consumer-confidence-rises-slightly-in-may/",
-    "https://www.tradingview.com/news/te_news:554403:0-italy-consumer-confidence-improves-in-may/",
+    "https://www.theglobaleconomy.com/Israel/consumer_confidence_survey/",
+    "https://www.thelocal.se/20260627/was-this-a-leaving-party-for-swedish-prime-minister-ulf-kristersson/",
+    "https://www.tovima.com/finance/from-saving-to-surviving-greek-households-under-pressure/",
     "https://www.turkishminute.com/2026/03/30/ankara-mayor-tops-approval-rankings-as-erdogan-gains-ground-over-jailed-rival/",
-    "https://www.upi.com/Top_News/World-News/2026/05/31/president-lee-jae-myung-first-year-approval-rating/5121780285105/",
-    "https://www.usnews.com/news/world/articles/2026-05-23/denmarks-frederiksen-gets-new-chance-to-form-government-after-centre-right-talks-fail",
-    "https://www.usnews.com/news/world/articles/2026-05-31/australias-far-right-party-leads-in-national-poll-for-first-time",
-    "https://www.westpac.com.au/about-westpac/media/reports/australian-economic-reports/",
-    "https://yougov.com/en-gb/articles/54701-voting-intention-4-5-may-2026-ref-25-lab-18-con-17-grn-15-ld-14"
+    "https://www.upi.com/Top_News/World-News/2026/06/29/president-lee-jae-myung-approval-rate-fell/6161782779478/",
+    "https://yougov.com/en-gb/articles/55019-voting-intention-21-22-june-2026-ref-25-con-20-lab-18-grn-15-ld-14"
   ]
 }

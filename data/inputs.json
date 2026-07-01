@@ -1,5 +1,5 @@
 {
-  "run_timestamp": "2026-06-01T13:41:53.511247+00:00",
+  "run_timestamp": "2026-07-01T11:27:33.610791+00:00",
   "leaders": {
     "starmer": {
       "name": "Keir Starmer",
@@ -14,17 +14,17 @@
       "far_right_party": "Reform UK",
       "tenure": {
         "took_office": "2024-07-05",
-        "days_in_office": 696,
-        "years_in_office": 1.91
+        "days_in_office": 726,
+        "years_in_office": 1.99
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.13,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 0.27,
-        "inflation_yoy_pct": 3.27,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 6.79,
-        "unemployment_pct": 4.75,
+        "gdp_growth_yoy_pct": 1.39,
+        "gdp_growth_data_year": 2025,
+        "gdp_growth_prev_year_pct": 1.08,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
         "data_year": 2025
       }
     },
@@ -42,17 +42,17 @@
       "far_right_party": "AfD",
       "tenure": {
         "took_office": "2025-05-06",
-        "days_in_office": 391,
-        "years_in_office": 1.07
+        "days_in_office": 421,
+        "years_in_office": 1.15
       },
       "macro": {
-        "gdp_growth_yoy_pct": -0.5,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -0.87,
-        "inflation_yoy_pct": 2.26,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 5.95,
-        "unemployment_pct": 3.71,
+        "gdp_growth_yoy_pct": 0.24,
+        "gdp_growth_data_year": 2025,
+        "gdp_growth_prev_year_pct": -0.5,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
         "data_year": 2025
       }
     },
@@ -67,17 +67,17 @@
       "far_right_party": "National Rally",
       "tenure": {
         "took_office": "2017-05-14",
-        "days_in_office": 3305,
-        "years_in_office": 9.05
+        "days_in_office": 3335,
+        "years_in_office": 9.13
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.19,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 1.44,
-        "inflation_yoy_pct": 2.0,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 4.88,
-        "unemployment_pct": 7.54,
+        "gdp_growth_yoy_pct": 0.84,
+        "gdp_growth_data_year": 2025,
+        "gdp_growth_prev_year_pct": 1.19,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
         "data_year": 2025
       }
     },
@@ -95,17 +95,17 @@
       "far_right_party": "Vox",
       "tenure": {
         "took_office": "2018-06-02",
-        "days_in_office": 2921,
-        "years_in_office": 8.0
+        "days_in_office": 2951,
+        "years_in_office": 8.08
       },
       "macro": {
-        "gdp_growth_yoy_pct": 3.46,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 2.46,
-        "inflation_yoy_pct": 2.77,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 3.53,
-        "unemployment_pct": 10.38,
+        "gdp_growth_yoy_pct": 2.82,
+        "gdp_growth_data_year": 2025,
+        "gdp_growth_prev_year_pct": 3.46,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
         "data_year": 2025
       }
     },
@@ -124,18 +124,18 @@
       "far_right_party": "Danish People's Party",
       "tenure": {
         "took_office": "2019-06-27",
-        "days_in_office": 2531,
-        "years_in_office": 6.93
+        "days_in_office": 2561,
+        "years_in_office": 7.01
       },
       "macro": {
-        "gdp_growth_yoy_pct": 3.48,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 0.6,
-        "inflation_yoy_pct": 1.37,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 3.31,
-        "unemployment_pct": 5.53,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "albanese": {
@@ -151,18 +151,18 @@
       "far_right_party": "One Nation",
       "tenure": {
         "took_office": "2022-05-23",
-        "days_in_office": 1470,
-        "years_in_office": 4.02
+        "days_in_office": 1500,
+        "years_in_office": 4.11
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.37,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 3.58,
-        "inflation_yoy_pct": 3.17,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 5.6,
-        "unemployment_pct": 4.09,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "martin": {
@@ -179,18 +179,18 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2025-01-23",
-        "days_in_office": 494,
-        "years_in_office": 1.35
+        "days_in_office": 524,
+        "years_in_office": 1.43
       },
       "macro": {
-        "gdp_growth_yoy_pct": 2.6,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -2.54,
-        "inflation_yoy_pct": 2.11,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 6.3,
-        "unemployment_pct": 4.63,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "jetten": {
@@ -209,18 +209,18 @@
       "far_right_party": "PVV",
       "tenure": {
         "took_office": "2026-02-23",
-        "days_in_office": 98,
-        "years_in_office": 0.27
+        "days_in_office": 128,
+        "years_in_office": 0.35
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.08,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -0.6,
-        "inflation_yoy_pct": 3.35,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 3.84,
-        "unemployment_pct": 3.87,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "montenegro": {
@@ -237,18 +237,18 @@
       "far_right_party": "Chega",
       "tenure": {
         "took_office": "2024-04-02",
-        "days_in_office": 790,
-        "years_in_office": 2.16
+        "days_in_office": 820,
+        "years_in_office": 2.25
       },
       "macro": {
-        "gdp_growth_yoy_pct": 2.14,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 3.1,
-        "inflation_yoy_pct": 2.42,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 4.31,
-        "unemployment_pct": 6.16,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "store": {
@@ -264,18 +264,18 @@
       "far_right_party": "Progress Party",
       "tenure": {
         "took_office": "2021-10-14",
-        "days_in_office": 1691,
-        "years_in_office": 4.63
+        "days_in_office": 1721,
+        "years_in_office": 4.71
       },
       "macro": {
-        "gdp_growth_yoy_pct": 2.1,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 0.07,
-        "inflation_yoy_pct": 3.15,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 5.52,
-        "unemployment_pct": 4.64,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "takaichi": {
@@ -292,18 +292,18 @@
       "far_right_party": "Sanseito",
       "tenure": {
         "took_office": "2025-10-21",
-        "days_in_office": 223,
-        "years_in_office": 0.61
+        "days_in_office": 253,
+        "years_in_office": 0.69
       },
       "macro": {
-        "gdp_growth_yoy_pct": 0.1,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 1.48,
-        "inflation_yoy_pct": 2.74,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 3.27,
-        "unemployment_pct": 2.45,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "michal": {
@@ -321,18 +321,18 @@
       "far_right_party": "EKRE",
       "tenure": {
         "took_office": "2024-07-23",
-        "days_in_office": 678,
-        "years_in_office": 1.86
+        "days_in_office": 708,
+        "years_in_office": 1.94
       },
       "macro": {
-        "gdp_growth_yoy_pct": -0.09,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -2.74,
-        "inflation_yoy_pct": 3.52,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 9.16,
-        "unemployment_pct": 8.31,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "kristersson": {
@@ -350,18 +350,18 @@
       "far_right_party": "Sweden Democrats",
       "tenure": {
         "took_office": "2022-10-18",
-        "days_in_office": 1322,
-        "years_in_office": 3.62
+        "days_in_office": 1352,
+        "years_in_office": 3.7
       },
       "macro": {
-        "gdp_growth_yoy_pct": 0.82,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -0.2,
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
         "inflation_yoy_pct": null,
         "inflation_prev_year_pct": null,
         "inflation_data_year": null,
-        "unemployment_pct": 8.69,
-        "data_year": 2025
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "orpo": {
@@ -380,18 +380,18 @@
       "far_right_party": "Finns Party",
       "tenure": {
         "took_office": "2023-06-20",
-        "days_in_office": 1077,
-        "years_in_office": 2.95
+        "days_in_office": 1107,
+        "years_in_office": 3.03
       },
       "macro": {
-        "gdp_growth_yoy_pct": 0.42,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -0.94,
-        "inflation_yoy_pct": 1.57,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 6.25,
-        "unemployment_pct": 9.46,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "mitsotakis": {
@@ -407,18 +407,18 @@
       "far_right_party": "Greek Solution",
       "tenure": {
         "took_office": "2019-07-08",
-        "days_in_office": 2520,
-        "years_in_office": 6.9
+        "days_in_office": 2550,
+        "years_in_office": 6.98
       },
       "macro": {
-        "gdp_growth_yoy_pct": 2.09,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 2.14,
-        "inflation_yoy_pct": 2.74,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 3.46,
-        "unemployment_pct": 8.54,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "stocker": {
@@ -436,18 +436,18 @@
       "far_right_party": "FPÖ",
       "tenure": {
         "took_office": "2025-03-03",
-        "days_in_office": 455,
-        "years_in_office": 1.25
+        "days_in_office": 485,
+        "years_in_office": 1.33
       },
       "macro": {
         "gdp_growth_yoy_pct": null,
         "gdp_growth_prev_year_pct": null,
         "gdp_growth_data_year": null,
-        "inflation_yoy_pct": 2.94,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 7.81,
-        "unemployment_pct": 5.58,
-        "data_year": 2025
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "dewever": {
@@ -467,18 +467,18 @@
       "far_right_party": "Vlaams Belang",
       "tenure": {
         "took_office": "2025-02-03",
-        "days_in_office": 483,
-        "years_in_office": 1.32
+        "days_in_office": 513,
+        "years_in_office": 1.4
       },
       "macro": {
         "gdp_growth_yoy_pct": null,
         "gdp_growth_prev_year_pct": null,
         "gdp_growth_data_year": null,
-        "inflation_yoy_pct": 3.14,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 4.05,
-        "unemployment_pct": 5.91,
-        "data_year": 2025
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "luxon": {
@@ -496,18 +496,18 @@
       "far_right_party": "NZ First",
       "tenure": {
         "took_office": "2023-11-27",
-        "days_in_office": 917,
-        "years_in_office": 2.51
+        "days_in_office": 947,
+        "years_in_office": 2.59
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.29,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 1.39,
-        "inflation_yoy_pct": 2.92,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 5.73,
-        "unemployment_pct": 5.08,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "meloni": {
@@ -525,18 +525,18 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2022-10-22",
-        "days_in_office": 1318,
-        "years_in_office": 3.61
+        "days_in_office": 1348,
+        "years_in_office": 3.69
       },
       "macro": {
-        "gdp_growth_yoy_pct": 0.69,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 0.98,
-        "inflation_yoy_pct": 0.98,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 5.62,
-        "unemployment_pct": 6.39,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "babis": {
@@ -554,18 +554,18 @@
       "far_right_party": "SPD",
       "tenure": {
         "took_office": "2025-12-09",
-        "days_in_office": 174,
-        "years_in_office": 0.48
+        "days_in_office": 204,
+        "years_in_office": 0.56
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.23,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 0.05,
-        "inflation_yoy_pct": 2.44,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 10.66,
-        "unemployment_pct": 2.83,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "trump": {
@@ -579,18 +579,18 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2025-01-20",
-        "days_in_office": 497,
-        "years_in_office": 1.36
+        "days_in_office": 527,
+        "years_in_office": 1.44
       },
       "macro": {
-        "gdp_growth_yoy_pct": 2.79,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 2.89,
-        "inflation_yoy_pct": 2.95,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 4.12,
-        "unemployment_pct": 4.2,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "magyar": {
@@ -606,18 +606,18 @@
       "far_right_party": "Mi Hazánk",
       "tenure": {
         "took_office": "2026-05-09",
-        "days_in_office": 23,
-        "years_in_office": 0.06
+        "days_in_office": 53,
+        "years_in_office": 0.15
       },
       "macro": {
-        "gdp_growth_yoy_pct": 0.56,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -0.82,
-        "inflation_yoy_pct": 3.7,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 17.12,
-        "unemployment_pct": 4.52,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "fico": {
@@ -635,18 +635,18 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2023-10-25",
-        "days_in_office": 950,
-        "years_in_office": 2.6
+        "days_in_office": 980,
+        "years_in_office": 2.68
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.94,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 2.11,
-        "inflation_yoy_pct": 2.76,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 10.53,
-        "unemployment_pct": 5.36,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "milei": {
@@ -660,18 +660,18 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2023-12-10",
-        "days_in_office": 904,
-        "years_in_office": 2.48
+        "days_in_office": 934,
+        "years_in_office": 2.56
       },
       "macro": {
-        "gdp_growth_yoy_pct": -1.34,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": -1.86,
-        "inflation_yoy_pct": 219.88,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 133.49,
-        "unemployment_pct": 7.14,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "netanyahu": {
@@ -692,18 +692,18 @@
       "far_right_party": "Otzma Yehudit",
       "tenure": {
         "took_office": "2022-12-29",
-        "days_in_office": 1250,
-        "years_in_office": 3.42
+        "days_in_office": 1280,
+        "years_in_office": 3.5
       },
       "macro": {
         "gdp_growth_yoy_pct": null,
         "gdp_growth_prev_year_pct": null,
         "gdp_growth_data_year": null,
-        "inflation_yoy_pct": 3.07,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 4.23,
-        "unemployment_pct": 3.49,
-        "data_year": 2025
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "erdogan": {
@@ -717,18 +717,18 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2014-08-28",
-        "days_in_office": 4295,
-        "years_in_office": 11.76
+        "days_in_office": 4325,
+        "years_in_office": 11.84
       },
       "macro": {
         "gdp_growth_yoy_pct": null,
         "gdp_growth_prev_year_pct": null,
         "gdp_growth_data_year": null,
-        "inflation_yoy_pct": 58.51,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 53.86,
-        "unemployment_pct": 8.52,
-        "data_year": 2025
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "tusk": {
@@ -746,18 +746,18 @@
       "far_right_party": "Confederation",
       "tenure": {
         "took_office": "2023-12-13",
-        "days_in_office": 901,
-        "years_in_office": 2.47
+        "days_in_office": 931,
+        "years_in_office": 2.55
       },
       "macro": {
-        "gdp_growth_yoy_pct": 3.03,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 0.25,
-        "inflation_yoy_pct": 3.79,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 11.53,
-        "unemployment_pct": 2.98,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "carney": {
@@ -773,18 +773,18 @@
       "far_right_party": "People's Party of Canada",
       "tenure": {
         "took_office": "2025-03-14",
-        "days_in_office": 444,
-        "years_in_office": 1.22
+        "days_in_office": 474,
+        "years_in_office": 1.3
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.55,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 1.53,
-        "inflation_yoy_pct": 2.38,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 3.88,
-        "unemployment_pct": 6.91,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "lee": {
@@ -798,18 +798,18 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2025-06-04",
-        "days_in_office": 362,
-        "years_in_office": 0.99
+        "days_in_office": 392,
+        "years_in_office": 1.07
       },
       "macro": {
-        "gdp_growth_yoy_pct": 2.0,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 1.58,
-        "inflation_yoy_pct": 2.32,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 3.6,
-        "unemployment_pct": 2.68,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     },
     "sheinbaum": {
@@ -823,18 +823,18 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2024-10-01",
-        "days_in_office": 608,
-        "years_in_office": 1.66
+        "days_in_office": 638,
+        "years_in_office": 1.75
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.43,
-        "gdp_growth_data_year": 2024,
-        "gdp_growth_prev_year_pct": 3.35,
-        "inflation_yoy_pct": 4.72,
-        "inflation_data_year": 2024,
-        "inflation_prev_year_pct": 5.53,
-        "unemployment_pct": 2.67,
-        "data_year": 2025
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
+        "unemployment_pct": null,
+        "data_year": null
       }
     }
   }
