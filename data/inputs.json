@@ -1,5 +1,5 @@
 {
-  "run_timestamp": "2026-08-01T10:02:12.299666+00:00",
+  "run_timestamp": "2026-09-01T13:16:47.522175+00:00",
   "leaders": {
     "starmer": {
       "name": "Keir Starmer",
@@ -14,13 +14,13 @@
       "far_right_party": "Reform UK",
       "tenure": {
         "took_office": "2024-07-05",
-        "days_in_office": 757,
-        "years_in_office": 2.07
+        "days_in_office": 788,
+        "years_in_office": 2.16
       },
       "macro": {
-        "gdp_growth_yoy_pct": 1.39,
-        "gdp_growth_data_year": 2025,
-        "gdp_growth_prev_year_pct": 1.08,
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
         "inflation_yoy_pct": 3.88,
         "inflation_data_year": 2025,
         "inflation_prev_year_pct": 3.27,
@@ -42,8 +42,8 @@
       "far_right_party": "AfD",
       "tenure": {
         "took_office": "2025-05-06",
-        "days_in_office": 452,
-        "years_in_office": 1.24
+        "days_in_office": 483,
+        "years_in_office": 1.32
       },
       "macro": {
         "gdp_growth_yoy_pct": 0.24,
@@ -67,8 +67,8 @@
       "far_right_party": "National Rally",
       "tenure": {
         "took_office": "2017-05-14",
-        "days_in_office": 3366,
-        "years_in_office": 9.22
+        "days_in_office": 3397,
+        "years_in_office": 9.3
       },
       "macro": {
         "gdp_growth_yoy_pct": 0.84,
@@ -95,16 +95,16 @@
       "far_right_party": "Vox",
       "tenure": {
         "took_office": "2018-06-02",
-        "days_in_office": 2982,
-        "years_in_office": 8.16
+        "days_in_office": 3013,
+        "years_in_office": 8.25
       },
       "macro": {
-        "gdp_growth_yoy_pct": 2.82,
-        "gdp_growth_data_year": 2025,
-        "gdp_growth_prev_year_pct": 3.46,
-        "inflation_yoy_pct": 2.7,
-        "inflation_data_year": 2025,
-        "inflation_prev_year_pct": 2.75,
+        "gdp_growth_yoy_pct": null,
+        "gdp_growth_prev_year_pct": null,
+        "gdp_growth_data_year": null,
+        "inflation_yoy_pct": null,
+        "inflation_prev_year_pct": null,
+        "inflation_data_year": null,
         "unemployment_pct": 10.38,
         "data_year": 2025
       }
@@ -124,8 +124,8 @@
       "far_right_party": "Danish People's Party",
       "tenure": {
         "took_office": "2019-06-27",
-        "days_in_office": 2592,
-        "years_in_office": 7.1
+        "days_in_office": 2623,
+        "years_in_office": 7.18
       },
       "macro": {
         "gdp_growth_yoy_pct": 2.93,
@@ -151,8 +151,8 @@
       "far_right_party": "One Nation",
       "tenure": {
         "took_office": "2022-05-23",
-        "days_in_office": 1531,
-        "years_in_office": 4.19
+        "days_in_office": 1562,
+        "years_in_office": 4.28
       },
       "macro": {
         "gdp_growth_yoy_pct": 1.35,
@@ -179,8 +179,8 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2025-01-23",
-        "days_in_office": 555,
-        "years_in_office": 1.52
+        "days_in_office": 586,
+        "years_in_office": 1.6
       },
       "macro": {
         "gdp_growth_yoy_pct": 12.34,
@@ -209,8 +209,8 @@
       "far_right_party": "PVV",
       "tenure": {
         "took_office": "2026-02-23",
-        "days_in_office": 159,
-        "years_in_office": 0.44
+        "days_in_office": 190,
+        "years_in_office": 0.52
       },
       "macro": {
         "gdp_growth_yoy_pct": 1.78,
@@ -237,8 +237,8 @@
       "far_right_party": "Chega",
       "tenure": {
         "took_office": "2024-04-02",
-        "days_in_office": 851,
-        "years_in_office": 2.33
+        "days_in_office": 882,
+        "years_in_office": 2.41
       },
       "macro": {
         "gdp_growth_yoy_pct": 1.86,
@@ -264,8 +264,8 @@
       "far_right_party": "Progress Party",
       "tenure": {
         "took_office": "2021-10-14",
-        "days_in_office": 1752,
-        "years_in_office": 4.8
+        "days_in_office": 1783,
+        "years_in_office": 4.88
       },
       "macro": {
         "gdp_growth_yoy_pct": 1.09,
@@ -292,8 +292,8 @@
       "far_right_party": "Sanseito",
       "tenure": {
         "took_office": "2025-10-21",
-        "days_in_office": 284,
-        "years_in_office": 0.78
+        "days_in_office": 315,
+        "years_in_office": 0.86
       },
       "macro": {
         "gdp_growth_yoy_pct": 1.19,
@@ -321,8 +321,8 @@
       "far_right_party": "EKRE",
       "tenure": {
         "took_office": "2024-07-23",
-        "days_in_office": 739,
-        "years_in_office": 2.02
+        "days_in_office": 770,
+        "years_in_office": 2.11
       },
       "macro": {
         "gdp_growth_yoy_pct": 0.58,
@@ -350,8 +350,8 @@
       "far_right_party": "Sweden Democrats",
       "tenure": {
         "took_office": "2022-10-18",
-        "days_in_office": 1383,
-        "years_in_office": 3.79
+        "days_in_office": 1414,
+        "years_in_office": 3.87
       },
       "macro": {
         "gdp_growth_yoy_pct": 1.54,
@@ -380,8 +380,8 @@
       "far_right_party": "Finns Party",
       "tenure": {
         "took_office": "2023-06-20",
-        "days_in_office": 1138,
-        "years_in_office": 3.12
+        "days_in_office": 1169,
+        "years_in_office": 3.2
       },
       "macro": {
         "gdp_growth_yoy_pct": 0.17,
@@ -407,8 +407,8 @@
       "far_right_party": "Greek Solution",
       "tenure": {
         "took_office": "2019-07-08",
-        "days_in_office": 2581,
-        "years_in_office": 7.07
+        "days_in_office": 2612,
+        "years_in_office": 7.15
       },
       "macro": {
         "gdp_growth_yoy_pct": 2.07,
@@ -436,8 +436,8 @@
       "far_right_party": "FPÖ",
       "tenure": {
         "took_office": "2025-03-03",
-        "days_in_office": 516,
-        "years_in_office": 1.41
+        "days_in_office": 547,
+        "years_in_office": 1.5
       },
       "macro": {
         "gdp_growth_yoy_pct": 0.62,
@@ -467,8 +467,8 @@
       "far_right_party": "Vlaams Belang",
       "tenure": {
         "took_office": "2025-02-03",
-        "days_in_office": 544,
-        "years_in_office": 1.49
+        "days_in_office": 575,
+        "years_in_office": 1.57
       },
       "macro": {
         "gdp_growth_yoy_pct": 0.98,
@@ -496,8 +496,8 @@
       "far_right_party": "NZ First",
       "tenure": {
         "took_office": "2023-11-27",
-        "days_in_office": 978,
-        "years_in_office": 2.68
+        "days_in_office": 1009,
+        "years_in_office": 2.76
       },
       "macro": {
         "gdp_growth_yoy_pct": 0.46,
@@ -525,8 +525,8 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2022-10-22",
-        "days_in_office": 1379,
-        "years_in_office": 3.78
+        "days_in_office": 1410,
+        "years_in_office": 3.86
       },
       "macro": {
         "gdp_growth_yoy_pct": 0.54,
@@ -554,8 +554,8 @@
       "far_right_party": "SPD",
       "tenure": {
         "took_office": "2025-12-09",
-        "days_in_office": 235,
-        "years_in_office": 0.64
+        "days_in_office": 266,
+        "years_in_office": 0.73
       },
       "macro": {
         "gdp_growth_yoy_pct": 2.58,
@@ -579,8 +579,8 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2025-01-20",
-        "days_in_office": 558,
-        "years_in_office": 1.53
+        "days_in_office": 589,
+        "years_in_office": 1.61
       },
       "macro": {
         "gdp_growth_yoy_pct": 2.16,
@@ -606,8 +606,8 @@
       "far_right_party": "Mi Hazánk",
       "tenure": {
         "took_office": "2026-05-09",
-        "days_in_office": 84,
-        "years_in_office": 0.23
+        "days_in_office": 115,
+        "years_in_office": 0.31
       },
       "macro": {
         "gdp_growth_yoy_pct": 0.51,
@@ -635,8 +635,8 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2023-10-25",
-        "days_in_office": 1011,
-        "years_in_office": 2.77
+        "days_in_office": 1042,
+        "years_in_office": 2.85
       },
       "macro": {
         "gdp_growth_yoy_pct": 0.81,
@@ -660,8 +660,8 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2023-12-10",
-        "days_in_office": 965,
-        "years_in_office": 2.64
+        "days_in_office": 996,
+        "years_in_office": 2.73
       },
       "macro": {
         "gdp_growth_yoy_pct": 4.37,
@@ -692,8 +692,8 @@
       "far_right_party": "Otzma Yehudit",
       "tenure": {
         "took_office": "2022-12-29",
-        "days_in_office": 1311,
-        "years_in_office": 3.59
+        "days_in_office": 1342,
+        "years_in_office": 3.67
       },
       "macro": {
         "gdp_growth_yoy_pct": 2.93,
@@ -717,8 +717,8 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2014-08-28",
-        "days_in_office": 4356,
-        "years_in_office": 11.93
+        "days_in_office": 4387,
+        "years_in_office": 12.01
       },
       "macro": {
         "gdp_growth_yoy_pct": 3.6,
@@ -746,8 +746,8 @@
       "far_right_party": "Confederation",
       "tenure": {
         "took_office": "2023-12-13",
-        "days_in_office": 962,
-        "years_in_office": 2.63
+        "days_in_office": 993,
+        "years_in_office": 2.72
       },
       "macro": {
         "gdp_growth_yoy_pct": 3.57,
@@ -773,8 +773,8 @@
       "far_right_party": "People's Party of Canada",
       "tenure": {
         "took_office": "2025-03-14",
-        "days_in_office": 505,
-        "years_in_office": 1.38
+        "days_in_office": 536,
+        "years_in_office": 1.47
       },
       "macro": {
         "gdp_growth_yoy_pct": 1.74,
@@ -798,8 +798,8 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2025-06-04",
-        "days_in_office": 423,
-        "years_in_office": 1.16
+        "days_in_office": 454,
+        "years_in_office": 1.24
       },
       "macro": {
         "gdp_growth_yoy_pct": 1.01,
@@ -823,8 +823,8 @@
       "far_right_party": null,
       "tenure": {
         "took_office": "2024-10-01",
-        "days_in_office": 669,
-        "years_in_office": 1.83
+        "days_in_office": 700,
+        "years_in_office": 1.92
       },
       "macro": {
         "gdp_growth_yoy_pct": 0.56,
